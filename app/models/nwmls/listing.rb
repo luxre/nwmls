@@ -82,8 +82,8 @@ class Nwmls::Listing
     when "COND" then Nwmls::CondominiumListing
     when "BUSO" then Nwmls::BusinessOpportunityListing
     when "COMI" then Nwmls::CommercialListing
-    when "MANU" then Nwmls::ManufacturedListing 
     when "FARM" then Nwmls::FarmListing
+    when "MANU" then Nwmls::ManufacturedHomeListing 
     when "MULT" then Nwmls::MultiFamilyListing
     when "RENT" then Nwmls::RentalListing
     when "VACL" then Nwmls::VacantLandListing
