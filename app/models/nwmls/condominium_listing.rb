@@ -5,7 +5,7 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     LAG: 'Listing Agent Number',
     ST: 'Status',
     LP: 'Listing Price',
-    LPH: 'Listing Price History *',
+    LPH: 'Listing Price History',
     SP: 'Selling Price',
     OLP: 'Original Price',
     HSN: 'House Number',
