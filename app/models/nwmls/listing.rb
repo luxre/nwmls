@@ -1,5 +1,7 @@
+require 'nwmls/acts_as_nwmls_listing'
+
 class Nwmls::Listing
-  include ActiveModel::Model
+  include Nwmls::ActsAsNwmlsListing
 
   def self.find(conditions = {}, filters = [])
     unless conditions.is_a?(Hash)

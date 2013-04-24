@@ -1,11 +1,6 @@
+
 class Nwmls::ResidentialListing < Nwmls::Listing
-  def self.find(conditions = {}, filters = [])
-    if conditions.is_a?(Hash)
-      conditions.merge!(:property_type => 'RESI')
-    end
-    super(conditions, filters)
-  end
-  
+
   CODES = HashWithIndifferentAccess.new(
     ADU: "Approved Accessory Dwelling",
     APS: "Appliances that Stay",
@@ -172,11 +167,6 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     ZNC: "Zoning Code"
   )
 
-  def self.codes
-    CODES
-  end
-  CODES.values.collect { |v| v.underscore.parameterize('_').to_sym }.each do |attr|
-    attr_accessor attr
-  end
+  acts_as_nwmls_listing :property_type => 'RESI', :codes => CODES
 
 end
