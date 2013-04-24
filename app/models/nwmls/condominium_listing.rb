@@ -1,4 +1,4 @@
-class Nwmls::CondoListing < Nwmls::Listing
+class Nwmls::CondominiumListing < Nwmls::Listing
   CODES = HashWithIndifferentAccess.new(
     LN: "Listing Number",
     PTYP: "Property Type",

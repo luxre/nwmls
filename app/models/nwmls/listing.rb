@@ -79,7 +79,7 @@ class Nwmls::Listing
   def self.listing_class(property_type)
     case property_type
     when "RESI" then Nwmls::ResidentialListing
-    when "COND" then Nwmls::CondoListing
+    when "COND" then Nwmls::CondominiumListing
     when "BUSO" then Nwmls::BusinessOpportunityListing
     when "COMI" then Nwmls::CommercialIndustrialListing
     when "FARM" then Nwmls::FarmRanchListing
