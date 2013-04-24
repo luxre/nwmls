@@ -1,25 +1,5 @@
-#BUSO: 
-#token: BusinessOpportunity
-#COMI: 
-#token: CommercialIndustrial
-#FARM: 
-#token: FarmRanch
-#MANU: 
-#token: Manufactured
-#MULT: 
-#token: MultiFamily
-#RENT: 
-#token: Rental
-#RESI: 
-#token: VacantLand
-require 'nwmls_listing_codes'
-
 class Nwmls::Listing
   include ActiveModel::Model
-  include NwmlsListingCodes
-  RESIDENTIAL_CODES.values.collect { |v| v.underscore.parameterize('_').to_sym }.each do |attr|
-    attr_accessor attr
-  end
 
   def self.find(conditions = {}, filters = [])
     unless conditions.is_a?(Hash)
@@ -32,10 +12,11 @@ class Nwmls::Listing
     xml = Nokogiri::XML(body)
     xml.root.children.each do |listing|
       attributes = {}
+      property_type = listing.at_css('PTYP').inner_text
+      klass = self.listing_class(property_type)
       listing.children.each do |element|
         attributes[translate_attribute(element.name).to_sym] = element.text
       end
-      klass = self.listing_class(attributes[:property_type])
       collection << klass.new(attributes)
     end
     if conditions[:id]
@@ -86,21 +67,24 @@ class Nwmls::Listing
   end
 
   def self.translate_attribute(attribute)
-    if code = RESIDENTIAL_CODES[attribute]
+    if code = self.codes[attribute]
       code.underscore.parameterize('_')
 #    else
 #      raise "code #{attribute} not found"
     end
   end
 
-  def id
-    self.listing_number
-  end
-
   def self.listing_class(property_type)
     case property_type
     when "RESI" then Nwmls::ResidentialListing
     when "COND" then Nwmls::CondoListing
+    when "BUSO" then Nwmls::BusinessOpportunityListing
+    when "COMI" then Nwmls::CommercialIndustrialListing
+    when "FARM" then Nwmls::FarmRanchListing
+    when "MANU" then Nwmls::ManufacturedListing 
+    when "MULT" then Nwmls::MultiFamilyListing
+    when "RENT" then Nwmls::RentalListing
+    when "VACL" then Nwmls::VacantLandListing
     end
   end
 
