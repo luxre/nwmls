@@ -81,7 +81,7 @@ class Nwmls::Listing
     when "RESI" then Nwmls::ResidentialListing
     when "COND" then Nwmls::CondominiumListing
     when "BUSO" then Nwmls::BusinessOpportunityListing
-    when "COMI" then Nwmls::CommercialIndustrialListing
+    when "COMI" then Nwmls::CommercialListing
     when "FARM" then Nwmls::FarmRanchListing
     when "MANU" then Nwmls::ManufacturedListing 
     when "MULT" then Nwmls::MultiFamilyListing
