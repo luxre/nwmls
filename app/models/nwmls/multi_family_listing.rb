@@ -190,7 +190,7 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
     ProhibitBlogging: 'Allow Blog',
-    SWR: 'swr',#no in documentation
+    SWR: 'Sewer',#not in documentation or schema
   )
   acts_as_nwmls_listing :property_type => 'MULT', :attribute_mappings => CODES
 end

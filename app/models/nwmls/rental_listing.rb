@@ -122,7 +122,7 @@ class Nwmls::RentalListing < Nwmls::Listing
     POS: 'Possession',
     RF: 'Roof',
     SIT: 'Site Features',
-    SWR: 'Sewer Company',
+    SWR: 'Sewer',
     TRM: 'Terms',
     VEW: 'View',
     WAS: 'Water Source',

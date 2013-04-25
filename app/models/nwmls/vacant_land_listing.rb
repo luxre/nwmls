@@ -45,7 +45,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     COU: 'County',
     CDOM: 'Cumulative Days on Market',
     CTDT: 'Contingent Date',
-    DOM: 'Days On Market',
+    DOM: 'Days on Market',
     SCA: 'Selling Co Agent Number',
     SCO: 'Selling Co Office Number',
     VIRT: 'Virtual Tour URL',
