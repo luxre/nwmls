@@ -69,7 +69,7 @@ class Nwmls::Listing
   end
 
   def self.translate_attribute(attribute)
-    if code = self.codes[attribute]
+    if code = self.attribute_mappings[attribute]
       code.underscore.parameterize('_')
 #    else
 #      raise "code #{attribute} not found"

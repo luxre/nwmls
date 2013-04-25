@@ -167,6 +167,6 @@ class Nwmls::CommercialListing < Nwmls::Listing
     ProhibitBlogging: 'Allow Blog',
   )
 
-  acts_as_nwmls_listing :property_type => 'COMI', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => CODES
 
 end

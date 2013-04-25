@@ -9,10 +9,10 @@ module Nwmls
         cattr_accessor :property_type
         self.property_type = options[:property_type]
 
-        cattr_accessor :codes
-        self.codes = options[:codes]
+        cattr_accessor :attribute_mappings
+        self.attribute_mappings = options[:attribute_mappings]
 
-        attr_accessor(*self.codes.values.collect { |v| v.underscore.parameterize('_').to_sym })
+        attr_accessor(*self.attribute_mappings.values.collect { |v| v.underscore.parameterize('_').to_sym })
 
         def self.find(conditions = {}, filters = [])
           if conditions.is_a?(Hash)

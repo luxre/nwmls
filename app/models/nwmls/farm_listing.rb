@@ -161,5 +161,5 @@ class Nwmls::FarmListing < Nwmls::Listing
     ProhibitBlogging: 'Allow Blog',
   )
 
-  acts_as_nwmls_listing :property_type => 'FARM', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'FARM', :attribute_mappings => CODES
 end

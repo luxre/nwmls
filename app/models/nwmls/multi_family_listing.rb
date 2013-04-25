@@ -192,5 +192,5 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     ProhibitBlogging: 'Allow Blog',
     SWR: 'swr',#no in documentation
   )
-  acts_as_nwmls_listing :property_type => 'MULT', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'MULT', :attribute_mappings => CODES
 end

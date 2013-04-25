@@ -127,5 +127,5 @@ class Nwmls::ManufacturedHomeListing < Nwmls::Listing
     ProhibitBlogging: 'Allow Blog',
   )
 
-  acts_as_nwmls_listing :property_type => 'MANU', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'MANU', :attribute_mappings => CODES
 end

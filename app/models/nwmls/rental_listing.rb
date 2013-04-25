@@ -204,5 +204,5 @@ class Nwmls::RentalListing < Nwmls::Listing
     UTL: 'Included in Rent',
     BSM: 'bsm', #unknown what this is not part of schema but showing in data
   )
-  acts_as_nwmls_listing :property_type => 'RENT', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'RENT', :attribute_mappings => CODES
 end

@@ -117,5 +117,5 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     AllowAVM: 'Allow AVM',
     ProhibitBlogging: 'Allow Blog',
   )
-  acts_as_nwmls_listing :property_type => 'VACL', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => CODES
 end

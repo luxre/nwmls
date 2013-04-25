@@ -167,6 +167,6 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     ZNC: "Zoning Code"
   )
 
-  acts_as_nwmls_listing :property_type => 'RESI', :codes => CODES
+  acts_as_nwmls_listing :property_type => 'RESI', :attribute_mappings => CODES
 
 end
