@@ -9,9 +9,18 @@ class Nwmls::Listing
     end
 
     response = evernet_client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
-    body = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
+    xml_body = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
+    collection = build_collection_from_xml(xml_body)
+    if conditions[:listing_number]
+      collection.first
+    else
+      collection
+    end
+  end
+
+  def self.build_collection_from_xml(xml_body)
     collection = []
-    xml = Nokogiri::XML(body)
+    xml = Nokogiri::XML(xml_body)
     xml.root.children.each do |listing|
       attributes = {}
       property_type = listing.at_css('PTYP').inner_text
@@ -21,11 +30,7 @@ class Nwmls::Listing
       end
       collection << klass.new(attributes)
     end
-    if conditions[:listing_number]
-      collection.first
-    else
-      collection
-    end
+    collection
   end
 
   def self.build_query(conditions = {}, filters = [])
