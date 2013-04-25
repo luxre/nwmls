@@ -5,7 +5,7 @@ class Nwmls::Listing
 
   def self.find(conditions = {}, filters = [])
     unless conditions.is_a?(Hash)
-      conditions = { :id => conditions.to_i }
+      conditions = { :listing_number => conditions.to_i }
     end
 
     response = evernet_client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
@@ -21,7 +21,7 @@ class Nwmls::Listing
       end
       collection << klass.new(attributes)
     end
-    if conditions[:id]
+    if conditions[:listing_number]
       collection.first
     else
       collection
