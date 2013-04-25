@@ -19,6 +19,4 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.0.0.beta1"
   s.add_dependency "savon"
   s.add_dependency "nokogiri"
-
-  s.add_development_dependency "sqlite3"
 end
