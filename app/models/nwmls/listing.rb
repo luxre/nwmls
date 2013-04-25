@@ -17,7 +17,7 @@ class Nwmls::Listing
       property_type = listing.at_css('PTYP').inner_text
       klass = self.listing_class(property_type)
       listing.children.each do |element|
-        attributes[translate_attribute(element.name).to_sym] = element.text
+        attributes[klass.translate_attribute(element.name).to_sym] = element.text
       end
       collection << klass.new(attributes)
     end
