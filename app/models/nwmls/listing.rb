@@ -46,8 +46,8 @@ class Nwmls::Listing
         xml.Body do
           xml.Query do
             xml.MLS "NWMLS"
-            if conditions[:id]
-              xml.ListingNumber conditions[:id] if conditions[:id]
+            if conditions[:listing_number]
+              xml.ListingNumber conditions[:listing_number] if conditions[:listing_number]
               xml.PropertyType (conditions[:property_type] || 'RESI')
             else
               xml.PropertyType conditions[:property_type]
