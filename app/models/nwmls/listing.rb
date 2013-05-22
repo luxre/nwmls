@@ -95,5 +95,21 @@ class Nwmls::Listing
     end
   end
 
+ def status
+   {
+    'A' => 'Active',
+    'C' => 'Contingent',
+    'D' => 'Active - STI',
+    'E' => 'Expired',
+    'P' => 'Pending',
+    'R' => 'Rented',
+    'S' => 'Sold',
+    'T' => 'Temp. Off Mrkt',
+    'U' => 'Sale Fail Release',
+    'X' => 'Cancelled',
+    }[@status]
+ end
+
+
 
 end
