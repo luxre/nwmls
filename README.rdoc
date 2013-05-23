@@ -1,3 +1,70 @@
 = Nwmls
 
-This project rocks and uses MIT-LICENSE.
+An object mapper for the Evernet NWMLS Soap Web Service
+
+== Supported versions
+
+* Ruby 4.0.0.rc1
+
+== Install
+
+Put this line in your Gemfile:
+  gem 'nwmls', :git => "git@github.com:luxre/nwmls.git"
+
+Then bundle:
+  % bundle
+
+Create config/initializers/evernet.rb to set your Evernet credentials
+  Evernet::Connection.user = 'XXXXX'
+  Evernet::Connection.pass = 'XXXXX'
+
+== Usage
+
+=== Finding a batch of listings
+
+the Nwmls::Listing#find method will return an array of Nwmls::Listing objects if given a hash. The possible keys for that hash are
+  :property_type
+  :status
+  :county
+  :area
+  :city
+  :begin_date
+  :end_date
+  :office_mls_id
+  :agent_mls_id
+  :bedrooms
+  :bathrooms
+
+eg. Nwmls::Listing.find(:property_type => "RESI", :status => "A", :city => "Seattle")
+
+The options for :property_type are "RESI", "COND", "BUSO", "COMI", "FARM", "MANU", "MULT", "RENT", "VACL". If the :property_type key is not supplied then "RESI" is the default
+
+There are subclasses of Nwmls::Listing based on the property types. Your result objects are returned as instances of these classes. You can also use find with these classes, for example
+  Nwmls::Listing.find(:property_type => "COND")
+
+is equivalent to
+  Nwmls::CondominiumListing.find()
+
+The supported subclasses are
+  Nwmls::ResidentialListing #RESI
+  Nwmls::CondominiumListing #COND
+  Nwmls::BusinessOpportunityListing #BUSO
+  Nwmls::CommercialListing #COMI
+  Nwmls::FarmListing #FARM
+  Nwmls::ManufacturedHomeListing #MANU
+  Nwmls::MultiFamilyListing #MULT
+  Nwmls::RentalListing #RENT
+  Nwmls::VacantLandListing #VACL
+
+* Filters
+The find method also takes an optional second parameter. This is an array of filters. The filters work similarly to a select clause in a SQL statement. It limits which attributes are returned in the results. For example
+  Nwmls::Listing.find(:status => "A", ['LN','PTYP',UD]) 
+would return all active residential listings but only the listing_number, property_type, and update_date attributes.
+This feature is useful when you are doing finds that return a large number of Listing objects
+
+=== Finding a single listing by it's listing number
+if you give find the key :listing_number then a single result will be returned instead of an array. Example:
+  Nwmls::Listing.find(:listing_number => '454186')
+conveniently you can also find a single listing with
+  Nwmls::Listing.find(454186)
+
