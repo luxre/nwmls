@@ -6,7 +6,6 @@ module Nwmls
           [
             :bus_line_nearby,
             :publish_to_internet,
-            :publish_to_internet,
             :senior_exemption,
             :show_address_to_public,
             :show_map_link_to_public,
