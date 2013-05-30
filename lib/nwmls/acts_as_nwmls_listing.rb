@@ -60,12 +60,5 @@ module Nwmls
       alias_method "#{method}?", method
     end
 
-#    def publish_to_internet
-#      @publish_to_internet == 'Y'
-#    end
-#    alias_method :publish_to_internet?, :publish_to_internet
-    #
-
-
   end
 end
