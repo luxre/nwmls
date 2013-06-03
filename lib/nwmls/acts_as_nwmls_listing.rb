@@ -24,8 +24,8 @@ module Nwmls
       def acts_as_nwmls_listing(options = {})
         include ActiveModel::Model
 
-        cattr_accessor :property_type
-        self.property_type = options[:property_type]
+        cattr_accessor :ptyp
+        self.ptyp = options[:property_type]
 
         cattr_accessor :attribute_mappings
         self.attribute_mappings = options[:attribute_mappings]
@@ -46,7 +46,7 @@ module Nwmls
 
         def self.find(conditions = {}, filters = [])
           if conditions.is_a?(Hash)
-            conditions.merge!(:property_type => self.property_type)
+            conditions.merge!(:property_type => self.ptyp)
           end
           super(conditions, filters)
         end
