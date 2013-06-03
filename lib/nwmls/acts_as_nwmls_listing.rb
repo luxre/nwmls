@@ -2,14 +2,22 @@ module Nwmls
   module ActsAsNwmlsListing
     extend ActiveSupport::Concern
 
-    BOOLEAN_ATTRIBUTES = 
-          [
-            :bus_line_nearby,
-            :publish_to_internet,
-            :senior_exemption,
-            :show_address_to_public,
-            :show_map_link_to_public,
-          ]
+    BOOLEAN_ATTRIBUTES = [
+      :bus_line_nearby,
+      :publish_to_internet,
+      :senior_exemption,
+      :show_address_to_public,
+      :show_map_link_to_public,
+    ]
+
+    ENCODED_ATTRIBUTES = [
+      :status,
+      :property_type
+    ]
+
+    MULTI_ENCODED_ATTRIBUTES = [
+      :unit_features
+    ]
 
 
     module ClassMethods
@@ -25,12 +33,8 @@ module Nwmls
           self.attribute_mappings.values.collect { |v| v.underscore.parameterize('_').to_sym }
         end
 
-        def self.encoded_attributes
-          [:status]
-        end
-
         def self.processed_attributes
-          BOOLEAN_ATTRIBUTES + self.encoded_attributes
+          BOOLEAN_ATTRIBUTES + ENCODED_ATTRIBUTES + MULTI_ENCODED_ATTRIBUTES
         end
 
         def self.readable_attributes
@@ -58,6 +62,24 @@ module Nwmls
         end
       end
       alias_method "#{method}?", method
+    end
+
+    ENCODED_ATTRIBUTES.each do |method|
+      define_method method do
+        value = instance_variable_get("@#{method}")
+        if value
+          I18n::t("#{method}.#{value}")
+        end
+      end
+    end
+
+    MULTI_ENCODED_ATTRIBUTES.each do |method|
+      define_method method do
+        values = instance_variable_get("@#{method}")
+        if values
+          values.split('|').collect { |value| I18n::t("#{method}.#{value}")}
+        end
+      end
     end
 
   end
