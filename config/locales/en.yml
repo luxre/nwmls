@@ -10,3 +10,5 @@ en:
     T: Temp. Off Mrkt
     U: Sale Fail Release
     X: Cancelled
+  property_type:
+    RESI: Residential
