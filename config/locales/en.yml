@@ -585,21 +585,78 @@ en:
     B: County
     #C: See Remarks
 
+  basement:
+    A: Daylight
+    B: Fully Finished
+    C: Partially Finished
+    D: Roughed In
+    E: Unfinished
+    #F: None
 
+  cats_and_dogs: 
+    A: Cats Only
+    B: Dogs Only
+    C: No Dogs or Cats
+    D: No Restrictions
+    E: Subj to Restrictions
+    #F: See Remarks
 
+  electricity:
+    A: On Property
+    B: In Street
+    C: Available
+    #D: Not Available
 
+  gas_available: 
+    A: On Property
+    B: In Street
+    C: Available
+    #D: Not Available
 
+  style: 
+    "22": Manuf-Triple Wide
+    "11": 1 1/2 Story
+    "12": 2 Story
+    "24": Houseboat
+    "13": Tri-Level
+    "14": Split Entry
+    "15": Multi Level
+    "16": 1 Story w/Bsmnt.
+    "17": 1 1/2 Stry w/Bsmt
+    "18": 2 Stories w/Bsmnt
+    "20": Manuf-Single Wide
+    "32": Townhouse
+    "21": Manuf-Double Wide
+    "10": 1 Story
 
+  lease_terms: 
+    #A: None
+    B: Assignable
+    C: Less Than 1Yr
+    D: 1-2 Years
+    E: 2-3 Years
+    F: 3-5 Years
+    G: More Than 5 Yrs
+    H: May Escalate
 
+  loading: 
+    A: 1-3 Bays
+    B: 4-6 Bays
+    C: 7+ Bays
+    D: "10' Doors"
+    E: "10'-15' Doors"
+    F: "15' Doors"
+    G: Dock High
+    H: Grade
+    I: Ramp
 
-
-
-
-
-
-
-
-
-
-
-
+  major_type_of_business: 
+    A: Food & Beverage
+    B: Gas Station
+    C: Grocery
+    D: Hospitality
+    E: Manufacturing
+    F: Retail
+    G: Services
+    H: Wholesale
+    #I: See Remarks

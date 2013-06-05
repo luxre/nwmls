@@ -53,7 +53,15 @@ module Nwmls
 
     ENCODED_ATTRIBUTES = [
       :status,
-      :property_type
+      :property_type,
+      :basement,
+      :cats_and_dogs,
+      :electricity,
+      :gas_available,
+      :style,
+      :lease_terms,
+      :loading,
+      :major_type_of_business,
     ]
 
     MULTI_ENCODED_ATTRIBUTES = [
