@@ -19,16 +19,6 @@ en:
     MULT: Multi-Family
     RENT: Rental
     VACL: Land
-  appliances_that_stay:
-    A: Dishwasher
-    B: Double Oven
-    C: Dryer
-    D: Garbage Disposal
-    E: Microwave
-    F: Range/Oven
-    G: Refrigerator
-    H: Trash Compactor
-    I: Washer
   amenities:
     A: Basement
     B: Clubhouse
