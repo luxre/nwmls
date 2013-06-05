@@ -111,7 +111,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     WSG: 'Water/Sewer/Garbage',
     YVA: 'Year Value Assessed',
     ZJD: 'Zoning Jurisdiction',
-    CFE: 'Features',
+    CFE: 'Commercial Features',
     ENS: 'Energy Source',
     EXT: 'Exterior',
     FLS: 'Floor Covering',
