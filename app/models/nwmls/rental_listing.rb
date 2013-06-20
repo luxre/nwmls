@@ -123,7 +123,7 @@ class Nwmls::RentalListing < Nwmls::Listing
     RF: 'Roof',
     SIT: 'Site Features',
     SWR: 'Sewer',
-    TRM: 'Terms',
+    TRM: 'Potential Terms',
     VEW: 'View',
     WAS: 'Water Source',
     WFT: 'Waterfront',

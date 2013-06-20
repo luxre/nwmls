@@ -21,7 +21,7 @@ en:
     VACL: Land
 
   #FROM AMENITIES WEB SERVICE
-  approved_accessory:
+  approved_accessory_dwelling:
     B: Lower
     C: Main
     E: Upper
@@ -70,7 +70,7 @@ en:
     D: Modular
     E: Planned Unit Dev
     F: Zero Lot Line
-  bonus_room:
+  bonus_room_location:
     B: Lower
     C: Main
     E: Upper
@@ -89,11 +89,11 @@ en:
     E: Clubhouse
     F: Golf Course
     G: Private Beach Access
-  den_office:
+  den_or_office:
     B: Lower
     C: Main
     E: Upper
-  dining_room:
+  dining_room_location:
     B: Lower
     C: Main
     E: Upper
@@ -103,12 +103,12 @@ en:
     C: LEED
     D: Other-See Remarks
     E: Third Party Verif.
-  extra_fin_rm:
+  extra_finished_room_location:
     A: Garage
     B: Lower
     C: Main
     E: Upper
-  energy_source_heat:
+  energy_source:
     A: Electric
     B: Natural Gas
     C: Oil
@@ -117,7 +117,7 @@ en:
     F: See Remarks
     G: Solar
     H: Wood
-  entry:
+  entry_location:
     B: Lower
     C: Main
     D: Split
@@ -139,7 +139,7 @@ en:
     A: Exempt
     B: Not Provided
     C: Provided
-  family_room:
+  family_room_location:
     B: Lower
     C: Main
     E: Upper
@@ -223,26 +223,26 @@ en:
     K: Stove/Free Stndg
     L: Wall
     M: Window Units
-  kit_with_eating_spc:
+  kitchen_with_eating_space_location:
     B: Lower
     C: Main
     E: Upper
-  showing_information:
-    A: Appointment
-    B: Call Listing Office
-    C: Day Sleeper
-    D: Gate Code Needed
-    E: MLS Keybox
-    F: Other Keybox
-    G: Owner-Call First
-    H: Pet in House
-    I: Power Off
-    J: Renter-Call First
-    K: Security System
-    L: See Remarks
-    M: Vacant
-    N: View With Discretion
-  kit_w_o_eating_space:
+#  showing_information:
+#    A: Appointment
+#    B: Call Listing Office
+#    C: Day Sleeper
+#    D: Gate Code Needed
+#    E: MLS Keybox
+#    F: Other Keybox
+#    G: Owner-Call First
+#    H: Pet in House
+#    I: Power Off
+#    J: Renter-Call First
+#    K: Security System
+#    L: See Remarks
+#    M: Vacant
+#    N: View With Discretion
+  kitchen_location:
     B: Lower
     C: Main
     E: Upper
@@ -260,14 +260,14 @@ en:
     L: Sidewalk
     M: Value In Land
     B: Community Golf Cours
-  letter_on_file:
-    A: Duplicate Areas
-    B: Duplicate Prop Type
-    C: Other
-    D: Restriction on Showg
-    E: SOC Restriction
-    F: Undiscl Owner Info
-  living_room:
+#  letter_on_file:
+#    A: Duplicate Areas
+#    B: Duplicate Prop Type
+#    C: Other
+#    D: Restriction on Showg
+#    E: SOC Restriction
+#    F: Undiscl Owner Info
+  living_room_location:
     B: Lower
     C: Main
     E: Upper
@@ -283,7 +283,7 @@ en:
     H: Tower
     I: See Remarks
     J: Option Available
-  lot_topog_veg:
+  lot_topography_vegetation:
     A: Brush
     C: Dune
     D: Equestrian
@@ -305,7 +305,7 @@ en:
     A: Completed
     B: Presale
     C: Under Construction
-  3rd_party_apprvl_req:
+  third_party_approval_required:
     A: None
     B: Other - See Remarks
     C: Short Sale
@@ -328,7 +328,7 @@ en:
     F: See Remarks
     G: Tile
     H: Torch Down
-  rec_room:
+  rec_room_location:
     B: Lower
     C: Main
     E: Upper
@@ -429,7 +429,7 @@ en:
     M: VA
     N: Variable Price Lstg
     I: SBA
-  utility_room:
+  utility_room_location:
     A: Garage
     B: Lower
     C: Main
@@ -486,7 +486,7 @@ en:
     D: Dryer-Gas
     E: Ice Maker
     F: Washer
-  common_prop_features:
+  common_features:
     A: Age Restriction
     B: Athletic Court
     D: Boat House
@@ -518,14 +518,14 @@ en:
     D: No Restrictions
     E: See Remarks
     F: Subj to Restrictions
-  h_o_dues_included:
+  home_owner_dues_include:
     A: Cable TV
     B: Central Hot Water
     C: Earthquake Ins.
     D: Garbage
     E: See Remarks
     F: Water/Sewer
-  kit_w_eat_space:
+  kitchen_with_eating_space_location:
     B: Lower
     C: Main
     E: Upper
@@ -731,7 +731,7 @@ en:
     F: Sheep
     G: Included in Sale
     H: See Lvestck Comments
-  lot_topography:
+  lot_topography_vegetation:
     F: Fruit Trees
     I: Level
     J: Partial Slope
@@ -758,11 +758,11 @@ en:
     F: Sand
     G: Sandy Loam
     H: See Soil Comments
-  form17:
+  form_17:
     A: Exempt
     B: Not Provided
     C: Provided
-  manufd_home_features:
+  manufactured_home_features:
     A: Awnings
     B: Bath Off Master
     C: Ceiling Fan(s)
@@ -832,7 +832,7 @@ en:
     N: false
     O: None
     Y: true
-  addl_finished_rooms:
+  additional_finished_rooms:
     B: Bonus Room
     C: Den
     D: Dining Room
@@ -847,20 +847,20 @@ en:
     E: Refrigerator
     F: Washer/Dryer
     G: See Remarks
-  approval_required:
-    A: Association
-    B: Credit
-    C: See Remarks
-  forms_required:
-    A: Rntl Agree.-Ownr
-    B: Rntl Agree.-Prop Mgr
-    C: Rntl Agree.-Rntg Off
-    D: Rental Application
-    E: Screening Rpt-Owner
-    F: Screening Rpt-Prp Mg
-    G: Screening Rpt-Rnt Of
-    H: See Remarks
-  move_in_funds_reqd:
+#  approval_required: #APR in RENT
+#    A: Association
+#    B: Credit
+#    C: See Remarks
+#  forms_required: #FMR in RENT
+#    A: Rntl Agree.-Ownr
+#    B: Rntl Agree.-Prop Mgr
+#    C: Rntl Agree.-Rntg Off
+#    D: Rental Application
+#    E: Screening Rpt-Owner
+#    F: Screening Rpt-Prp Mg
+#    G: Screening Rpt-Rnt Of
+#    H: See Remarks
+  move_in_funds_required:
     A: First Month
     B: Last Month
     C: Cleaning Fee
@@ -868,7 +868,7 @@ en:
     E: Pet Fee
     F: Security Deposit
     G: See Remarks
-  terms_conditions:
+  terms_and_conditions:
     A: Month to Month
     B: Non-Smoking
     C: No Pets
@@ -905,7 +905,7 @@ en:
     F: Sewer
     G: Water
     H: See Remarks
-  reports_docs_compltd:
+  documents_provided:
     A: CCRs
     B: Drainage
     C: Geotech
