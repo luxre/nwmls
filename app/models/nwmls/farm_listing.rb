@@ -133,7 +133,7 @@ class Nwmls::FarmListing < Nwmls::Listing
     EQP: 'Equipment Included',
     EXT: 'Exterior',
     F17: 'Form 17',
-    FEA: 'Features',
+    FEA: 'Interior Features',
     FEN: 'Fence',
     FND: 'Foundation',
     FTP: 'Farm Type',

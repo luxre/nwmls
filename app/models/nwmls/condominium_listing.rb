@@ -88,7 +88,7 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     HBM: 'Half Baths Main',
     HBT: 'Half Bathrooms',
     HBU: 'Half Baths Upper',
-    HOD: 'Home Owner Dues',
+    HOD: 'Annual Association Dues',
     JH: 'Junior High',
     KES: 'Kitchen w/Eating Space Location',
     KIT: 'Kitchen Location',

@@ -68,7 +68,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     ELE: 'Electricity',
     ESM: 'Easements',
     F17: 'Form 17',
-    GAS: 'Gas Available',
+    GAS: 'Gas',
     JH: 'Junior High',
     LSZ: 'Lot Dimensions',
     LT: 'Lot Number',
