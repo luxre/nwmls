@@ -21,212 +21,213 @@ en:
     VACL: Land
 
   #FROM AMENITIES WEB SERVICE
-  approved_accessory_dwelling:
-    B: Lower
-    C: Main
-    E: Upper
-  appliances_that_stay:
-    A: Dishwasher
-    B: Double Oven
-    C: Dryer
-    D: Garbage Disposal
-    E: Microwave
-    F: Range/Oven
-    G: Refrigerator
-    H: See Remarks
-    I: Trash Compactor
-    J: Washer
-  architecture:
-    A: A-Frame/Dome
-    B: Cabin
-    C: Cape Cod
-    D: Colonial
-    F: Contemporary
-    G: Craftsman
-    I: NW Contemporary
-    J: See Remarks
-    K: Spanish/SW
-    N: Traditional
-    O: Tudor
-    P: Victorian
-    Q: Modern
-    H: Loft
-    L: Studio
-    M: Townhouse
-    E: Contemp/Custom
-  building_condition:
-    A: Average
-    B: Fair
-    C: Fixer
-    D: Good
-    E: Remodeled
-    F: Restored
-    G: Under Construction
-    H: Very Good
-  building_information:
-    A: Additional Dwelling
-    B: Built On Lot
-    C: Manufactured Home
-    D: Modular
-    E: Planned Unit Dev
-    F: Zero Lot Line
-  bonus_room_location:
-    B: Lower
-    C: Main
-    E: Upper
-  basement:
-    A: Daylight
-    B: Fully Finished
-    C: None
-    D: Partially Finished
-    E: Roughed In
-    F: Unfinished
-  community_features:
-    A: Age Restriction
-    B: Airfield
-    C: Boat Launch
-    D: CCRs
-    E: Clubhouse
-    F: Golf Course
-    G: Private Beach Access
-  den_or_office_location:
-    B: Lower
-    C: Main
-    E: Upper
-  dining_room_location:
-    B: Lower
-    C: Main
-    E: Upper
-  environmental_cert:
-    A: Built Green
-    B: ENERGY STAR
-    C: LEED
-    D: Other-See Remarks
-    E: Third Party Verif.
-  extra_finished_room_location:
-    A: Garage
-    B: Lower
-    C: Main
-    E: Upper
-  energy_source:
-    A: Electric
-    B: Natural Gas
-    C: Oil
-    D: Pellet
-    E: Propane
-    F: See Remarks
-    G: Solar
-    H: Wood
-  entry_location:
-    B: Lower
-    C: Main
-    D: Split
-    E: Upper
-  exterior:
-    A: Brick
-    B: Cement Plank
-    C: Cement/Concrete
-    E: Log
-    G: Metal/Vinyl
-    I: See Remarks
-    J: Stone
-    K: Stucco
-    N: Wood
-    O: Wood Products
-    L: Tilt-Up
-    H: Other
-  form_17:
-    A: Exempt
-    B: Not Provided
-    C: Provided
-  family_room_location:
-    B: Lower
-    C: Main
-    E: Upper
-  interior_features:
-    A: 2nd Kitchen
-    A1: Wet Bar
-    B: 2nd Master BR
-    B1: Wine Cellar
-    C1: Wired for Generator
-    D: Bath Off Master
-    E: Built-In Vacuum
-    F: Ceiling Fan(s)
-    G: Dbl Pane/Storm Windw
-    H: Dining Room
-    I: Disabled Access
-    L: Frplc. in Mstr Bdrm
-    M: French Doors
-    N: High Tech Cabling
-    O: Hot Tub/Spa
-    Q: Jetted Tub
-    R: Loft
-    T: Sauna
-    U: Security System
-    V: Skylights
-    W: Solarium/Atrium
-    X: Vaulted Ceilings
-    Y: Walk In Pantry
-    Z: Walk-in Closet
-    C: 3rd Master BR
-    J: Extra Room
-    K: Family/Rec Room
-    P: Intermcom
-    S: Pantry
-  floor_covering:
-    A: Bamboo/Cork
-    B: Ceramic Tile
-    C: Concrete
-    D: Fir/Softwood
-    E: Hardwood
-    F: Laminate
-    I: Other Renewable
-    J: See Remarks
-    K: Slate
-    L: Vinyl
-    M: Wall to Wall Carpet
-    G: Laminate Hardwood
-    H: Laminate Tile
-  foundation:
-    A: Concrete Block
-    C: Concrete Ribbon
-    E: Post  Block
-    F: Post  Pillar
-    G: Poured Concrete
-    H: See Remarks
-    I: Slab
-    J: Tie Down
-    B: Concrete Perimeter
-    D: Concrete Slab
-  parking_type:
-    B: Carport-Attached
-    C: Carport-Detached
-    E: Garage-Attached
-    F: Garage-Detached
-    H: None
-    I: Off-Street Parking
-    A: Carport
-    G: Individual Garage
-    J: Uncovered
-    D: Common Garage
-  heating_and_cooling:
-    A: Baseboard
-    B: Central Air
-    C: Forced Air
-    D: Heat Pump
-    E: High Efficiency
-    F: Insert
-    G: None
-    H: Other-See Remarks
-    I: Radiant
-    J: Radiator
-    K: Stove/Free Stndg
-    L: Wall
-    M: Window Units
-  kitchen_with_eating_space_location:
-    B: Lower
-    C: Main
-    E: Upper
+  amenities:
+    approved_accessory_dwelling:
+      B: Lower
+      C: Main
+      E: Upper
+    appliances_that_stay:
+      A: Dishwasher
+      B: Double Oven
+      C: Dryer
+      D: Garbage Disposal
+      E: Microwave
+      F: Range/Oven
+      G: Refrigerator
+      H: See Remarks
+      I: Trash Compactor
+      J: Washer
+    architecture:
+      A: A-Frame/Dome
+      B: Cabin
+      C: Cape Cod
+      D: Colonial
+      F: Contemporary
+      G: Craftsman
+      I: NW Contemporary
+      J: See Remarks
+      K: Spanish/SW
+      N: Traditional
+      O: Tudor
+      P: Victorian
+      Q: Modern
+      H: Loft
+      L: Studio
+      M: Townhouse
+      E: Contemp/Custom
+    building_condition:
+      A: Average
+      B: Fair
+      C: Fixer
+      D: Good
+      E: Remodeled
+      F: Restored
+      G: Under Construction
+      H: Very Good
+    building_information:
+      A: Additional Dwelling
+      B: Built On Lot
+      C: Manufactured Home
+      D: Modular
+      E: Planned Unit Dev
+      F: Zero Lot Line
+    bonus_room_location:
+      B: Lower
+      C: Main
+      E: Upper
+    basement:
+      A: Daylight
+      B: Fully Finished
+      C: None
+      D: Partially Finished
+      E: Roughed In
+      F: Unfinished
+    community_features:
+      A: Age Restriction
+      B: Airfield
+      C: Boat Launch
+      D: CCRs
+      E: Clubhouse
+      F: Golf Course
+      G: Private Beach Access
+    den_or_office_location:
+      B: Lower
+      C: Main
+      E: Upper
+    dining_room_location:
+      B: Lower
+      C: Main
+      E: Upper
+    environmental_cert:
+      A: Built Green
+      B: ENERGY STAR
+      C: LEED
+      D: Other-See Remarks
+      E: Third Party Verif.
+    extra_finished_room_location:
+      A: Garage
+      B: Lower
+      C: Main
+      E: Upper
+    energy_source:
+      A: Electric
+      B: Natural Gas
+      C: Oil
+      D: Pellet
+      E: Propane
+      F: See Remarks
+      G: Solar
+      H: Wood
+    entry_location:
+      B: Lower
+      C: Main
+      D: Split
+      E: Upper
+    exterior:
+      A: Brick
+      B: Cement Plank
+      C: Cement/Concrete
+      E: Log
+      G: Metal/Vinyl
+      I: See Remarks
+      J: Stone
+      K: Stucco
+      N: Wood
+      O: Wood Products
+      L: Tilt-Up
+      H: Other
+    form_17:
+      A: Exempt
+      B: Not Provided
+      C: Provided
+    family_room_location:
+      B: Lower
+      C: Main
+      E: Upper
+    interior_features:
+      A: 2nd Kitchen
+      A1: Wet Bar
+      B: 2nd Master BR
+      B1: Wine Cellar
+      C1: Wired for Generator
+      D: Bath Off Master
+      E: Built-In Vacuum
+      F: Ceiling Fan(s)
+      G: Dbl Pane/Storm Windw
+      H: Dining Room
+      I: Disabled Access
+      L: Frplc. in Mstr Bdrm
+      M: French Doors
+      N: High Tech Cabling
+      O: Hot Tub/Spa
+      Q: Jetted Tub
+      R: Loft
+      T: Sauna
+      U: Security System
+      V: Skylights
+      W: Solarium/Atrium
+      X: Vaulted Ceilings
+      Y: Walk In Pantry
+      Z: Walk-in Closet
+      C: 3rd Master BR
+      J: Extra Room
+      K: Family/Rec Room
+      P: Intermcom
+      S: Pantry
+    floor_covering:
+      A: Bamboo/Cork
+      B: Ceramic Tile
+      C: Concrete
+      D: Fir/Softwood
+      E: Hardwood
+      F: Laminate
+      I: Other Renewable
+      J: See Remarks
+      K: Slate
+      L: Vinyl
+      M: Wall to Wall Carpet
+      G: Laminate Hardwood
+      H: Laminate Tile
+    foundation:
+      A: Concrete Block
+      C: Concrete Ribbon
+      E: Post  Block
+      F: Post  Pillar
+      G: Poured Concrete
+      H: See Remarks
+      I: Slab
+      J: Tie Down
+      B: Concrete Perimeter
+      D: Concrete Slab
+    parking_type:
+      B: Carport-Attached
+      C: Carport-Detached
+      E: Garage-Attached
+      F: Garage-Detached
+      H: None
+      I: Off-Street Parking
+      A: Carport
+      G: Individual Garage
+      J: Uncovered
+      D: Common Garage
+    heating_and_cooling:
+      A: Baseboard
+      B: Central Air
+      C: Forced Air
+      D: Heat Pump
+      E: High Efficiency
+      F: Insert
+      G: None
+      H: Other-See Remarks
+      I: Radiant
+      J: Radiator
+      K: Stove/Free Stndg
+      L: Wall
+      M: Window Units
+    kitchen_with_eating_space_location:
+      B: Lower
+      C: Main
+      E: Upper
 #  showing_information:
 #    A: Appointment
 #    B: Call Listing Office
@@ -242,24 +243,24 @@ en:
 #    L: See Remarks
 #    M: Vacant
 #    N: View With Discretion
-  kitchen_location:
-    B: Lower
-    C: Main
-    E: Upper
-  lot_details:
-    A: Alley
-    C: Corner Lot
-    D: Cul-de-sac
-    E: Curbs
-    F: Dead End Street
-    G: Drought Res Landscpe
-    H: High Voltage Line
-    I: Open Space
-    J: Paved Street
-    K: Secluded
-    L: Sidewalk
-    M: Value In Land
-    B: Community Golf Cours
+    kitchen_location:
+      B: Lower
+      C: Main
+      E: Upper
+    lot_details:
+      A: Alley
+      C: Corner Lot
+      D: Cul-de-sac
+      E: Curbs
+      F: Dead End Street
+      G: Drought Res Landscpe
+      H: High Voltage Line
+      I: Open Space
+      J: Paved Street
+      K: Secluded
+      L: Sidewalk
+      M: Value In Land
+      B: Community Golf Cours
 #  letter_on_file:
 #    A: Duplicate Areas
 #    B: Duplicate Prop Type
@@ -267,587 +268,587 @@ en:
 #    D: Restriction on Showg
 #    E: SOC Restriction
 #    F: Undiscl Owner Info
-  living_room_location:
-    B: Lower
-    C: Main
-    E: Upper
-  leased_equipment:
-    Y: true
-    A: Bailer
-    B: Combine
-    C: Dairy
-    D: Electric
-    E: Feeder
-    F: Planter
-    G: Sprinkler
-    H: Tower
-    I: See Remarks
-    J: Option Available
-    none: none
-  lot_topography_vegetation:
-    A: Brush
-    C: Dune
-    D: Equestrian
-    F: Fruit Trees
-    G: Garden Space
-    I: Level
-    J: Partial Slope
-    K: Pasture
-    L: Rolling
-    N: Sloped
-    O: Steep Slope
-    Q: Terraces
-    R: Wooded
-  master_bedroom_location:
-    B: Lower
-    C: Main
-    E: Upper
-  new_construction:
-    A: Completed
-    B: Presale
-    C: Under Construction
-  third_party_approval_required:
-    A: None
-    B: Other - See Remarks
-    C: Short Sale
-  pool:
-    A: Above Ground
-    B: Community
-    C: Indoor
-    D: In-Ground
-  possession:
-    A: Closing
-    B: Negotiable
-    C: See Remarks
-    D: Subject to Tenants
-  roof:
-    A: Built-Up
-    B: Cedar Shake
-    C: Composition
-    D: Flat
-    E: Metal
-    F: See Remarks
-    G: Tile
-    H: Torch Down
-  rec_room_location:
-    B: Lower
-    C: Main
-    E: Upper
-  site_features:
-    A: Arena-Indoor
-    B: Arena-Outdoor
-    C: Athletic Court
-    D: Barn
-    E: Boat House
-    F: Cabana/Gazebo
-    G: Cable TV
-    H: Deck
-    I: Disabled Access
-    J: Dock
-    K: Dog Run
-    L: Fenced-Fully
-    M: Fenced-Partially
-    N: Gas Available
-    O: Gated Entry
-    P: Green House
-    Q: High Speed Internet
-    R: Hot Tub/Spa
-    S: Moorage
-    T: Outbuildings
-    U: Patio
-    V: Propane
-    W: RV Parking
-    X: Shop
-    Y: Sprinkler System
-    Z: Stable
-  style:
-    10: 10-1 Story
-    11: 11-1 1/2 Story
-    12: 12-2 Story
-    13: 13-Tri-Level
-    14: 14-Split Entry
-    15: 15-Multi Level
-    16: 16-1 Story w/Bsmnt.
-    17: 17- 1/2 Sty. w/Bsmnt
-    18: 18-2 Stories w/Bsmnt
-    20: 20-Manuf-Single Wide
-    21: 21-Manuf-Double Wide
-    22: 22-Manuf-Triple Wide
-    24: 24-Floating Home
-    32: 32-Townhouse
-    30: 30-Condo (1 Level)
-    31: 31-Condo (2 Levels)
-    33: 33-Co-op
-    34: 34-Condo (3 Levels)
-    35: 35-Garage Storage
-    45: 45-Moorage
-    60: 60-Comm Bldg Und 10K
-    61: 61-Comm Bldg Ovr 10K
-    62: 62-Business Opp.
-    63: 63-Farm  Ranch
-    64: 64-Hotel/Motel
-    70: 70-Industrial
-    71: 71-Light Indrl.
-    72: 72-Mobile Home Park
-    73: 73-Office
-    74: 74-Recreational
-    75: 75-Retail
-    76: 76-RV Park
-    77: 77-Timber
-    78: 78-Warehouse
-    52: 52-Duplex
-    53: 53-Tri-plex
-    54: 54-4-Plex
-    56: 56-10+ Units
-    57: 57-10+ Units
-    5-: 5-Plex
-    55: 55-5-9 Units
-    40: 40-Res-Less thn 1 Ac
-    41: 41-Res - 1 Acre +
-    42: 42-Multi-Family
-    43: 43-Comm/Industrial
-    44: 44-Recreational
-  sewer:
-    A: Available
-    C: None
-    F: Septic
-    G: Sewer Connected
-    B: In Street
-    D: Not Available
-    E: On Property
-  potential_terms:
-    A: Assumable
-    B: Cash Out
-    C: Conventional
-    D: Farm Home Loan
-    E: FHA
-    F: Lease/Purchase
-    G: Owner Financing
-    H: Rehab Loan
-    J: See Remarks
-    K: State Bond
-    L: USDA
-    M: VA
-    N: Variable Price Lstg
-    I: SBA
-  utility_room_location:
-    A: Garage
-    B: Lower
-    C: Main
-    E: Upper
-  view:
-    A: Bay
-    B: Canal
-    C: City
-    D: Golf Course
-    E: Jetty
-    F: Lake
-    G: Mountain
-    H: Ocean
-    I: Partial
-    J: River
-    K: See Remarks
-    L: Sound
-    M: Strait
-    N: Territorial
-  water_source:
-    B: Community
-    F: Individual Well
-    I: Private
-    K: Public
-    L: See Remarks
-    N: Shared Well
-    O: Shares
-  waterfront:
-    A: Bank-High
-    B: Bank-Low
-    C: Bank-Medium
-    D: Bay
-    F: Bulkhead
-    G: Canal
-    H: Creek
-    I: Jetty
-    J: Lake
-    K: No Bank
-    L: Ocean
-    M: River
-    N: Saltwater
-    O: Sound
-    P: Strait
-    Q: Tideland Rights
-    E: Beach Rights
-  zoning_jurisdiction:
-    A: City
-    B: County
-    C: See Remarks
-  appliance_hookups:
-    A: Cooking-Electric
-    B: Cooking-Gas
-    C: Dryer-Electric
-    D: Dryer-Gas
-    E: Ice Maker
-    F: Washer
-  common_features:
-    A: Age Restriction
-    B: Athletic Court
-    D: Boat House
-    E: Cable TV
-    F: Club House
-    G: Disabled Access
-    I: Elevator
-    J: Exercise Room
-    K: Fire Sprinklers
-    L: Game/Rec Rm
-    M: Golf Course
-    N: High Speed Int Avail
-    O: Hot Tub
-    P: Laundry Room
-    Q: Lobby Entrance
-    R: Moorage
-    S: Outside Entry
-    T: Pool-Indoor
-    U: Pool-Outdoor
-    V: RV Parking
-    W: Sauna
-    X: Security Gate
-    Y: See Remarks
-    Z: Trails
-  cats_and_dogs:
-    A: Cats Only
-    B: Dogs Only
-    C: No Dogs or Cats
-    D: No Restrictions
-    E: See Remarks
-    F: Subj to Restrictions
-  home_owner_dues_include:
-    A: Cable TV
-    B: Central Hot Water
-    C: Earthquake Ins.
-    D: Garbage
-    E: See Remarks
-    F: Water/Sewer
-  kitchen_with_eating_space_location:
-    B: Lower
-    C: Main
-    E: Upper
-  parking_types:
-    A: Carport
-    D: Common Garage
-    G: Individual Garage
-    H: None
-    I: Off-Street Parking
-    J: Uncovered
-  type_of_fireplace:
-    A: Both
-    B: Gas
-    C: Wood
-  unit_features:
-    A: Alarm System
-    B: Balcony/Deck/Patio
-    C: Central Vacuum
-    D: Disabled Access
-    E: End Unit
-    F: French Doors
-    G: Ground Floor
-    H: Insulated Windows
-    I: Jetted/Soaking Tub
-    K: Master Bath
-    L: Penthouse
-    M: Skylights
-    N: Top Floor
-    O: Vaulted Ceilings
-    P: Walk-in Closet
-    Q: Yard
-  features:
-    A: Disabled Access
-    B: Elevator
-    C: Leased Fixtures
-    D: Satellite
-    E: Signage Included
-    F: Sprinklered
-    G: Storage
-    H: Tenant Association
-  general_zoning_classification:
-    A: Agricultural
-    B: Business
-    C: Commercial
-    D: Farm  Ranch
-    E: Forestry
-    F: Industrial
-    G: Industrial-Light
-    H: Multi-Family
-    I: Office
-    J: Residential
-    K: Retail
-    L: See Remarks
-  loading:
-    A: 1-3 Bays
-    B: 4-6 Bays
-    C: 7+ Bays
-    D: 10&#39; Doors
-    E: 10&#39;-15&#39; Doors
-    F: 15&#39; Doors
-    G: Dock High
-    H: Grade
-    I: Ramp
-  topography:
-    I: Level
-    N: Sloped
-    R: Wooded
-    B: Cliffs
-    E: Fill Needed
-    H: Gullies
-    L: Rolling
-    M: See Remarks
-    P: Swale
-  barn_features:
-    A: Box Stalls
-    B: Calving Area
-    C: Granary
-    D: Lay Stalls
-    E: Loft Area
-    F: Milking Parlor
-    G: Multiple Storage
-    H: Silo/Silage Bunker
-    I: Workshop
-    J: See Outbldg Comments
-    K: Office
-  barn_type:
-    A: Grain
-    B: Hay
-    C: Livestock
-    D: Pole
-    E: See Comments
-  energy_source:
-    A: Electric
-    B: Natural Gas
-    C: Oil
-    D: Pellet
-    E: Propane
-    F: See Remarks
-    H: Wood
-  equipment_included:
-    A: Bailer
-    B: Combine
-    C: Dairy
-    D: Disc
-    E: Electric
-    F: Feeder
-    G: Hay Wagon
-    H: Irrigation
-    I: Leveler
-    J: Planter
-    K: Plow
-    L: Rake
-    M: See Comments
-  fence:
-    A: Barbed Wire
-    B: Block
-    C: Brick
-    D: Chain Link
-    E: Combination
-    F: Cross Fenced
-    G: Electric
-    H: Partial
-    I: Partial Perimeter
-    J: Perimeter
-    K: Picket
-    L: Rail
-    M: Security
-    N: Wire
-    O: Wood
-    P: See Remarks
-  farm_type:
-    A: Berry
-    B: Crop
-    C: Equestrian
-    D: Land Only
-    E: Livestock
-    F: Nursery
-    G: Orchard
-    H: Tree
-    I: Vineyard
-    J: See Remarks
-  improvements:
-    M: Gas Tanks
-    N: Equipment Included
-    O: Disabled Access
-    P: Green House
-    Q: Deck
-    R: Patio
-    S: Dog Run
-    T: Hot Tub Spa
-    U: In Ground Pool
-    V: Above Ground Pool
-    W: Sprinkler System
-    X: See Remarks
-    A: Barn
-    B: Boat House
-    C: Cabana/Gazebo
-    D: Cable TV Available
-    E: Dock
-    F: Dwelling
-    G: Fenced-Fully
-    H: Fenced-Partially
-    I: Garage
-    J: Outbuilding(s)
-    K: Shop
-    L: Stable
-  irrigation_source:
-    A: Bureau
-    B: Community
-    C: Drainage
-    D: Pond
-    E: Well Drilled
-    F: Well Shared
-    G: Well Private
-    H: Additional Well(s)
-    I: Water Rights Cert.
-    J: Water Use Permit
-    K: See Irrigation Comm
-  irrigation_type:
-    A: Circle
-    B: Drip Line
-    C: Dry Land
-    D: Hand Lines
-    E: Pivot
-    F: Pressure/Undergrnd
-    G: Wheel Lines
-    H: See Irrigation Comm
-    I: None
-  leased_terms:
-    I: Annual
-    J: Month-to-Month
-    K: Quarterly
-    L: Semi-Annual
-    M: Year 1-3
-    N: Year 4+
-    O: See Remarks
-  livestock_type:
-    A: Cattle
-    B: Dairy
-    C: Hog
-    D: Horse
-    E: Poultry
-    F: Sheep
-    G: Included in Sale
-    H: See Lvestck Comments
-  lot_topography_vegetation:
-    F: Fruit Trees
-    I: Level
-    J: Partial Slope
-    L: Rolling
-    N: Sloped
-    R: Wooded
-  outbuildings:
-    A: Arena-Indoors
-    B: Arena-Outdoors
-    C: 2nd Barn
-    D: Chicken
-    E: Corral
-    F: Stable
-    G: Storage
-    H: Windmill
-    I: Workshop
-    J: See Outbldg Comments
-  soil_type:
-    A: Clay
-    B: Clay Loam
-    C: Loam
-    D: Gravel
-    E: Rock
-    F: Sand
-    G: Sandy Loam
-    H: See Soil Comments
-  form_17:
-    A: Exempt
-    B: Not Provided
-    C: Provided
-  manufactured_home_features:
-    A: Awnings
-    B: Bath Off Master
-    C: Ceiling Fan(s)
-    D: Disabled Access
-    E: Double Pane Windows
-    F: Drapes
-    G: Fireplace in Master
-    H: Hot Tub/Spa
-    I: Jetted/Soaking Tub
-    J: Landscaped
-    K: Patio/Porch/Deck
-    L: Sauna
-    M: Security System
-    N: Skylights
-    O: Vaulted Ceilings
-    P: Walk-In Closet
-    Q: Wet Bar
-  other_rooms:
-    D: Dining Room
-    E: Entry
-    F: Extra Finished Room
-    G: Family Room
-    H: Kitchen w/Eat Space
-    I: Kitchen
-    J: Living Room
-    N: Utility Room
-  park_amenities:
-    A: BBQs
-    B: Clubhouse
-    C: Common Area
-    D: Community Watefront
-    E: Exercise Room
-    F: Golf
-    G: Laundry
-    H: Playground
-    I: Pool
-    J: Recreational Area
-    K: RV Parking
-    L: Sauna
-    M: Security Gate
-    N: Sidewalks
-    O: Spa/Hot Tub
-    P: Tennis Courts
-    Q: Trails
-    R: High Speed Int Avail
-  space_rent_includes:
-    A: Water
-    B: Sewer
-    C: Garbage
-    D: Cable/TV
-    E: See Remarks
-  amenities:
-    A: Basement
-    B: Clubhouse
-    C: Coin Op Laundry
-    D: Elevator
-    E: Energy Package
-    F: Fire Sprinklers
-    G: Playground
-    H: Storage
-    I: Thermal Windows
-    J: See Remarks
-  leased_items:
-    K: Furnace/Burner
-    L: Security System
-    M: Washer/Dryer
-    N: false
-    O: None
-    Y: true
-  additional_finished_rooms:
-    B: Bonus Room
-    C: Den
-    D: Dining Room
-    G: Family Room
-    H: Kitchen Eating Space
-    L: Recreation Room
-  appliances_provided:
-    A: Dishwasher
-    B: Garbage Disposal
-    C: Microwave
-    D: Range/Oven
-    E: Refrigerator
-    F: Washer/Dryer
-    G: See Remarks
+    living_room_location:
+      B: Lower
+      C: Main
+      E: Upper
+    leased_equipment:
+      Y: true
+      A: Bailer
+      B: Combine
+      C: Dairy
+      D: Electric
+      E: Feeder
+      F: Planter
+      G: Sprinkler
+      H: Tower
+      I: See Remarks
+      J: Option Available
+      none: none
+    lot_topography_vegetation:
+      A: Brush
+      C: Dune
+      D: Equestrian
+      F: Fruit Trees
+      G: Garden Space
+      I: Level
+      J: Partial Slope
+      K: Pasture
+      L: Rolling
+      N: Sloped
+      O: Steep Slope
+      Q: Terraces
+      R: Wooded
+    master_bedroom_location:
+      B: Lower
+      C: Main
+      E: Upper
+    new_construction:
+      A: Completed
+      B: Presale
+      C: Under Construction
+    third_party_approval_required:
+      A: None
+      B: Other - See Remarks
+      C: Short Sale
+    pool:
+      A: Above Ground
+      B: Community
+      C: Indoor
+      D: In-Ground
+    possession:
+      A: Closing
+      B: Negotiable
+      C: See Remarks
+      D: Subject to Tenants
+    roof:
+      A: Built-Up
+      B: Cedar Shake
+      C: Composition
+      D: Flat
+      E: Metal
+      F: See Remarks
+      G: Tile
+      H: Torch Down
+    rec_room_location:
+      B: Lower
+      C: Main
+      E: Upper
+    site_features:
+      A: Arena-Indoor
+      B: Arena-Outdoor
+      C: Athletic Court
+      D: Barn
+      E: Boat House
+      F: Cabana/Gazebo
+      G: Cable TV
+      H: Deck
+      I: Disabled Access
+      J: Dock
+      K: Dog Run
+      L: Fenced-Fully
+      M: Fenced-Partially
+      N: Gas Available
+      O: Gated Entry
+      P: Green House
+      Q: High Speed Internet
+      R: Hot Tub/Spa
+      S: Moorage
+      T: Outbuildings
+      U: Patio
+      V: Propane
+      W: RV Parking
+      X: Shop
+      Y: Sprinkler System
+      Z: Stable
+    style:
+      10: 10-1 Story
+      11: 11-1 1/2 Story
+      12: 12-2 Story
+      13: 13-Tri-Level
+      14: 14-Split Entry
+      15: 15-Multi Level
+      16: 16-1 Story w/Bsmnt.
+      17: 17- 1/2 Sty. w/Bsmnt
+      18: 18-2 Stories w/Bsmnt
+      20: 20-Manuf-Single Wide
+      21: 21-Manuf-Double Wide
+      22: 22-Manuf-Triple Wide
+      24: 24-Floating Home
+      32: 32-Townhouse
+      30: 30-Condo (1 Level)
+      31: 31-Condo (2 Levels)
+      33: 33-Co-op
+      34: 34-Condo (3 Levels)
+      35: 35-Garage Storage
+      45: 45-Moorage
+      60: 60-Comm Bldg Und 10K
+      61: 61-Comm Bldg Ovr 10K
+      62: 62-Business Opp.
+      63: 63-Farm  Ranch
+      64: 64-Hotel/Motel
+      70: 70-Industrial
+      71: 71-Light Indrl.
+      72: 72-Mobile Home Park
+      73: 73-Office
+      74: 74-Recreational
+      75: 75-Retail
+      76: 76-RV Park
+      77: 77-Timber
+      78: 78-Warehouse
+      52: 52-Duplex
+      53: 53-Tri-plex
+      54: 54-4-Plex
+      56: 56-10+ Units
+      57: 57-10+ Units
+      5-: 5-Plex
+      55: 55-5-9 Units
+      40: 40-Res-Less thn 1 Ac
+      41: 41-Res - 1 Acre +
+      42: 42-Multi-Family
+      43: 43-Comm/Industrial
+      44: 44-Recreational
+    sewer:
+      A: Available
+      C: None
+      F: Septic
+      G: Sewer Connected
+      B: In Street
+      D: Not Available
+      E: On Property
+    potential_terms:
+      A: Assumable
+      B: Cash Out
+      C: Conventional
+      D: Farm Home Loan
+      E: FHA
+      F: Lease/Purchase
+      G: Owner Financing
+      H: Rehab Loan
+      J: See Remarks
+      K: State Bond
+      L: USDA
+      M: VA
+      N: Variable Price Lstg
+      I: SBA
+    utility_room_location:
+      A: Garage
+      B: Lower
+      C: Main
+      E: Upper
+    view:
+      A: Bay
+      B: Canal
+      C: City
+      D: Golf Course
+      E: Jetty
+      F: Lake
+      G: Mountain
+      H: Ocean
+      I: Partial
+      J: River
+      K: See Remarks
+      L: Sound
+      M: Strait
+      N: Territorial
+    water_source:
+      B: Community
+      F: Individual Well
+      I: Private
+      K: Public
+      L: See Remarks
+      N: Shared Well
+      O: Shares
+    waterfront:
+      A: Bank-High
+      B: Bank-Low
+      C: Bank-Medium
+      D: Bay
+      F: Bulkhead
+      G: Canal
+      H: Creek
+      I: Jetty
+      J: Lake
+      K: No Bank
+      L: Ocean
+      M: River
+      N: Saltwater
+      O: Sound
+      P: Strait
+      Q: Tideland Rights
+      E: Beach Rights
+    zoning_jurisdiction:
+      A: City
+      B: County
+      C: See Remarks
+    appliance_hookups:
+      A: Cooking-Electric
+      B: Cooking-Gas
+      C: Dryer-Electric
+      D: Dryer-Gas
+      E: Ice Maker
+      F: Washer
+    common_features:
+      A: Age Restriction
+      B: Athletic Court
+      D: Boat House
+      E: Cable TV
+      F: Club House
+      G: Disabled Access
+      I: Elevator
+      J: Exercise Room
+      K: Fire Sprinklers
+      L: Game/Rec Rm
+      M: Golf Course
+      N: High Speed Int Avail
+      O: Hot Tub
+      P: Laundry Room
+      Q: Lobby Entrance
+      R: Moorage
+      S: Outside Entry
+      T: Pool-Indoor
+      U: Pool-Outdoor
+      V: RV Parking
+      W: Sauna
+      X: Security Gate
+      Y: See Remarks
+      Z: Trails
+    cats_and_dogs:
+      A: Cats Only
+      B: Dogs Only
+      C: No Dogs or Cats
+      D: No Restrictions
+      E: See Remarks
+      F: Subj to Restrictions
+    home_owner_dues_include:
+      A: Cable TV
+      B: Central Hot Water
+      C: Earthquake Ins.
+      D: Garbage
+      E: See Remarks
+      F: Water/Sewer
+    kitchen_with_eating_space_location:
+      B: Lower
+      C: Main
+      E: Upper
+    parking_types:
+      A: Carport
+      D: Common Garage
+      G: Individual Garage
+      H: None
+      I: Off-Street Parking
+      J: Uncovered
+    type_of_fireplace:
+      A: Both
+      B: Gas
+      C: Wood
+    unit_features:
+      A: Alarm System
+      B: Balcony/Deck/Patio
+      C: Central Vacuum
+      D: Disabled Access
+      E: End Unit
+      F: French Doors
+      G: Ground Floor
+      H: Insulated Windows
+      I: Jetted/Soaking Tub
+      K: Master Bath
+      L: Penthouse
+      M: Skylights
+      N: Top Floor
+      O: Vaulted Ceilings
+      P: Walk-in Closet
+      Q: Yard
+    features:
+      A: Disabled Access
+      B: Elevator
+      C: Leased Fixtures
+      D: Satellite
+      E: Signage Included
+      F: Sprinklered
+      G: Storage
+      H: Tenant Association
+    general_zoning_classification:
+      A: Agricultural
+      B: Business
+      C: Commercial
+      D: Farm  Ranch
+      E: Forestry
+      F: Industrial
+      G: Industrial-Light
+      H: Multi-Family
+      I: Office
+      J: Residential
+      K: Retail
+      L: See Remarks
+    loading:
+      A: 1-3 Bays
+      B: 4-6 Bays
+      C: 7+ Bays
+      D: 10&#39; Doors
+      E: 10&#39;-15&#39; Doors
+      F: 15&#39; Doors
+      G: Dock High
+      H: Grade
+      I: Ramp
+    topography:
+      I: Level
+      N: Sloped
+      R: Wooded
+      B: Cliffs
+      E: Fill Needed
+      H: Gullies
+      L: Rolling
+      M: See Remarks
+      P: Swale
+    barn_features:
+      A: Box Stalls
+      B: Calving Area
+      C: Granary
+      D: Lay Stalls
+      E: Loft Area
+      F: Milking Parlor
+      G: Multiple Storage
+      H: Silo/Silage Bunker
+      I: Workshop
+      J: See Outbldg Comments
+      K: Office
+    barn_type:
+      A: Grain
+      B: Hay
+      C: Livestock
+      D: Pole
+      E: See Comments
+    energy_source:
+      A: Electric
+      B: Natural Gas
+      C: Oil
+      D: Pellet
+      E: Propane
+      F: See Remarks
+      H: Wood
+    equipment_included:
+      A: Bailer
+      B: Combine
+      C: Dairy
+      D: Disc
+      E: Electric
+      F: Feeder
+      G: Hay Wagon
+      H: Irrigation
+      I: Leveler
+      J: Planter
+      K: Plow
+      L: Rake
+      M: See Comments
+    fence:
+      A: Barbed Wire
+      B: Block
+      C: Brick
+      D: Chain Link
+      E: Combination
+      F: Cross Fenced
+      G: Electric
+      H: Partial
+      I: Partial Perimeter
+      J: Perimeter
+      K: Picket
+      L: Rail
+      M: Security
+      N: Wire
+      O: Wood
+      P: See Remarks
+    farm_type:
+      A: Berry
+      B: Crop
+      C: Equestrian
+      D: Land Only
+      E: Livestock
+      F: Nursery
+      G: Orchard
+      H: Tree
+      I: Vineyard
+      J: See Remarks
+    improvements:
+      M: Gas Tanks
+      N: Equipment Included
+      O: Disabled Access
+      P: Green House
+      Q: Deck
+      R: Patio
+      S: Dog Run
+      T: Hot Tub Spa
+      U: In Ground Pool
+      V: Above Ground Pool
+      W: Sprinkler System
+      X: See Remarks
+      A: Barn
+      B: Boat House
+      C: Cabana/Gazebo
+      D: Cable TV Available
+      E: Dock
+      F: Dwelling
+      G: Fenced-Fully
+      H: Fenced-Partially
+      I: Garage
+      J: Outbuilding(s)
+      K: Shop
+      L: Stable
+    irrigation_source:
+      A: Bureau
+      B: Community
+      C: Drainage
+      D: Pond
+      E: Well Drilled
+      F: Well Shared
+      G: Well Private
+      H: Additional Well(s)
+      I: Water Rights Cert.
+      J: Water Use Permit
+      K: See Irrigation Comm
+    irrigation_type:
+      A: Circle
+      B: Drip Line
+      C: Dry Land
+      D: Hand Lines
+      E: Pivot
+      F: Pressure/Undergrnd
+      G: Wheel Lines
+      H: See Irrigation Comm
+      I: None
+    leased_terms:
+      I: Annual
+      J: Month-to-Month
+      K: Quarterly
+      L: Semi-Annual
+      M: Year 1-3
+      N: Year 4+
+      O: See Remarks
+    livestock_type:
+      A: Cattle
+      B: Dairy
+      C: Hog
+      D: Horse
+      E: Poultry
+      F: Sheep
+      G: Included in Sale
+      H: See Lvestck Comments
+    lot_topography_vegetation:
+      F: Fruit Trees
+      I: Level
+      J: Partial Slope
+      L: Rolling
+      N: Sloped
+      R: Wooded
+    outbuildings:
+      A: Arena-Indoors
+      B: Arena-Outdoors
+      C: 2nd Barn
+      D: Chicken
+      E: Corral
+      F: Stable
+      G: Storage
+      H: Windmill
+      I: Workshop
+      J: See Outbldg Comments
+    soil_type:
+      A: Clay
+      B: Clay Loam
+      C: Loam
+      D: Gravel
+      E: Rock
+      F: Sand
+      G: Sandy Loam
+      H: See Soil Comments
+    form_17:
+      A: Exempt
+      B: Not Provided
+      C: Provided
+    manufactured_home_features:
+      A: Awnings
+      B: Bath Off Master
+      C: Ceiling Fan(s)
+      D: Disabled Access
+      E: Double Pane Windows
+      F: Drapes
+      G: Fireplace in Master
+      H: Hot Tub/Spa
+      I: Jetted/Soaking Tub
+      J: Landscaped
+      K: Patio/Porch/Deck
+      L: Sauna
+      M: Security System
+      N: Skylights
+      O: Vaulted Ceilings
+      P: Walk-In Closet
+      Q: Wet Bar
+    other_rooms:
+      D: Dining Room
+      E: Entry
+      F: Extra Finished Room
+      G: Family Room
+      H: Kitchen w/Eat Space
+      I: Kitchen
+      J: Living Room
+      N: Utility Room
+    park_amenities:
+      A: BBQs
+      B: Clubhouse
+      C: Common Area
+      D: Community Watefront
+      E: Exercise Room
+      F: Golf
+      G: Laundry
+      H: Playground
+      I: Pool
+      J: Recreational Area
+      K: RV Parking
+      L: Sauna
+      M: Security Gate
+      N: Sidewalks
+      O: Spa/Hot Tub
+      P: Tennis Courts
+      Q: Trails
+      R: High Speed Int Avail
+    space_rent_includes:
+      A: Water
+      B: Sewer
+      C: Garbage
+      D: Cable/TV
+      E: See Remarks
+    amenities:
+      A: Basement
+      B: Clubhouse
+      C: Coin Op Laundry
+      D: Elevator
+      E: Energy Package
+      F: Fire Sprinklers
+      G: Playground
+      H: Storage
+      I: Thermal Windows
+      J: See Remarks
+    leased_items:
+      K: Furnace/Burner
+      L: Security System
+      M: Washer/Dryer
+      N: false
+      O: None
+      Y: true
+    additional_finished_rooms:
+      B: Bonus Room
+      C: Den
+      D: Dining Room
+      G: Family Room
+      H: Kitchen Eating Space
+      L: Recreation Room
+    appliances_provided:
+      A: Dishwasher
+      B: Garbage Disposal
+      C: Microwave
+      D: Range/Oven
+      E: Refrigerator
+      F: Washer/Dryer
+      G: See Remarks
 #  approval_required: #APR in RENT
 #    A: Association
 #    B: Credit
@@ -861,156 +862,156 @@ en:
 #    F: Screening Rpt-Prp Mg
 #    G: Screening Rpt-Rnt Of
 #    H: See Remarks
-  move_in_funds_required:
-    A: First Month
-    B: Last Month
-    C: Cleaning Fee
-    D: Pet Deposit
-    E: Pet Fee
-    F: Security Deposit
-    G: See Remarks
-  terms_and_conditions:
-    A: Month to Month
-    B: Non-Smoking
-    C: No Pets
-    D: Purchase Option
-    E: Section 8
-  type_of_property:
-    A: App&#39;d Access. Dwl Un
-    C: Condo
-    D: Mobile Home
-    F: Multi-Family/Apt.
-    G: Room For Rent
-    H: See Remarks
-    I: Shared Housing
-    J: Single Family Home
-  included_in_rent:
-    A: Cable
-    B: Garbage
-    C: Heat
-    D: Homeowner Dues
-    E: Hot Water
-    F: Lawn Service
-    G: Pool Service
-    H: Power
-    I: Security System
-    J: Sewer
-    K: Telephone
-    L: Water
-  assessment_fees:
-    A: Electric
-    B: Gas
-    C: Parks
-    D: Road
-    E: School
-    F: Sewer
-    G: Water
-    H: See Remarks
-  documents_provided:
-    A: CCRs
-    B: Drainage
-    C: Geotech
-    D: Road Agreement
-    E: Septic &quot;As Built&quot;
-    F: Topographical
-    G: Well Agreement
-    H: Wetland Delineation
-    I: See Remarks
-  electricity:
-    A: On Property
-    B: In Street
-    C: Available
-    D: Not Available
-  property_features:
-    A: Brush
-    B: Comm. Grade Timber
-    C: Corners Flagged
-    D: Dune Grasses
-    E: Evergreens
-    F: Garden/Fruit Trees
-    G: Heavily Forested
-    H: Lightly Treed
-    I: ORV Trails
-    J: Partially Cleared
-    K: Pasture Land
-    L: Pond
-    M: Recreational
-    N: Riding Trails
-    O: Stream/Creek
-    P: Irrigation
-  gas:
-    A: On Property
-    B: In Street
-    C: Available
-    D: Not Available
-  road_information:
-    A: Access Easement
-    B: County Maintained
-    C: County Right of Way
-    D: Gravel
-    E: Paved
-    F: Privately Maintained
-    G: Recorded Maint. Agrm
-    H: Trail Permit
-    I: See Remarks
-  restrictions:
-    A: CC
-    B: NO Manufacturd Homes
-    C: Manufacturd Homes OK
-    D: No Restrictions
-    E: Timber Clause
-    F: Unknown
-    G: See Remarks
-  water:
-    A: Available
-    C: Community Well
-    D: Drilled Well
-    E: In Street
-    G: Not Available
-    H: On Property
-    J: Private Well
-    L: See Remarks
-    M: Share Available
-    N: Shared Well
-    P: Unknown
-    Q: Water Rights
-    R: Well Site Approved
-  lease_terms:
-    A: None
-    B: Assignable
-    C: Less Than 1Yr
-    D: 1-2 Years
-    E: 2-3 Years
-    F: 3-5 Years
-    G: More Than 5 Yrs
-    H: May Escalate
-  licenses:
-    A: Alcohol
-    B: Gaming
-    C: Professional
-    D: See Remarks
-  location:
-    A: Business Park
-    B: Corner
-    C: Free Standing
-    D: Inside
-    E: Shopping Center
-    F: See Remarks
-  major_type_of_business:
-    A: Food  Beverage
-    B: Gas Station
-    C: Grocery
-    D: Hospitality
-    E: Manufacturing
-    F: Retail
-    G: Services
-    H: Wholesale
-    I: See Remarks
-  real_property:
-    A: Lease Only
-    B: Lease Option
-    C: Optional
-    D: Purchase
-    E: Rent Only
-    F: Separate Listing
-    G: See Remarks
+    move_in_funds_required:
+      A: First Month
+      B: Last Month
+      C: Cleaning Fee
+      D: Pet Deposit
+      E: Pet Fee
+      F: Security Deposit
+      G: See Remarks
+    terms_and_conditions:
+      A: Month to Month
+      B: Non-Smoking
+      C: No Pets
+      D: Purchase Option
+      E: Section 8
+    type_of_property:
+      A: App&#39;d Access. Dwl Un
+      C: Condo
+      D: Mobile Home
+      F: Multi-Family/Apt.
+      G: Room For Rent
+      H: See Remarks
+      I: Shared Housing
+      J: Single Family Home
+    included_in_rent:
+      A: Cable
+      B: Garbage
+      C: Heat
+      D: Homeowner Dues
+      E: Hot Water
+      F: Lawn Service
+      G: Pool Service
+      H: Power
+      I: Security System
+      J: Sewer
+      K: Telephone
+      L: Water
+    assessment_fees:
+      A: Electric
+      B: Gas
+      C: Parks
+      D: Road
+      E: School
+      F: Sewer
+      G: Water
+      H: See Remarks
+    documents_provided:
+      A: CCRs
+      B: Drainage
+      C: Geotech
+      D: Road Agreement
+      E: Septic &quot;As Built&quot;
+      F: Topographical
+      G: Well Agreement
+      H: Wetland Delineation
+      I: See Remarks
+    electricity:
+      A: On Property
+      B: In Street
+      C: Available
+      D: Not Available
+    property_features:
+      A: Brush
+      B: Comm. Grade Timber
+      C: Corners Flagged
+      D: Dune Grasses
+      E: Evergreens
+      F: Garden/Fruit Trees
+      G: Heavily Forested
+      H: Lightly Treed
+      I: ORV Trails
+      J: Partially Cleared
+      K: Pasture Land
+      L: Pond
+      M: Recreational
+      N: Riding Trails
+      O: Stream/Creek
+      P: Irrigation
+    gas:
+      A: On Property
+      B: In Street
+      C: Available
+      D: Not Available
+    road_information:
+      A: Access Easement
+      B: County Maintained
+      C: County Right of Way
+      D: Gravel
+      E: Paved
+      F: Privately Maintained
+      G: Recorded Maint. Agrm
+      H: Trail Permit
+      I: See Remarks
+    restrictions:
+      A: CC
+      B: NO Manufacturd Homes
+      C: Manufacturd Homes OK
+      D: No Restrictions
+      E: Timber Clause
+      F: Unknown
+      G: See Remarks
+    water:
+      A: Available
+      C: Community Well
+      D: Drilled Well
+      E: In Street
+      G: Not Available
+      H: On Property
+      J: Private Well
+      L: See Remarks
+      M: Share Available
+      N: Shared Well
+      P: Unknown
+      Q: Water Rights
+      R: Well Site Approved
+    lease_terms:
+      A: None
+      B: Assignable
+      C: Less Than 1Yr
+      D: 1-2 Years
+      E: 2-3 Years
+      F: 3-5 Years
+      G: More Than 5 Yrs
+      H: May Escalate
+    licenses:
+      A: Alcohol
+      B: Gaming
+      C: Professional
+      D: See Remarks
+    location:
+      A: Business Park
+      B: Corner
+      C: Free Standing
+      D: Inside
+      E: Shopping Center
+      F: See Remarks
+    major_type_of_business:
+      A: Food  Beverage
+      B: Gas Station
+      C: Grocery
+      D: Hospitality
+      E: Manufacturing
+      F: Retail
+      G: Services
+      H: Wholesale
+      I: See Remarks
+    real_property:
+      A: Lease Only
+      B: Lease Option
+      C: Optional
+      D: Purchase
+      E: Rent Only
+      F: Separate Listing
+      G: See Remarks

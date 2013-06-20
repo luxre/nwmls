@@ -199,7 +199,7 @@ module Nwmls
       define_method method do
         value = instance_variable_get("@#{method}")
         if value
-          I18n::t("#{method}.#{value}")
+          I18n::t("amenities.#{method}.#{value}")
         end
       end
     end
@@ -208,7 +208,7 @@ module Nwmls
       define_method method do
         values = instance_variable_get("@#{method}")
         if values
-          values.split('|').collect { |value| I18n::t("#{method}.#{value}")}
+          values.split('|').collect { |value| I18n::t("amenities.#{method}.#{value}")}
         end
       end
     end
