@@ -70,7 +70,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     CSP: 'Column Spacing',
     DLT: 'Depth of Lot',
     ELEX: 'Electrical Expenses',
-    ENV: 'Environment Survey',
+    ENV: 'Environmental Survey',
     EXA: 'Expansion Area',
     EXP: 'Expenses',
     F17: 'Form 17',

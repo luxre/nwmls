@@ -89,7 +89,7 @@ en:
     E: Clubhouse
     F: Golf Course
     G: Private Beach Access
-  den_or_office:
+  den_or_office_location:
     B: Lower
     C: Main
     E: Upper
@@ -283,6 +283,7 @@ en:
     H: Tower
     I: See Remarks
     J: Option Available
+    none: none
   lot_topography_vegetation:
     A: Brush
     C: Dune
@@ -297,7 +298,7 @@ en:
     O: Steep Slope
     Q: Terraces
     R: Wooded
-  master_bedroom:
+  master_bedroom_location:
     B: Lower
     C: Main
     E: Upper
