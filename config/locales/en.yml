@@ -70,19 +70,6 @@ en:
     D: Modular
     E: Planned Unit Dev
     F: Zero Lot Line
-  no_of_bedrms_lower:
-    Y: true
-  no_of_bedrms_main:
-    Y: true
-  no_of_bedrms_upper:
-    Y: true
-  builder:
-    Y: true
-  block:
-    Y: true
-  bank_reo_owned:
-    N: false
-    Y: true
   bonus_room:
     B: Lower
     C: Main
@@ -94,11 +81,6 @@ en:
     D: Partially Finished
     E: Roughed In
     F: Unfinished
-  bus_line_nearby:
-    N: false
-    Y: true
-  bus_route_number:
-    D: Default
   community_features:
     A: Age Restriction
     B: Airfield
@@ -161,16 +143,6 @@ en:
     B: Lower
     C: Main
     E: Upper
-  no_full_baths_garag:
-    Y: true
-  no_full_baths_lower:
-    Y: true
-  no_full_baths_main:
-    Y: true
-  no_full_baths_1_0:
-    Y: true
-  no_full_baths_upper:
-    Y: true
   interior_features:
     A: 2nd Kitchen
     A1: Wet Bar
@@ -226,16 +198,6 @@ en:
     J: Tie Down
     B: Concrete Perimeter
     D: Concrete Slab
-  total_fireplaces:
-    Y: true
-  no_fireplaces_lower:
-    Y: true
-  no_fireplaces_main:
-    Y: true
-  no_fireplaces_upper:
-    Y: true
-  total_covered_prkg:
-    Y: true
   parking_type:
     B: Carport-Attached
     C: Carport-Detached
@@ -247,18 +209,6 @@ en:
     G: Individual Garage
     J: Uncovered
     D: Common Garage
-  no_1_2_baths_garage:
-    Y: true
-  no_1_2_baths_lower:
-    Y: true
-  no_1_2_baths_main:
-    Y: true
-  no_1_2_baths_50:
-    Y: true
-  no_1_2_baths_upper:
-    Y: true
-  mthly_homeownr_dues:
-    Y: true
   heating_and_cooling:
     A: Baseboard
     B: Central Air
@@ -333,10 +283,6 @@ en:
     H: Tower
     I: See Remarks
     J: Option Available
-  lot_dimensions:
-    Y: true
-  lot_no:
-    Y: true
   lot_topog_veg:
     A: Brush
     C: Dune
@@ -355,26 +301,14 @@ en:
     B: Lower
     C: Main
     E: Upper
-  manufd_home_manuf:
-    Y: true
-  manufd_home_model_nm:
-    Y: true
-  manufd_home_serial:
-    Y: true
-  monthly_rent:
-    Y: true
   new_construction:
     A: Completed
     B: Presale
     C: Under Construction
-  owner_s_city_state:
-    Y: true
   3rd_party_apprvl_req:
     A: None
     B: Other - See Remarks
     C: Short Sale
-  power_company:
-    Y: true
   pool:
     A: Above Ground
     B: Community
@@ -385,15 +319,6 @@ en:
     B: Negotiable
     C: See Remarks
     D: Subject to Tenants
-  purchaser:
-    D: Default
-  plat_subdivn_project:
-    Y: true
-  prelim_title_orderd:
-    N: false
-    Y: true
-  no_3_4_baths_75:
-    Y: true
   roof:
     A: Built-Up
     B: Cedar Shake
@@ -407,14 +332,6 @@ en:
     B: Lower
     C: Main
     E: Upper
-  aprvd_of_bdrm_sptic:
-    Y: true
-  finished_sqft:
-    Y: true
-  square_footage_src:
-    Y: true
-  unfinished_sqft:
-    Y: true
   site_features:
     A: Arena-Indoor
     B: Arena-Outdoor
@@ -442,12 +359,6 @@ en:
     X: Shop
     Y: Sprinkler System
     Z: Stable
-  show_map_link_y_n:
-    N: false
-    Y: true
-  senior_exemption:
-    N: false
-    Y: true
   style:
     10: 10-1 Story
     11: 11-1 1/2 Story
@@ -495,8 +406,6 @@ en:
     42: 42-Multi-Family
     43: 43-Comm/Industrial
     44: 44-Recreational
-  sewer_company:
-    Y: true
   sewer:
     A: Available
     C: None
@@ -505,14 +414,6 @@ en:
     B: In Street
     D: Not Available
     E: On Property
-  no_3_4_baths_garage:
-    Y: true
-  no_3_4_baths_lower:
-    Y: true
-  no_3_4_baths_main:
-    Y: true
-  no_3_4_baths_upper:
-    Y: true
   potential_terms:
     A: Assumable
     B: Cash Out
@@ -528,12 +429,6 @@ en:
     M: VA
     N: Variable Price Lstg
     I: SBA
-  total_useable_rooms:
-    Y: Default
-  annual_taxes:
-    Y: true
-  tax_year:
-    Y: true
   utility_room:
     A: Garage
     B: Lower
@@ -554,8 +449,6 @@ en:
     L: Sound
     M: Strait
     N: Territorial
-  water_company:
-    Y: true
   water_source:
     B: Community
     F: Individual Well
@@ -564,8 +457,6 @@ en:
     L: See Remarks
     N: Shared Well
     O: Shares
-  waterfront_footage:
-    Y: true
   waterfront:
     A: Bank-High
     B: Bank-Low
@@ -584,18 +475,10 @@ en:
     P: Strait
     Q: Tideland Rights
     E: Beach Rights
-  water_heater_typ_loc:
-    Y: true
   zoning_jurisdiction:
     A: City
     B: County
     C: See Remarks
-  zoning_code:
-    D: Default
-    Y: true
-  project_apprv_by_fha:
-    N: false
-    Y: true
   appliance_hookups:
     A: Cooking-Electric
     B: Cooking-Gas
@@ -603,14 +486,6 @@ en:
     D: Dryer-Gas
     E: Ice Maker
     F: Washer
-  assc_contact_phone:
-    Y: true
-  no_of_lower_bdrms:
-    Y: true
-  no_of_main_bdrms:
-    Y: true
-  no_of_upper_bdrms:
-    Y: true
   common_prop_features:
     A: Age Restriction
     B: Athletic Court
@@ -636,9 +511,6 @@ en:
     X: Security Gate
     Y: See Remarks
     Z: Trails
-  co-op:
-    N: false
-    Y: true
   cats_and_dogs:
     A: Cats Only
     B: Dogs Only
@@ -646,26 +518,6 @@ en:
     D: No Restrictions
     E: See Remarks
     F: Subj to Restrictions
-  no_lower_full_baths:
-    Y: true
-  no_main_full_baths:
-    Y: true
-  no_upper_full_baths:
-    Y: true
-  no_lower_fireplaces:
-    Y: true
-  no_main_fireplaces:
-    Y: true
-  no_upper_fireplaces:
-    Y: true
-  no_lower_1_2_baths:
-    Y: true
-  no_main_1_2_baths:
-    Y: true
-  no_upper_1_2_baths:
-    Y: true
-  mnth_homeowner_dues:
-    Y: true
   h_o_dues_included:
     A: Cable TV
     B: Central Hot Water
@@ -677,18 +529,6 @@ en:
     B: Lower
     C: Main
     E: Upper
-  manager_phone_no:
-    Y: true
-  no_assigned_spaces:
-    Y: true
-  no_of_units_in_cplx:
-    Y: true
-  no_of_stories_in_bld:
-    Y: true
-  no_of_units_in_bldg:
-    Y: true
-  owner_occupancy:
-    Y: true
   parking_types:
     A: Carport
     D: Common Garage
@@ -696,38 +536,10 @@ en:
     H: None
     I: Off-Street Parking
     J: Uncovered
-  parking_space_nos:
-    Y: true
-  bldg_complex_name:
-    Y: true
-  remodeled_updated:
-    N: false
-    Y: true
-  spec_assessment_amt:
-    Y: true
-  square_ftg_source:
-    Y: true
-  special_assessment:
-    N: false
-    Y: true
-  storage_no:
-    Y: true
-  storage_location:
-    Y: true
-  no_of_access_stairs:
-    D: Default
-  no_lower_3_4_baths:
-    Y: true
-  no_main_3_4_baths:
-    Y: true
-  no_upper_3_4_baths:
-    Y: true
   type_of_fireplace:
     A: Both
     B: Gas
     C: Wood
-  floor_no_of_unit:
-    Y: true
   unit_features:
     A: Alarm System
     B: Balcony/Deck/Patio
@@ -745,17 +557,6 @@ en:
     O: Vaulted Ceilings
     P: Walk-in Closet
     Q: Yard
-  window_coverings:
-    Y: true
-  wtr_heater_type_loc:
-    Y: true
-  power_servic_in_amps:
-    Y: true
-  no_available_pads:
-    Y: true
-  boundary_survey:
-    N: false
-    Y: true
   features:
     A: Disabled Access
     B: Elevator
@@ -765,31 +566,6 @@ en:
     F: Sprinklered
     G: Storage
     H: Tenant Association
-  ceiling_height:
-    Y: true
-  column_spacing:
-    Y: true
-  depth_of_lot:
-    Y: true
-  electrical_expenses:
-    Y: true
-  environmental_survey:
-    N: false
-    Y: true
-  expansion_area:
-    N: false
-    Y: true
-  total_exp_frm_tex:
-    Y: true
-  free_clear:
-    N: false
-    Y: true
-  gross_adjusted_inc:
-    Y: true
-  gross_rent_multip:
-    Y: true
-  gross_scheduled_inc:
-    Y: true
   general_zoning_classification:
     A: Agricultural
     B: Business
@@ -803,12 +579,6 @@ en:
     J: Residential
     K: Retail
     L: See Remarks
-  heating_expenses:
-    Y: true
-  annual_assoc_dues:
-    Y: true
-  insurance_expenses:
-    Y: true
   loading:
     A: 1-3 Bays
     B: 4-6 Bays
@@ -829,132 +599,6 @@ en:
     L: Rolling
     M: See Remarks
     P: Swale
-  lx1_lease_expiration:
-    Y: true
-  lx2_lease_expiration:
-    Y: true
-  lx3_lease_expiration:
-    Y: true
-  lx4_lease_expiration:
-    Y: true
-  lx5_lease_expiration:
-    Y: true
-  lx6_lease_expiration:
-    Y: true
-  nn1_est_nnn_month:
-    Y: true
-  nn2_est_nnn_month:
-    Y: true
-  nn3_est_nnn_month:
-    Y: true
-  nn4_est_nnn_month:
-    Y: true
-  nn5_est_nnn_month:
-    Y: true
-  nn6_est_nnn_month:
-    Y: true
-  nnn-total_mnthly_nnn:
-    Y: true
-  net_operating_inc:
-    Y: true
-  approx_office_sqft:
-    Y: true
-  other_expenses:
-    Y: true
-  pad_ready:
-    N: false
-    Y: true
-  total_cov_d_prkg:
-    Y: true
-  total_uncov_d_prkg:
-    Y: true
-  prelim_title_ordered:
-    N: false
-    Y: true
-  rn1_base_rent_month:
-    Y: true
-  rn2_base_rent_month:
-    Y: true
-  rn3_base_rent_month:
-    Y: true
-  rn4_base_rent_month:
-    Y: true
-  rn5_base_rent_month:
-    Y: true
-  rn6_base_rent_month:
-    Y: true
-  sf1_approx_sq_ft:
-    Y: true
-  sf2_approx_sq_ft:
-    Y: true
-  sf3_approx_sq_ft:
-    Y: true
-  sf4_approx_sq_ft:
-    Y: true
-  sf5_approx_sq_ft:
-    Y: true
-  sf6_approx_sq_ft:
-    Y: true
-  approx_bldg_sqft:
-    Y: true
-  site_frontage:
-    Y: true
-  total_assessed_value:
-    Y: true
-  total_expenses:
-    Y: true
-  tn1_tenant_1_dscrptn:
-    Y: true
-  tn2_tenant_2_dscrptn:
-    Y: true
-  tn3_tenant_3_dscrptn:
-    Y: true
-  tn4_tenant_4_dscrptn:
-    Y: true
-  tn5_tenant_5_dscrptn:
-    Y: true
-  tn6_tenant_6_dscrptn:
-    Y: true
-  tri-total_mthly_rent:
-    Y: true
-  tsf-total_sqft_rentd:
-    Y: true
-  tax_expense:
-    Y: true
-  us1_type_of_use:
-    Y: true
-  us2_type_of_use:
-    Y: true
-  us3_type_of_use:
-    Y: true
-  us4_type_of_use:
-    Y: true
-  us5_type_of_use:
-    Y: true
-  us6_type_of_use:
-    Y: true
-  vacancy_rate:
-    Y: true
-  improvements_asd_val:
-    Y: true
-  land_assessed_value:
-    Y: true
-  approx_whse_mfg_sqft:
-    Y: true
-  water_sewer_garbage:
-    Y: true
-  year_value_assessed:
-    Y: true
-  acreage_comments:
-    Y: true
-  barn_out-bldg_commnt:
-    Y: true
-  no_bdrms_-_lower:
-    Y: true
-  no_bdrms_-_main:
-    Y: true
-  no_bdrms_-_upper:
-    Y: true
   barn_features:
     A: Box Stalls
     B: Calving Area
@@ -967,22 +611,12 @@ en:
     I: Workshop
     J: See Outbldg Comments
     K: Office
-  boarding_income:
-    Y: true
-  barn_size:
-    Y: true
   barn_type:
     A: Grain
     B: Hay
     C: Livestock
     D: Pole
     E: See Comments
-  crop_soil_commnts:
-    Y: true
-  crop_income:
-    Y: true
-  elevation:
-    D: Default
   energy_source:
     A: Electric
     B: Natural Gas
@@ -991,8 +625,6 @@ en:
     E: Propane
     F: See Remarks
     H: Wood
-  equity:
-    Y: true
   equipment_included:
     A: Bailer
     B: Combine
@@ -1007,12 +639,6 @@ en:
     K: Plow
     L: Rake
     M: See Comments
-  equipment_value:
-    Y: true
-  easements:
-    Y: true
-  no_of_full_baths:
-    Y: true
   fence:
     A: Barbed Wire
     B: Block
@@ -1041,10 +667,6 @@ en:
     H: Tree
     I: Vineyard
     J: See Remarks
-  total_covered_parkg:
-    Y: true
-  no_of_1_2_baths:
-    Y: true
   improvements:
     M: Gas Tanks
     N: Equipment Included
@@ -1092,10 +714,6 @@ en:
     G: Wheel Lines
     H: See Irrigation Comm
     I: None
-  livestock_comments:
-    Y: true
-  lease_income:
-    Y: true
   leased_terms:
     I: Annual
     J: Month-to-Month
@@ -1120,14 +738,6 @@ en:
     L: Rolling
     N: Sloped
     R: Wooded
-  manuf_home_manufr:
-    Y: true
-  manuf_home_model_nm:
-    Y: true
-  manuf_home_serial:
-    Y: true
-  irrigation_comments:
-    Y: true
   outbuildings:
     A: Arena-Indoors
     B: Arena-Outdoors
@@ -1139,22 +749,6 @@ en:
     H: Windmill
     I: Workshop
     J: See Outbldg Comments
-  parlor_size:
-    Y: true
-  no_of_3_4_baths:
-    Y: true
-  quarter:
-    Y: true
-  apprvd_for_brs:
-    Y: true
-  sec_twn_rng:
-    Y: true
-  finished_sq_foot:
-    Y: true
-  unfinished_sq_foot:
-    Y: true
-  storage_size:
-    Y: true
   soil_type:
     A: Clay
     B: Clay Loam
@@ -1164,33 +758,10 @@ en:
     F: Sand
     G: Sandy Loam
     H: See Soil Comments
-  survey:
-    Y: true
-  till_acres:
-    Y: true
-  view_comments:
-    Y: true
-  waterfront_ftg:
-    Y: true
-  age_restriction:
-    N: false
-    Y: true
   form17:
     A: Exempt
     B: Not Provided
     C: Provided
-  no_of_full_baths1_0:
-    Y: true
-  total_of_fireplace:
-    Y: true
-  no_of_1_2_baths_50:
-    Y: true
-  l_i_inspected:
-    N: false
-    Y: true
-  manufd_after_6_15_76:
-    N: false
-    Y: true
   manufd_home_features:
     A: Awnings
     B: Bath Off Master
@@ -1209,12 +780,6 @@ en:
     O: Vaulted Ceilings
     P: Walk-In Closet
     Q: Wet Bar
-  manufd_home_manufer:
-    Y: true
-  no_of_assigned_spcs:
-    Y: true
-  no_of_homes_in_park:
-    Y: true
   other_rooms:
     D: Dining Room
     E: Entry
@@ -1224,9 +789,6 @@ en:
     I: Kitchen
     J: Living Room
     N: Utility Room
-  park_apprv_for_sale:
-    N: false
-    Y: true
   park_amenities:
     A: BBQs
     B: Clubhouse
@@ -1246,27 +808,12 @@ en:
     P: Tennis Courts
     Q: Trails
     R: High Speed Int Avail
-  park_name:
-    Y: true
-  no_of_3_4_baths_75:
-    Y: true
-  sq_footage_source:
-    Y: true
-  skirting_material:
-    Y: true
-  space_rent_per_month:
-    Y: true
   space_rent_includes:
     A: Water
     B: Sewer
     C: Garbage
     D: Cable/TV
     E: See Remarks
-  un_can_stay_aft_sale:
-    N: false
-    Y: true
-  ain-add_mnthly_incom:
-    Y: true
   amenities:
     A: Basement
     B: Clubhouse
@@ -1278,175 +825,12 @@ en:
     H: Storage
     I: Thermal Windows
     J: See Remarks
-  ba1_unit_1_bathrooms:
-    Y: true
-  ba2_unit_2_bathrooms:
-    Y: true
-  ba3_unit_3_bathrooms:
-    Y: true
-  ba4_unit_4_bathrooms:
-    Y: true
-  ba5_unit_5_bathrooms:
-    Y: true
-  ba6_unit_6_bathrooms:
-    Y: true
-  br1_unit_1_beds:
-    Y: true
-  br2_unit_2_beds:
-    Y: true
-  br3_unit_3_beds:
-    Y: true
-  br4_unit_4_beds:
-    Y: true
-  br5_unit_5_beds:
-    Y: true
-  br6_unit_6_beds:
-    Y: true
-  dw1_dishwasher:
-    N: false
-    Y: true
-  dw2_dishwasher:
-    N: false
-    Y: true
-  dw3_dishwasher:
-    N: false
-    Y: true
-  dw4_dishwasher:
-    N: false
-    Y: true
-  dw5_dishwasher:
-    N: false
-    Y: true
-  dw6_dishwasher:
-    N: false
-    Y: true
-  fg1_refrigerator:
-    N: false
-    Y: true
-  fg2_refrigerator:
-    N: false
-    Y: true
-  fg3_refrigerator:
-    N: false
-    Y: true
-  fg4_refrigerator:
-    N: false
-    Y: true
-  fg5_refrigerator:
-    N: false
-    Y: true
-  fg6_refrigerator:
-    N: false
-    Y: true
-  fp1_of_fireplaces:
-    Y: true
-  fp2_of_fireplaces:
-    Y: true
-  fp3_of_fireplaces:
-    Y: true
-  fp4_of_fireplaces:
-    Y: true
-  fp5_of_fireplaces:
-    Y: true
-  fp6_of_fireplaces:
-    Y: true
-  no_garage_spaces:
-    Y: true
   leased_items:
     K: Furnace/Burner
     L: Security System
     M: Washer/Dryer
     N: false
     O: None
-    Y: true
-  no_carport_spaces:
-    Y: true
-  total_no_of_units:
-    Y: true
-  rn1_monthly_rent:
-    Y: true
-  rn2_monthly_rent:
-    Y: true
-  rn3_monthly_rent:
-    Y: true
-  rn4_monthly_rent:
-    Y: true
-  rn5_monthly_rent:
-    Y: true
-  rn6_monthly_rent:
-    Y: true
-  ro1_range_oven:
-    N: false
-    Y: true
-  ro2_range_oven:
-    N: false
-    Y: true
-  ro3_range_oven:
-    N: false
-    Y: true
-  ro4_range_oven:
-    N: false
-    Y: true
-  ro5_range_oven:
-    N: false
-    Y: true
-  ro6_range_oven:
-    N: false
-    Y: true
-  approved_bdrms:
-    Y: true
-  sf2_unit_2_sq_ft:
-    Y: true
-  sf3_unit_3_sq_ft:
-    Y: true
-  sf4_unit_4_sq_ft:
-    Y: true
-  sf5_unit_5_sq_ft:
-    Y: true
-  sf6_unit_6_sq_ft:
-    Y: true
-  no_stories_in_bldg:
-    Y: true
-  tin-tot_mnthly_incom:
-    Y: true
-  total_rentable_sqft:
-    D: Default
-  total_no_prkg_spaces:
-    Y: true
-  units_below_grade:
-    N: false
-    Y: true
-  un1_unit_1:
-    Y: true
-  un2_unit_2:
-    Y: true
-  un3_unit_3:
-    Y: true
-  un4_unit_4:
-    Y: true
-  un5_unit_5:
-    Y: true
-  un6_unit_6:
-    Y: true
-  no_uncovered_spaces:
-    Y: true
-  wd1_washer_dryer:
-    N: false
-    Y: true
-  wd2_washer_dryer:
-    N: false
-    Y: true
-  wd3_washer_dryer:
-    N: false
-    Y: true
-  wd4_washer_dryer:
-    N: false
-    Y: true
-  wd5_washer_dryer:
-    N: false
-    Y: true
-  wd6_washer_dryer:
-    N: false
     Y: true
   addl_finished_rooms:
     B: Bonus Room
@@ -1467,13 +851,6 @@ en:
     A: Association
     B: Credit
     C: See Remarks
-  available_until:
-    Y: true
-  curr_lstd_for_sale:
-    N: false
-    Y: true
-  date_available:
-    Y: true
   forms_required:
     A: Rntl Agree.-Ownr
     B: Rntl Agree.-Prop Mgr
@@ -1483,13 +860,6 @@ en:
     F: Screening Rpt-Prp Mg
     G: Screening Rpt-Rnt Of
     H: See Remarks
-  no_of_fireplaces:
-    Y: true
-  furnished:
-    N: false
-    Y: true
-  list_no_for_sale:
-    Y: true
   move_in_funds_reqd:
     A: First Month
     B: Last Month
@@ -1498,11 +868,6 @@ en:
     E: Pet Fee
     F: Security Deposit
     G: See Remarks
-  min_rental_term:
-    Y: true
-  storage:
-    N: false
-    Y: true
   terms_conditions:
     A: Month to Month
     B: Non-Smoking
@@ -1577,10 +942,6 @@ en:
     B: In Street
     C: Available
     D: Not Available
-  level:
-    Y: true
-  road_on_which_side:
-    Y: true
   road_information:
     A: Access Easement
     B: County Maintained
@@ -1599,38 +960,6 @@ en:
     E: Timber Clause
     F: Unknown
     G: See Remarks
-  septic_apprv_bdrms:
-    Y: true
-  septic_desg_applied:
-    N: false
-    Y: true
-  septic_desg_aprv_dt:
-    Y: true
-  septic_desg_exp_dt:
-    Y: true
-  septic_system_inst:
-    N: false
-    Y: true
-  soil_feasibility_tst:
-    N: false
-    Y: true
-  sketch_submitted:
-    N: false
-    Y: true
-  slopes_down_to_the:
-    Y: true
-  septic_system_type:
-    Y: true
-  soil_test_date:
-    Y: true
-  survey_information:
-    Y: true
-  terms_remarks:
-    Y: true
-  waterfrnt_footage:
-    Y: true
-  water_jurisdiction:
-    Y: true
   water:
     A: Available
     C: Community Well
@@ -1645,21 +974,6 @@ en:
     P: Unknown
     Q: Water Rights
     R: Well Site Approved
-  no_of_employees:
-    Y: true
-  equipment:
-    Y: true
-  franchise:
-    N: false
-    Y: true
-  annual_gross_sales:
-    Y: true
-  goodwill_value:
-    Y: true
-  hours_of_operation:
-    Y: true
-  inventory_value:
-    Y: true
   lease_terms:
     A: None
     B: Assignable
@@ -1674,9 +988,6 @@ en:
     B: Gaming
     C: Professional
     D: See Remarks
-  liens_mortgages:
-    N: false
-    Y: true
   location:
     A: Business Park
     B: Corner
@@ -1684,8 +995,6 @@ en:
     D: Inside
     E: Shopping Center
     F: See Remarks
-  lot:
-    Y: true
   major_type_of_business:
     A: Food  Beverage
     B: Gas Station
@@ -1696,16 +1005,6 @@ en:
     G: Services
     H: Wholesale
     I: See Remarks
-  business_name:
-    Y: true
-  net_proceeds:
-    Y: true
-  total_uncovered_pkg:
-    Y: true
-  real_estate_value:
-    Y: true
-  annual_rent:
-    Y: true
   real_property:
     A: Lease Only
     B: Lease Option
@@ -1714,15 +1013,3 @@ en:
     E: Rent Only
     F: Separate Listing
     G: See Remarks
-  signage_stays_y_n:
-    N: false
-    Y: true
-  annual_expenses:
-    Y: true
-  type_of_business:
-    Y: true
-  year_established:
-    Y: true
-  yrs_curr_ownr_in_bus:
-    Y: true
-
