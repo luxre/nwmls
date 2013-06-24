@@ -212,18 +212,15 @@ class Nwmls::Listing
         elsif value.length == 1 and not (CODED_FIELDS + MULTI_CODED_FIELDS).include?(name)
           Rails.logger.info "CODED #{name}"
         end
-        key = klass.translate_attribute(element.name).to_sym
-        #we should do the encoding here duh!
-        if MULTI_CODED_FIELDS.include?(name)
-          unless value.blank?
+        if value.present?
+          key = klass.translate_attribute(element.name).to_sym
+          if MULTI_CODED_FIELDS.include?(name)
             attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
-          end
-        elsif CODED_FIELDS.include?(name)
-          unless value.blank?
+          elsif CODED_FIELDS.include?(name)
             attributes[key] = I18n::t("#{name}.#{value}")
+          else
+            attributes[key] = value
           end
-        elsif value.present?
-          attributes[key] = value
         end
       end
       instance = klass.new(attributes)
