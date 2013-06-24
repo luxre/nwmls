@@ -208,8 +208,7 @@ class Nwmls::Listing
     xml = Nokogiri::XML(xml_body)
     xml.root.children.each do |listing|
       attributes = {}
-      property_type = listing.at_css('PTYP').inner_text
-      klass = self.listing_class(property_type)
+      klass = self.listing_class(listing.at_css('PTYP').inner_text)
       listing.children.each do |element|
         value = element.text
         name = element.name
