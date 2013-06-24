@@ -4,10 +4,9 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   CODED_FIELDS = %w(
+    PTYP
     AGR
     AMP
-    AR
-    ASF
     BLK
     BON
     BR1
