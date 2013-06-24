@@ -20,6 +20,12 @@ en:
     T: Temp. Off Mrkt
     U: Sale Fail Release
     X: Cancelled
+  NIA:
+    Y: Yes
+    N: No
+  SHOADR:
+    Y: Yes
+    N: No
     
 ### FROM AMENITIES WEB SERVICE ###
   ADU:

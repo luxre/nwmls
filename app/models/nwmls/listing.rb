@@ -3,14 +3,11 @@ require 'nwmls/acts_as_nwmls_listing'
 class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
-  BOOLEAN_FIELDS = %w(
-    NIA
-  )
-
   CODED_FIELDS = %w(
+    NIA
+    BUS
     AR
     ASF
-    BUS
     CLA
     DRP
     DRS
@@ -23,7 +20,6 @@ class Nwmls::Listing
     MAP
     MOR
     NC
-    NIA
     PIC
     POL
     PRJ
@@ -173,7 +169,6 @@ class Nwmls::Listing
     LTP
     MHF
     MIF
-    MR
     OUT
     PKG
     RDI
@@ -220,14 +215,15 @@ class Nwmls::Listing
         key = klass.translate_attribute(element.name).to_sym
         #we should do the encoding here duh!
         if MULTI_CODED_FIELDS.include?(name)
-          attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
+          unless value.blank?
+            attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
+          end
         elsif CODED_FIELDS.include?(name)
-          attributes[key] = I18n::t("#{name}.#{value}")
-        elsif BOOLEAN_FIELDS.include?(name)
-          attributes[key] = case value
-                            when 'Y' then true
-                            when 'N' then false
-                            end
+          unless value.blank?
+            attributes[key] = I18n::t("#{name}.#{value}")
+          end
+        elsif value.present?
+          attributes[key] = value
         end
       end
       instance = klass.new(attributes)
