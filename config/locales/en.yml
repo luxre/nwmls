@@ -1,27 +1,27 @@
 en:
-  status:
-    A: Active
-    C: Contingent
-    D: Active - STI
-    E: Expired
-    P: Pending
-    R: Rented
-    S: Sold
-    T: Temp. Off Mrkt
-    U: Sale Fail Release
-    X: Cancelled
-  property_type:
-    RESI: Residential
-    COND: Condominium
-    COMI: Commercial/Industrial
-    FARM: Farm/Ranch
-    MANU: Manufactured Home
-    MULT: Multi-Family
-    RENT: Rental
-    VACL: Land
-
   #FROM AMENITIES WEB SERVICE
   amenities:
+    property_type:
+      RESI: Residential
+      COND: Condominium
+      COMI: Commercial/Industrial
+      FARM: Farm/Ranch
+      MANU: Manufactured Home
+      MULT: Multi-Family
+      RENT: Rental
+      VACL: Land
+
+    status:
+      A: Active
+      C: Contingent
+      D: Active - STI
+      E: Expired
+      P: Pending
+      R: Rented
+      S: Sold
+      T: Temp. Off Mrkt
+      U: Sale Fail Release
+      X: Cancelled
     approved_accessory_dwelling:
       B: Lower
       C: Main
@@ -273,18 +273,18 @@ en:
       C: Main
       E: Upper
     leased_equipment:
-      Y: true
-      A: Bailer
-      B: Combine
-      C: Dairy
-      D: Electric
-      E: Feeder
-      F: Planter
-      G: Sprinkler
-      H: Tower
-      I: See Remarks
-      J: Option Available
-      none: none
+      #Y: true
+      #A: Bailer
+      #B: Combine
+      #C: Dairy
+      #D: Electric
+      #E: Feeder
+      #F: Planter
+      #G: Sprinkler
+      #H: Tower
+      #I: See Remarks
+      #J: Option Available
+      #none: none
     lot_topography_vegetation:
       A: Brush
       C: Dune
@@ -362,52 +362,52 @@ en:
       Y: Sprinkler System
       Z: Stable
     style:
-      10: 10-1 Story
-      11: 11-1 1/2 Story
-      12: 12-2 Story
-      13: 13-Tri-Level
-      14: 14-Split Entry
-      15: 15-Multi Level
-      16: 16-1 Story w/Bsmnt.
-      17: 17- 1/2 Sty. w/Bsmnt
-      18: 18-2 Stories w/Bsmnt
-      20: 20-Manuf-Single Wide
-      21: 21-Manuf-Double Wide
-      22: 22-Manuf-Triple Wide
-      24: 24-Floating Home
-      32: 32-Townhouse
-      30: 30-Condo (1 Level)
-      31: 31-Condo (2 Levels)
-      33: 33-Co-op
-      34: 34-Condo (3 Levels)
-      35: 35-Garage Storage
-      45: 45-Moorage
-      60: 60-Comm Bldg Und 10K
-      61: 61-Comm Bldg Ovr 10K
-      62: 62-Business Opp.
-      63: 63-Farm  Ranch
-      64: 64-Hotel/Motel
-      70: 70-Industrial
-      71: 71-Light Indrl.
-      72: 72-Mobile Home Park
-      73: 73-Office
-      74: 74-Recreational
-      75: 75-Retail
-      76: 76-RV Park
-      77: 77-Timber
-      78: 78-Warehouse
-      52: 52-Duplex
-      53: 53-Tri-plex
-      54: 54-4-Plex
-      56: 56-10+ Units
-      57: 57-10+ Units
-      5-: 5-Plex
-      55: 55-5-9 Units
-      40: 40-Res-Less thn 1 Ac
-      41: 41-Res - 1 Acre +
-      42: 42-Multi-Family
-      43: 43-Comm/Industrial
-      44: 44-Recreational
+      '10': 10-1 Story
+      '11': 11-1 1/2 Story
+      '12': 12-2 Story
+      '13': 13-Tri-Level
+      '14': 14-Split Entry
+      '15': 15-Multi Level
+      '16': 16-1 Story w/Bsmnt.
+      '17': 17- 1/2 Sty. w/Bsmnt
+      '18': 18-2 Stories w/Bsmnt
+      '20': 20-Manuf-Single Wide
+      '21': 21-Manuf-Double Wide
+      '22': 22-Manuf-Triple Wide
+      '24': 24-Floating Home
+      '32': 32-Townhouse
+      '30': 30-Condo (1 Level)
+      '31': 31-Condo (2 Levels)
+      '33': 33-Co-op
+      '34': 34-Condo (3 Levels)
+      '35': 35-Garage Storage
+      '45': 45-Moorage
+      '60': 60-Comm Bldg Und 10K
+      '61': 61-Comm Bldg Ovr 10K
+      '62': 62-Business Opp.
+      '63': 63-Farm  Ranch
+      '64': 64-Hotel/Motel
+      '70': 70-Industrial
+      '71': 71-Light Indrl.
+      '72': 72-Mobile Home Park
+      '73': 73-Office
+      '74': 74-Recreational
+      '75': 75-Retail
+      '76': 76-RV Park
+      '77': 77-Timber
+      '78': 78-Warehouse
+      '52': 52-Duplex
+      '53': 53-Tri-plex
+      '54': 54-4-Plex
+      '56': 56-10+ Units
+      '57': 57-10+ Units
+      '5': 5-Plex
+      '55': 55-5-9 Units
+      '40': 40-Res-Less thn 1 Ac
+      '41': 41-Res - 1 Acre +
+      '42': 42-Multi-Family
+      '43': 43-Comm/Industrial
+      '44': 44-Recreational
     sewer:
       A: Available
       C: None

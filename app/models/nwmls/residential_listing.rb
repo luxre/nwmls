@@ -148,7 +148,7 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     TBL: "Three Quarter Baths Lower",
     TBM: "Three Quarter Baths Main",
     TBU: "Three Quarter Baths Upper",
-    TRM: "Terms",
+    TRM: "Potential Terms",
     TX: "Tax Amount",
     TXY: "Tax Year",
     UD: "Update Date",
