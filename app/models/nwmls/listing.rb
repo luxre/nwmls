@@ -4,6 +4,9 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   CODED_FIELDS = %w(
+    FRN
+    ENV
+    BON
     NIA
     BUS
     AR
@@ -62,11 +65,13 @@ class Nwmls::Listing
     FG5
     FG6
     FP1
+    PAD
     FP2
     FP3
     FP4
     FP5
     FP6
+    AMP
     FUR
     GAI
     GAS
@@ -123,6 +128,7 @@ class Nwmls::Listing
     UN4
     UN5
     UN6
+    WDW
     UNF
     UNT
     UTL
