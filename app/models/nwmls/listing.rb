@@ -3,6 +3,62 @@ require 'nwmls/acts_as_nwmls_listing'
 class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
+  CODED_FIELDS = %w(
+    AR
+    ASF
+    BUS
+    CLA
+    COLO
+    DRP
+    DRS
+    EXT
+    FP
+    GAR
+    GRDX
+    GRDY
+    HOD
+    HSN
+    HSNA
+    LSD
+    LSF
+    MAP
+    MOR
+    NC
+    NIA
+    PIC
+    POL
+    PRJ
+    SFF
+    SHOADR
+    SIT
+    SML
+    SNR
+    ST
+    STR
+    TX
+    TXY
+    WHT
+  )
+  
+
+  MULTI_CODED_FIELDS = %w(
+    APS
+    BDI
+    ENS
+    EXT
+    FEA
+    FLS
+    GR
+    HTC
+    LDE
+    RF
+    SIT
+    SWR
+    TRM
+    VEW
+    WFT
+  )
+
   def self.find(conditions = {}, filters = [])
     unless conditions.is_a?(Hash)
       conditions = { :listing_number => conditions.to_i }
@@ -26,9 +82,26 @@ class Nwmls::Listing
       property_type = listing.at_css('PTYP').inner_text
       klass = self.listing_class(property_type)
       listing.children.each do |element|
-        attributes[klass.translate_attribute(element.name).to_sym] = element.text
+        value = element.text
+        name = element.name
+        if value.include?('|') and not MULTI_CODED_FIELDS.include?(name)
+          Rails.logger.info "MULTI #{name}"
+        elsif value.length == 1 and not (CODED_FIELDS + MULTI_CODED_FIELDS).include?(name)
+          Rails.logger.info "CODED #{name}"
+        end
+        key = klass.translate_attribute(element.name).to_sym
+        #we should do the encoding here duh!
+        attributes[key] = element.text
       end
-      collection << klass.new(attributes)
+      instance = klass.new(attributes)
+      attributes.keys.each do |attr|
+        val = instance.send(attr)
+        if val.to_s =~ /translation missing/
+          Rails.logger.info "MISSING #{attr} #{val}"
+
+        end
+      end
+      collection << instance
     end
     collection
   end
@@ -76,8 +149,8 @@ class Nwmls::Listing
   def self.translate_attribute(attribute)
     if code = self.attribute_mappings[attribute]
       code.underscore.parameterize('_')
-#    else
-#      raise "code #{attribute} not found"
+    else
+      raise "code #{attribute} not found"
     end
   end
 
