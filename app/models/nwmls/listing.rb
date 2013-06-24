@@ -3,21 +3,20 @@ require 'nwmls/acts_as_nwmls_listing'
 class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
+  BOOLEAN_FIELDS = %w(
+    NIA
+  )
+
   CODED_FIELDS = %w(
     AR
     ASF
     BUS
     CLA
-    COLO
     DRP
     DRS
-    EXT
     FP
     GAR
-    GRDX
-    GRDY
     HOD
-    HSN
     HSNA
     LSD
     LSF
@@ -30,7 +29,6 @@ class Nwmls::Listing
     PRJ
     SFF
     SHOADR
-    SIT
     SML
     SNR
     ST
@@ -38,21 +36,151 @@ class Nwmls::Listing
     TX
     TXY
     WHT
+    AGR
+    BLK
+    BR1
+    BR2
+    BR3
+    BR4
+    BR5
+    BR6
+    BRI
+    CRI
+    DW1
+    DW2
+    DW3
+    DW4
+    DW5
+    DW6
+    ELE
+    ELEX
+    EQI
+    EQV
+    ESM
+    EXP
+    FAC
+    FG1
+    FG2
+    FG3
+    FG4
+    FG5
+    FG6
+    FP1
+    FP2
+    FP3
+    FP4
+    FP5
+    FP6
+    FUR
+    GAI
+    GAS
+    GRM
+    GSI
+    HET
+    INS
+    IRRC
+    LSI
+    LSZ
+    LT
+    MLT
+    NAS
+    NOH
+    NOI
+    NOU
+    OTX
+    PKS
+    RD
+    REM
+    RN1
+    RN2
+    RN3
+    RN4
+    RN5
+    RN6
+    RO1
+    RO2
+    RO3
+    RO4
+    RO5
+    RO6
+    SF1
+    SF2
+    SF3
+    SF4
+    SF5
+    SF6
+    SIB
+    SLP
+    SPR
+    STG
+    STP
+    TAC
+    TEX
+    TIN
+    TPO
+    TYP
+    UCS
+    UFN
+    UN1
+    UN2
+    UN3
+    UN4
+    UN5
+    UN6
+    UNF
+    UNT
+    UTL
+    VAC
+    WAC
+    WD1
+    WD2
+    WD3
+    WD4
+    WD5
+    WD6
+    WFG
+    WTR
+    YBT
+    ZJD
   )
   
 
   MULTI_CODED_FIELDS = %w(
+    AMN
+    APP
     APS
     BDI
+    BFE
+    BSM
+    BTP
+    CMN
+    CTD
     ENS
+    EQP
     EXT
     FEA
+    FEN
     FLS
+    FTP
+    FTR
     GR
+    GZC
     HTC
+    IMP
+    IRS
+    ITP
     LDE
+    LTP
+    MHF
+    MIF
+    MR
+    OUT
+    PKG
+    RDI
     RF
+    SFS
     SIT
+    SRI
     SWR
     TRM
     VEW
@@ -91,7 +219,16 @@ class Nwmls::Listing
         end
         key = klass.translate_attribute(element.name).to_sym
         #we should do the encoding here duh!
-        attributes[key] = element.text
+        if MULTI_CODED_FIELDS.include?(name)
+          attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
+        elsif CODED_FIELDS.include?(name)
+          attributes[key] = I18n::t("#{name}.#{value}")
+        elsif BOOLEAN_FIELDS.include?(name)
+          attributes[key] = case value
+                            when 'Y' then true
+                            when 'N' then false
+                            end
+        end
       end
       instance = klass.new(attributes)
       attributes.keys.each do |attr|
