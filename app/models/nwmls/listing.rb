@@ -4,39 +4,12 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   CODED_FIELDS = %w(
-    FRN
-    ENV
-    BON
-    NIA
-    BUS
+    AGR
+    AMP
     AR
     ASF
-    CLA
-    DRP
-    DRS
-    FP
-    GAR
-    HOD
-    HSNA
-    LSD
-    LSF
-    MAP
-    MOR
-    NC
-    PIC
-    POL
-    PRJ
-    SFF
-    SHOADR
-    SML
-    SNR
-    ST
-    STR
-    TX
-    TXY
-    WHT
-    AGR
     BLK
+    BON
     BR1
     BR2
     BR3
@@ -44,7 +17,11 @@ class Nwmls::Listing
     BR5
     BR6
     BRI
+    BUS
+    CLA
     CRI
+    DRP
+    DRS
     DW1
     DW2
     DW3
@@ -53,6 +30,7 @@ class Nwmls::Listing
     DW6
     ELE
     ELEX
+    ENV
     EQI
     EQV
     ESM
@@ -64,32 +42,45 @@ class Nwmls::Listing
     FG4
     FG5
     FG6
+    FP
     FP1
-    PAD
     FP2
     FP3
     FP4
     FP5
     FP6
-    AMP
+    FRN
     FUR
     GAI
+    GAR
     GAS
     GRM
     GSI
     HET
+    HOD
+    HSNA
     INS
     IRRC
+    LSD
+    LSF
     LSI
     LSZ
     LT
+    MAP
     MLT
+    MOR
     NAS
+    NC
+    NIA
     NOH
     NOI
     NOU
     OTX
+    PAD
+    PIC
     PKS
+    POL
+    PRJ
     RD
     REM
     RN1
@@ -110,15 +101,23 @@ class Nwmls::Listing
     SF4
     SF5
     SF6
+    SFF
+    SHOADR
     SIB
     SLP
+    SML
+    SNR
     SPR
+    ST
     STG
     STP
+    STR
     TAC
     TEX
     TIN
     TPO
+    TX
+    TXY
     TYP
     UCS
     UFN
@@ -128,7 +127,6 @@ class Nwmls::Listing
     UN4
     UN5
     UN6
-    WDW
     UNF
     UNT
     UTL
@@ -140,7 +138,9 @@ class Nwmls::Listing
     WD4
     WD5
     WD6
+    WDW
     WFG
+    WHT
     WTR
     YBT
     ZJD
