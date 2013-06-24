@@ -197,7 +197,9 @@ class Nwmls::Listing
           if MULTI_CODED_FIELDS.include?(name)
             attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
           elsif CODED_FIELDS.include?(name)
-            attributes[key] = I18n::t("#{name}.#{value}")
+            unless value == '0'
+              attributes[key] = I18n::t("#{name}.#{value}")
+            end
           else
             if %w(Y N).include?(value)
               Rails.logger.info "YN for #{name}"
