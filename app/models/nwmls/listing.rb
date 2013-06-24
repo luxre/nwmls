@@ -18,10 +18,7 @@ class Nwmls::Listing
     BR6
     BRI
     BUS
-    CLA
     CRI
-    DRP
-    DRS
     DW1
     DW2
     DW3
@@ -29,12 +26,10 @@ class Nwmls::Listing
     DW5
     DW6
     ELE
-    ELEX
     ENV
     EQI
     EQV
     ESM
-    EXP
     FAC
     FG1
     FG2
@@ -42,7 +37,6 @@ class Nwmls::Listing
     FG4
     FG5
     FG6
-    FP
     FP1
     FP2
     FP3
@@ -51,36 +45,24 @@ class Nwmls::Listing
     FP6
     FRN
     FUR
-    GAI
-    GAR
     GAS
     GRM
-    GSI
     HET
     HOD
-    HSNA
     INS
-    IRRC
     LSD
-    LSF
     LSI
     LSZ
-    LT
-    MAP
     MLT
-    MOR
     NAS
     NC
     NIA
     NOH
-    NOI
     NOU
     OTX
     PAD
-    PIC
     PKS
     POL
-    PRJ
     RD
     REM
     RN1
@@ -111,13 +93,9 @@ class Nwmls::Listing
     ST
     STG
     STP
-    STR
     TAC
-    TEX
     TIN
     TPO
-    TX
-    TXY
     TYP
     UCS
     UFN
@@ -128,10 +106,7 @@ class Nwmls::Listing
     UN5
     UN6
     UNF
-    UNT
     UTL
-    VAC
-    WAC
     WD1
     WD2
     WD3
@@ -142,12 +117,13 @@ class Nwmls::Listing
     WFG
     WHT
     WTR
-    YBT
     ZJD
   )
   
 
   MULTI_CODED_FIELDS = %w(
+    CFE
+    FND
     AMN
     APP
     APS
