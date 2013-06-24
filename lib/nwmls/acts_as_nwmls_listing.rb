@@ -24,15 +24,5 @@ module Nwmls
       end
     end
 
-#    BOOLEAN_ATTRIBUTES.each do |method|
-#      define_method method do
-#        case instance_variable_get("@#{method}")
-#        when 'Y' then true
-#        when 'N' then false
-#        end
-#      end
-#      alias_method "#{method}?", method
-#    end
-
   end
 end
