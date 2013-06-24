@@ -199,18 +199,17 @@ class Nwmls::Listing
           elsif CODED_FIELDS.include?(name)
             attributes[key] = I18n::t("#{name}.#{value}")
           else
+            if %w(Y N).include?(value)
+              Rails.logger.info "YN for #{name}"
+            end
             attributes[key] = value
+          end
+          if attributes[key].to_s =~ /translation missing/
+            Rails.logger.info "MISSING #{key} #{attributes[key]}"
           end
         end
       end
       instance = klass.new(attributes)
-      attributes.keys.each do |attr|
-        val = instance.send(attr)
-        if val.to_s =~ /translation missing/
-          Rails.logger.info "MISSING #{attr} #{val}"
-
-        end
-      end
       collection << instance
     end
     collection
