@@ -4,33 +4,102 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   CODED_ELEMENTS = %w(
-    PTYP
+    ADU
+    AFH
+    AFR
     AGR
+    AMN
     AMP
+    ANC
+    APH
+    APP
+    APR
+    APS
+    ARC
+    ATF
+    BDC
+    BDI
+    BFE
     BON
+    BREO
+    BRM
+    BSM
+    BTP
     BUS
+    CFE
+    CL
+    CMFE
+    CMN
+    COO
+    CTD
+    DNO
+    DOC
+    DRM
     DW1
     DW2
     DW3
     DW4
     DW5
     DW6
+    ECRT
+    EFR
     ELE
+    ENS
+    ENT
     ENV
+    EQP
+    EXA
+    EXT
+    F17
     FAC
+    FAM
+    FEA
+    FEN
     FG1
     FG2
     FG3
     FG4
     FG5
     FG6
+    FLS
+    FMR
+    FND
     FRN
+    FTP
+    FTR
     FUR
     GAS
+    GR
+    GZC
+    HOI
+    KES
+    KEY
+    KIT
+    LDG
+    LES
+    LIC
+    LIT
+    LNI
+    LNM
+    LOC
+    LOF
+    LRM
+    LTG
+    LTV
+    MBD
+    MFY
+    MTB
     NC
     NIA
+    OTR
     PAD
+    PARQ
+    PAS
+    PKA
     POL
+    POS
+    PTO
+    PTYP
     REM
     RO1
     RO2
@@ -38,113 +107,43 @@ class Nwmls::Listing
     RO4
     RO5
     RO6
+    RP
+    RRM
+    RS2
+    SDA
+    SEP
+    SFA
     SHOADR
+    SIN
+    SKS
     SML
     SNR
+    SPA
     ST
+    STO
+    STP
+    STY
+    TMC
+    TOF
     TPO
+    TYP
+    UBG
     UCS
+    UNF
+    UTL
+    UTR
+    WAS
     WD1
     WD2
     WD3
     WD4
     WD5
     WD6
+    WTR
     ZJD
-
-    ADU
-    ARC
-    BDC
-    BREO
-    BRM
-    CMFE
-    DNO
-    DRM
-    ECRT
-    EFR
-    ENT
-    F17
-    FAM
-    KES
-    KEY
-    KIT
-    LOF
-    LRM
-    LTV
-    MBD
-    PARQ
-    POS
-    PTO
-    STY
-    UTR
-    WAS
-    AFH
-    APH
-    COO
-    HOI
-    SPA
-    TOF
-    EXA
-    LTG
-    ANC
-    LNI
-    MFY
-    OTR
-    PAS
-    PKA
-    LIT
-    UBG
-    AFR
-    APR
-    CL
-    FMR
-    STO
-    TMC
-    ATF
-    DOC
-    RS2
-    SDA
-    SEP
-    SFA
-    SKS
-    RRM
-    LNM
-    SIN
   )
 
   MULTI_CODED_ELEMENTS = %w(
-    MTB
-    LES
-    WTR
-    RP
-    TYP
-    STP
-    LIC
-    UNF
-    LOC
-    LDG
-    CFE
-    FND
-    AMN
-    APP
-    APS
-    BDI
-    BFE
-    BSM
-    BTP
-    UTL
-    CMN
-    CTD
-    ENS
-    EQP
-    EXT
-    FEA
-    FEN
-    FLS
-    FTP
-    FTR
-    GR
-    GZC
     HTC
     IMP
     IRS
