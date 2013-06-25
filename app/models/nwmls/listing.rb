@@ -3,7 +3,7 @@ require 'nwmls/acts_as_nwmls_listing'
 class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
-  CODED_FIELDS = %w(
+  CODED_ELEMENTS = %w(
     PTYP
     AGR
     AMP
@@ -111,7 +111,7 @@ class Nwmls::Listing
     SIN
   )
 
-  MULTI_CODED_FIELDS = %w(
+  MULTI_CODED_ELEMENTS = %w(
     MTB
     LES
     WTR
@@ -190,9 +190,9 @@ class Nwmls::Listing
         name = element.name
         if value.present?
           key = klass.translate_attribute(element.name).to_sym
-          if MULTI_CODED_FIELDS.include?(name)
+          if MULTI_CODED_ELEMENTS.include?(name)
             attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
-          elsif CODED_FIELDS.include?(name)
+          elsif CODED_ELEMENTS.include?(name)
             unless value == '0'
               attributes[key] = I18n::t("#{name}.#{value}")
             end
