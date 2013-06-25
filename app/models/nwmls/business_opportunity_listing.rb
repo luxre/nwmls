@@ -71,7 +71,7 @@ class Nwmls::BusinessOpportunityListing < Nwmls::Listing
     HRS: 'Hours of Operation',
     INV: 'Inventory Value',
     LNM: 'Liens/Mortgages',
-    LSI: 'Leased Items',
+    LSI: 'Lease Income',
     LT: 'Lot Number',
     NA: 'Business Name',
     NP: 'Net Proceeds',
