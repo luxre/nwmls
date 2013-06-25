@@ -27,7 +27,6 @@ class Nwmls::Listing
     ELE
     ENV
     EQI
-    EQV
     ESM
     FAC
     FG1
@@ -45,10 +44,7 @@ class Nwmls::Listing
     FRN
     FUR
     GAS
-    GRM
-    HET
     HOD
-    INS
     LSD
     LSI
     LSZ
@@ -57,34 +53,19 @@ class Nwmls::Listing
     NC
     NIA
     NOH
-    NOU
-    OTX
     PAD
     PKS
     POL
     RD
     REM
-    RN1
-    RN2
-    RN3
-    RN4
-    RN5
-    RN6
     RO1
     RO2
     RO3
     RO4
     RO5
     RO6
-    SF1
-    SF2
-    SF3
-    SF4
-    SF5
-    SF6
     SFF
     SHOADR
-    SIB
     SLP
     SML
     SNR
@@ -93,17 +74,10 @@ class Nwmls::Listing
     STG
     STP
     TAC
-    TIN
     TPO
     TYP
     UCS
     UFN
-    UN1
-    UN2
-    UN3
-    UN4
-    UN5
-    UN6
     UNF
     UTL
     WD1
@@ -121,6 +95,12 @@ class Nwmls::Listing
   
 
   MULTI_CODED_FIELDS = %w(
+    MTB
+    LES
+    RP
+    LIC
+    LOC
+    LDG
     CFE
     FND
     AMN
