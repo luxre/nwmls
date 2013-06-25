@@ -1228,18 +1228,17 @@ en:
   LCC:
     Y: Yes
 
-#  data is not actually encoded
-#  LEQ:
-#    A: Bailer
-#    B: Combine
-#    C: Dairy
-#    D: Electric
-#    E: Feeder
-#    F: Planter
-#    G: Sprinkler
-#    H: Tower
-#    I: See Remarks
-#    J: Option Available
+  LEQ:
+    A: Bailer
+    B: Combine
+    C: Dairy
+    D: Electric
+    E: Feeder
+    F: Planter
+    G: Sprinkler
+    H: Tower
+    I: See Remarks
+    J: Option Available
 
   LSI:
     Y: Yes

@@ -7,17 +7,8 @@ class Nwmls::Listing
     PTYP
     AGR
     AMP
-    BLK
     BON
-    BR1
-    BR2
-    BR3
-    BR4
-    BR5
-    BR6
-    BRI
     BUS
-    CRI
     DW1
     DW2
     DW3
@@ -26,8 +17,6 @@ class Nwmls::Listing
     DW6
     ELE
     ENV
-    EQI
-    ESM
     FAC
     FG1
     FG2
@@ -35,28 +24,13 @@ class Nwmls::Listing
     FG4
     FG5
     FG6
-    FP1
-    FP2
-    FP3
-    FP4
-    FP5
-    FP6
     FRN
     FUR
     GAS
-    HOD
-    LSD
-    LSI
-    LSZ
-    MLT
-    NAS
     NC
     NIA
-    NOH
     PAD
-    PKS
     POL
-    RD
     REM
     RO1
     RO2
@@ -64,41 +38,88 @@ class Nwmls::Listing
     RO4
     RO5
     RO6
-    SFF
     SHOADR
-    SLP
     SML
     SNR
-    SPR
     ST
-    STG
-    STP
-    TAC
     TPO
-    TYP
     UCS
-    UFN
-    UNF
-    UTL
     WD1
     WD2
     WD3
     WD4
     WD5
     WD6
-    WDW
-    WFG
-    WHT
-    WTR
     ZJD
+
+    ADU
+    ARC
+    BDC
+    BREO
+    BRM
+    CMFE
+    DNO
+    DRM
+    ECRT
+    EFR
+    ENT
+    F17
+    FAM
+    KES
+    KEY
+    KIT
+    LOF
+    LRM
+    LTV
+    MBD
+    PARQ
+    POS
+    PTO
+    STY
+    UTR
+    WAS
+    AFH
+    APH
+    COO
+    HOI
+    SPA
+    TOF
+    EXA
+    LTG
+    ANC
+    LNI
+    MFY
+    OTR
+    PAS
+    PKA
+    LIT
+    UBG
+    AFR
+    APR
+    CL
+    FMR
+    STO
+    TMC
+    ATF
+    DOC
+    RS2
+    SDA
+    SEP
+    SFA
+    SKS
+    LNM
+    SIN
   )
-  
 
   MULTI_CODED_FIELDS = %w(
     MTB
     LES
+    WTR
     RP
+    TYP
+    STP
     LIC
+    UNF
     LOC
     LDG
     CFE
@@ -110,6 +131,7 @@ class Nwmls::Listing
     BFE
     BSM
     BTP
+    UTL
     CMN
     CTD
     ENS
@@ -134,7 +156,6 @@ class Nwmls::Listing
     PKG
     RDI
     RF
-    SFS
     SIT
     SRI
     SWR
