@@ -188,11 +188,6 @@ class Nwmls::Listing
       listing.children.each do |element|
         value = element.text
         name = element.name
-        if value.include?('|') and not MULTI_CODED_FIELDS.include?(name)
-          Rails.logger.info "MULTI #{name}"
-        elsif value.length == 1 and not (CODED_FIELDS + MULTI_CODED_FIELDS).include?(name)
-          Rails.logger.info "CODED #{name}"
-        end
         if value.present?
           key = klass.translate_attribute(element.name).to_sym
           if MULTI_CODED_FIELDS.include?(name)
