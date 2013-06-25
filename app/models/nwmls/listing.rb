@@ -107,6 +107,7 @@ class Nwmls::Listing
     SEP
     SFA
     SKS
+    RRM
     LNM
     SIN
   )
