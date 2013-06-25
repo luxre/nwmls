@@ -197,13 +197,14 @@ class Nwmls::Listing
               attributes[key] = I18n::t("#{name}.#{value}")
             end
           else
-            if %w(Y N).include?(value)
-              Rails.logger.info "YN for #{name}"
-            end
             attributes[key] = value
           end
+
+          #temporary code for development/debugging
           if attributes[key].to_s =~ /translation missing/
             Rails.logger.info "MISSING #{key} #{attributes[key]}"
+          elsif %w(Y N).include? attributes[key]
+            Rails.logger.info "YN for #{name}"
           end
         end
       end
