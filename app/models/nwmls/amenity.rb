@@ -4,8 +4,8 @@ class Nwmls::Amenity
 
 
   def self.find(property_type)
-    xml_body = Evernet::Connection.retrieve_amenity_data(property_type)
-    build_collection_from_xml(xml_body)
+    xml = Evernet::Connection.retrieve_amenity_data(property_type)
+    build_collection(xml)
   end
 
   private
@@ -16,10 +16,9 @@ class Nwmls::Amenity
     self.values = options[:values]
   end
 
-  def self.build_collection_from_xml(xml_body)
+  def self.build_collection(xml)
     collection = []
     raw = {}
-    xml = Nokogiri::XML(xml_body)
     xml.root.children.each do |amenity|
       if amenity.name == 'Amenity'
         code = amenity.at('Code').inner_text

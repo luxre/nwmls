@@ -171,8 +171,8 @@ class Nwmls::Listing
       conditions = { :listing_number => conditions.to_i }
     end
 
-    xml_body = Evernet::Connection.retrieve_listing_data(conditions, filters)
-    collection = build_collection_from_xml(xml_body)
+    xml = Evernet::Connection.retrieve_listing_data(conditions, filters)
+    collection = build_collection(xml)
     if conditions[:listing_number]
       collection.first
     else
@@ -180,9 +180,8 @@ class Nwmls::Listing
     end
   end
 
-  def self.build_collection_from_xml(xml_body)
+  def self.build_collection(xml)
     collection = []
-    xml = Nokogiri::XML(xml_body)
     xml.root.children.each do |listing|
       attributes = {}
       klass = self.listing_class(listing.at_css('PTYP').inner_text)

@@ -11,19 +11,21 @@ class Evernet::Connection
 
   def self.retrieve_listing_data(conditions = {}, filters = [])
     response = instance.client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
-    response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
+    raw = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
+    load_data_result_with_nokogiri(raw)
   end
 
   def self.retrieve_amenity_data(property_type)
     response = instance.client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(:property_type => property_type) }
-    response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
+    raw = response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
+    load_data_result_with_nokogiri(raw)
   end
 
   def self.retrieve_office_data(conditions = {})
     response = instance.client.call :retrieve_office_data, message: { v_strXmlQuery: build_query }
-    response.body[:retrieve_office_data_response][:retrieve_office_data_result]
+    raw = response.body[:retrieve_office_data_response][:retrieve_office_data_result]
+    load_data_result_with_nokogiri(raw)
   end
-
 
   private
 
@@ -73,6 +75,14 @@ class Evernet::Connection
         end
       end
     end
+  end
+
+  def self.load_data_result_with_nokogiri(raw)
+    xml = Nokogiri::XML(raw)
+    if error_element = xml.at('Error')
+      raise error_element.text
+    end
+    xml
   end
 
 
