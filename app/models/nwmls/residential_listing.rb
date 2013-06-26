@@ -28,7 +28,7 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     CIT: "City",
     CLA: "Co-Listing Agent Number",
     CLO: "Selling Date",
-    CMFE: "Common/Community Features",
+    CMFE: "Community Features",
     COLO: "Co Office",
     COU: "County",
     CTDT: "Contingent Date",

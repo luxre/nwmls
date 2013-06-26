@@ -95,7 +95,7 @@ class Nwmls::RentalListing < Nwmls::Listing
     POL: 'Pool',
     PRJ: 'Project',
     PTO: 'Preliminary Title Ordered',
-    SAP: 'Approved Number of Bedrooms',
+    SAP: 'Septic Approved for Number of Bedrooms',
     SH: 'Senior High',
     SIB: 'Number of Stories in Building',
     SML: 'Show Map Link to Public',
@@ -202,7 +202,7 @@ class Nwmls::RentalListing < Nwmls::Listing
     TMC: 'Terms and Conditions',
     TYP: 'Type of Property',
     UTL: 'Included in Rent',
-    BSM: 'bsm', #unknown what this is not part of schema but showing in data
+    BSM: 'Basement',
   )
   acts_as_nwmls_listing :property_type => 'RENT', :attribute_mappings => CODES
 end

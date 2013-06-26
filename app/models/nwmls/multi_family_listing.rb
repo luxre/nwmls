@@ -94,7 +94,7 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     POL: 'Pool',
     PRJ: 'Project',
     PTO: 'Preliminary Title Ordered',
-    SAP: 'Approved Number of Bedrooms',
+    SAP: 'Septic Approved for Number of Bedrooms',
     SH: 'Senior High',
     SIB: 'Number of Stories in Building',
     SML: 'Show Map Link to Public',

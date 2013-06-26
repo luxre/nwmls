@@ -84,7 +84,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     LSZ: 'Lot Dimensions',
     LT: 'Lot Number',
     NNN: 'Total Monthly NNN',
-    NOI: 'Net Operating Costs',
+    NOI: 'Net Operating Income',
     OSF: 'Approximate Office Square Feet',
     OTX: 'Other Expenses',
     PAD: 'Pad Ready',

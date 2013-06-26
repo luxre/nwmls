@@ -103,7 +103,7 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     NC: 'New Construction',
     NOC: 'Number of Units in Complex',
     NOS: 'Number of Stories in Building',
-    NOU: 'Number of Units in Building',
+    NOU: 'Number of Units',
     OOC: 'Owner Occupancy Percentage',
     PKS: 'Parking Space Number',
     PRJ: 'Project',

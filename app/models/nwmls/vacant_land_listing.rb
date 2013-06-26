@@ -77,7 +77,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     PTO: 'Preliminary Title Ordered',
     QTR: 'Three Quarter Baths Total',
     RD: 'Road On Which Side of Property',
-    SAP: 'Approved Number of Bedrooms',
+    SAP: 'Septic Approved for Number of Bedrooms',
     SDA: 'Septic Designed and Applied for',
     SEC: 'Section/Township/Range',
     SEP: 'Septic System Installed',
