@@ -1,6 +1,12 @@
 require 'savon'
 class Evernet::Connection
+
+  SCHEMA_NAME = 'NWMLSStandardXML'
+  MLS = 'NWMLS'
+  DEFAULT_PTYP = 'RESI'
+
   cattr_accessor :user, :pass
+
   attr_accessor :client
 
   def self.retrieve_listing_data(conditions = {}, filters = [])
@@ -35,14 +41,14 @@ class Evernet::Connection
         xml.Head do
           xml.UserId user
           xml.Password pass
-          xml.SchemaName 'NWMLSStandardXML'
+          xml.SchemaName SCHEMA_NAME
         end
         xml.Body do
           xml.Query do
-            xml.MLS "NWMLS"
+            xml.MLS MLS
             if conditions[:listing_number]
               xml.ListingNumber conditions[:listing_number] if conditions[:listing_number]
-              xml.PropertyType (conditions[:property_type] || 'RESI')
+              xml.PropertyType (conditions[:property_type] || DEFAULT_PTYP)
             else
               xml.PropertyType conditions[:property_type]
               xml.Status conditions[:status] if conditions[:status]
