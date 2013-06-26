@@ -115,7 +115,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     PARQ: 'Third Party Approval Required',
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
-    ProhibitBlogging: 'Allow Blog',
+    ProhibitBLOG: 'Allow Blog',
   )
   acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => CODES
 end

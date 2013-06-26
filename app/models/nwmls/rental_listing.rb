@@ -189,7 +189,7 @@ class Nwmls::RentalListing < Nwmls::Listing
     DW6: 'Dishwasher Unit 6',
     CLA: 'Co-Listing Agent Number',
     AllowAVM: 'Allow AVM',
-    ProhibitBlogging: 'Allow Blog',
+    ProhibitBLOG: 'Allow Blog',
     AFR: 'Additional Finished Rooms ',
     APP: 'Appliances Provided',
     DOM: 'Days on Market',

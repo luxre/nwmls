@@ -158,7 +158,7 @@ class Nwmls::FarmListing < Nwmls::Listing
     PARQ: 'Third Party Approval Required',
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
-    ProhibitBlogging: 'Allow Blog',
+    ProhibitBLOG: 'Allow Blog',
   )
 
   acts_as_nwmls_listing :property_type => 'FARM', :attribute_mappings => CODES

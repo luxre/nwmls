@@ -26,6 +26,12 @@ en:
   SHOADR:
     Y: Yes
     N: No
+  ProhibitBLOG:
+    Y: Yes
+    N: No
+  AllowAVM:
+    Y: Yes
+    N: No
     
 ### FROM AMENITIES WEB SERVICE ###
   ADU:

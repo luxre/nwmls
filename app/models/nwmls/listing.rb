@@ -16,6 +16,7 @@ class Nwmls::Listing
     APS
     ARC
     ATF
+    AllowAVM
     BDC
     BDI
     BFE
@@ -98,6 +99,7 @@ class Nwmls::Listing
     POS
     PTO
     PTYP
+    ProhibitBLOG
     REM
     RO1
     RO2

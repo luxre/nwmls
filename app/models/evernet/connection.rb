@@ -1,11 +1,11 @@
 require 'savon'
 class Evernet::Connection
 
-  SCHEMA_NAME = 'NWMLSStandardXML'
+  DEFAULT_SCHEMA_NAME = 'StandardXML1_1'
   MLS = 'NWMLS'
   DEFAULT_PTYP = 'RESI'
 
-  cattr_accessor :user, :pass
+  cattr_accessor :user, :pass, :schema_name
 
   attr_accessor :client
 
@@ -41,7 +41,7 @@ class Evernet::Connection
         xml.Head do
           xml.UserId user
           xml.Password pass
-          xml.SchemaName SCHEMA_NAME
+          xml.SchemaName (schema_name || DEFAULT_SCHEMA_NAME )
         end
         xml.Body do
           xml.Query do

@@ -189,7 +189,7 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     PARQ: 'Third Party Approval Required',
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
-    ProhibitBlogging: 'Allow Blog',
+    ProhibitBLOG: 'Allow Blog',
     SWR: 'Sewer',#not in documentation or schema
   )
   acts_as_nwmls_listing :property_type => 'MULT', :attribute_mappings => CODES

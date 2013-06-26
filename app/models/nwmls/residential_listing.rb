@@ -17,7 +17,7 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     BLD: "Builder",
     BLK: "Block",
     BRM: "Bonus Room Location",
-    ProhibitBlogging: "Allow Blog",
+    ProhibitBLOG: "Allow Blog",
     BR: "Bedrooms",
     BREO: "Bank Owned",
     BSM: "Basement",
