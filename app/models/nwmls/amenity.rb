@@ -12,7 +12,7 @@ class Nwmls::Amenity
   def self.find(conditions = {})
     response = evernet_client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
     xml_body = response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
-    collection = build_collection_from_xml(xml_body)
+    build_collection_from_xml(xml_body)
   end
 
   def self.build_query(conditions = {})
