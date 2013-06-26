@@ -252,9 +252,12 @@ class Nwmls::Listing
     end
   end
 
-  def self.evernet_client
+  def self.evernet_connection
     @@evernet_connection ||= Evernet::Connection.new
-    @@evernet_connection.client
+  end
+
+  def self.evernet_client
+    self.evernet_connection.client
   end
 
   def self.translate_attribute(attribute)

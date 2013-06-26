@@ -55,10 +55,12 @@ class Nwmls::Amenity
     collection
   end
 
-
+  def self.evernet_connection
+    @@evernet_connection ||= Evernet::Connection.new
+  end
 
   def self.evernet_client
-    @@evernet_connection ||= Evernet::Connection.new
-    @@evernet_connection.client
+    self.evernet_connection.client
   end
+
 end
