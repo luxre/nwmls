@@ -8,7 +8,6 @@ class Nwmls::Listing
     AFH
     AFR
     AGR
-    AMN
     AMP
     ANC
     APH
@@ -61,7 +60,6 @@ class Nwmls::Listing
     FG4
     FG5
     FG6
-    FLS
     FMR
     FND
     FRN
@@ -147,6 +145,7 @@ class Nwmls::Listing
     HTC
     IMP
     IRS
+    FLS
     ITP
     LDE
     LTP
@@ -159,6 +158,7 @@ class Nwmls::Listing
     SIT
     SRI
     SWR
+    AMN
     TRM
     VEW
     WFT
