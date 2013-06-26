@@ -19,6 +19,12 @@ class Evernet::Connection
     response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
   end
 
+  def self.retrieve_office_data(conditions = {})
+    response = instance.client.call :retrieve_office_data, message: { v_strXmlQuery: build_query }
+    response.body[:retrieve_office_data_response][:retrieve_office_data_result]
+  end
+
+
   private
 
   def self.instance
