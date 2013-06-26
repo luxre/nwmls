@@ -14,8 +14,8 @@ class Evernet::Connection
     response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
   end
 
-  def self.retrieve_amenity_data(conditions = {}, filters = [])
-    response = instance.client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
+  def self.retrieve_amenity_data(property_type)
+    response = instance.client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(:property_type => property_type) }
     response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
   end
 

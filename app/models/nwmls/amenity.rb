@@ -3,8 +3,8 @@ class Nwmls::Amenity
   attr_accessor :code, :description, :values
 
 
-  def self.find(conditions = {})
-    xml_body = Evernet::Connection.retrieve_amenity_data(conditions)
+  def self.find(property_type)
+    xml_body = Evernet::Connection.retrieve_amenity_data(property_type)
     build_collection_from_xml(xml_body)
   end
 
