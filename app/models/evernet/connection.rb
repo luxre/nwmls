@@ -50,7 +50,7 @@ class Evernet::Connection
               xml.ListingNumber conditions[:listing_number] if conditions[:listing_number]
               xml.PropertyType (conditions[:property_type] || DEFAULT_PTYP)
             else
-              xml.PropertyType conditions[:property_type]
+              xml.PropertyType conditions[:property_type] if conditions[:propery_type]
               xml.Status conditions[:status] if conditions[:status]
               xml.County conditions[:county] if conditions[:county]
               xml.Area conditions[:area] if conditions[:area]
