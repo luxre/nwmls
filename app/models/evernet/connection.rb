@@ -33,8 +33,8 @@ class Evernet::Connection
     xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
       xml.Message do
         xml.Head do
-          xml.UserId Evernet::Connection.user
-          xml.Password Evernet::Connection.pass
+          xml.UserId user
+          xml.Password pass
           xml.SchemaName 'NWMLSStandardXML'
         end
         xml.Body do
