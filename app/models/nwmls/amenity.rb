@@ -58,6 +58,7 @@ class Nwmls::Amenity
 
 
   def self.evernet_client
-    @@evernet_client ||= Evernet::Connection.new
+    @@evernet_connection ||= Evernet::Connection.new
+    @@evernet_connection.client
   end
 end
