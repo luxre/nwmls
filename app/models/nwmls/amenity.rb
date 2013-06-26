@@ -10,7 +10,7 @@ class Nwmls::Amenity
 
 
   def self.find(conditions = {})
-    xml_body = evernet_connection.retrieve_amenity_data(conditions)
+    xml_body = Evernet::Connection.retrieve_amenity_data(conditions)
     build_collection_from_xml(xml_body)
   end
 
@@ -32,10 +32,6 @@ class Nwmls::Amenity
       collection << self.new(values)
     end
     collection
-  end
-
-  def self.evernet_connection
-    Evernet::Connection
   end
 
 end
