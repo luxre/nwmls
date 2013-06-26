@@ -169,7 +169,7 @@ class Nwmls::Listing
       conditions = { :listing_number => conditions.to_i }
     end
 
-    response = evernet_client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+    response = evernet_client.call :retrieve_listing_data, message: { v_strXmlQuery: evernet_connection.build_query(conditions, filters) }
     xml_body = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
     collection = build_collection_from_xml(xml_body)
     if conditions[:listing_number]
@@ -214,42 +214,6 @@ class Nwmls::Listing
       collection << instance
     end
     collection
-  end
-
-  def self.build_query(conditions = {}, filters = [])
-    xml = Builder::XmlMarkup.new
-    xml.instruct!
-    xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
-      xml.Message do
-        xml.Head do
-          xml.UserId Evernet::Connection.user
-          xml.Password Evernet::Connection.pass
-          xml.SchemaName 'NWMLSStandardXML'
-        end
-        xml.Body do
-          xml.Query do
-            xml.MLS "NWMLS"
-            if conditions[:listing_number]
-              xml.ListingNumber conditions[:listing_number] if conditions[:listing_number]
-              xml.PropertyType (conditions[:property_type] || 'RESI')
-            else
-              xml.PropertyType conditions[:property_type]
-              xml.Status conditions[:status] if conditions[:status]
-              xml.County conditions[:county] if conditions[:county]
-              xml.Area conditions[:area] if conditions[:area]
-              xml.City conditions[:city]if conditions[:city]
-              xml.BeginDate (conditions[:begin_date] or 10.years.ago).strftime('%FT%T')
-              xml.EndDate (conditions[:end_date] or Time.now + 1.day).strftime('%FT%T')
-              xml.OfficeId conditions[:office_mls_id] if conditions[:office_mls_id]
-              xml.AgentId conditions[:agent_mls_id] if conditions[:agent_mls_id]
-              xml.Bedrooms conditions[:bedrooms] if conditions[:bedrooms]
-              xml.Bathrooms conditions[:bathrooms] if conditions[:bathrooms]
-            end
-          end
-          xml.Filter filters.join(',')
-        end
-      end
-    end
   end
 
   def self.evernet_connection

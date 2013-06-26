@@ -10,29 +10,9 @@ class Nwmls::Amenity
 
 
   def self.find(conditions = {})
-    response = evernet_client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
+    response = evernet_client.call :retrieve_amenity_data, message: { v_strXmlQuery: evernet_connection.build_query(conditions) }
     xml_body = response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
     build_collection_from_xml(xml_body)
-  end
-
-  def self.build_query(conditions = {})
-    xml = Builder::XmlMarkup.new
-    xml.instruct!
-    xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
-      xml.Message do
-        xml.Head do
-          xml.UserId Evernet::Connection.user
-          xml.Password Evernet::Connection.pass
-          xml.SchemaName 'NWMLSStandardXML'
-        end
-        xml.Body do
-          xml.Query do
-            xml.MLS "NWMLS"
-            xml.PropertyType (conditions[:property_type] || 'RESI')
-          end
-        end
-      end
-    end
   end
 
   def self.build_collection_from_xml(xml_body)
