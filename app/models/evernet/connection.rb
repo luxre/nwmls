@@ -3,6 +3,22 @@ class Evernet::Connection
   cattr_accessor :user, :pass
   attr_accessor :client
 
+  def self.retrieve_listing_data(conditions = {}, filters = [])
+    response = instance.client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+    response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
+  end
+
+  def self.retrieve_amenity_data(conditions = {}, filters = [])
+    response = instance.client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
+    response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
+  end
+
+  private
+
+  def self.instance
+    @__instance__ ||= new
+  end
+
   def initialize
     self.client = Savon.client(
       wsdl: "http://evernet.nwmls.com/evernetqueryservice/evernetquery.asmx?WSDL",
@@ -10,21 +26,8 @@ class Evernet::Connection
     )
   end
 
-  def retrieve_listing_data(conditions = {}, filters = [])
-    response = client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
-    response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
-  end
 
-  def retrieve_amenity_data(conditions = {}, filters = [])
-    response = client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
-    response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
-  end
-
-
-
-  private
-
-  def build_query(conditions = {}, filters = [])
+  def self.build_query(conditions = {}, filters = [])
     xml = Builder::XmlMarkup.new
     xml.instruct!
     xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
