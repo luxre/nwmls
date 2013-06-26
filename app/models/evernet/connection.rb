@@ -11,7 +11,8 @@ class Evernet::Connection
   end
 
   def retrieve_listing_data(conditions = {}, filters = [])
-    client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+    response = client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+    response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
   end
 
 
