@@ -2,16 +2,18 @@ class Nwmls::Amenity
 
   attr_accessor :code, :description, :values
 
-  def initialize(options = {})
-    self.code = options[:code]
-    self.description = options[:description]
-    self.values = options[:values]
-  end
-
 
   def self.find(conditions = {})
     xml_body = Evernet::Connection.retrieve_amenity_data(conditions)
     build_collection_from_xml(xml_body)
+  end
+
+  private
+
+  def initialize(options = {})
+    self.code = options[:code]
+    self.description = options[:description]
+    self.values = options[:values]
   end
 
   def self.build_collection_from_xml(xml_body)
