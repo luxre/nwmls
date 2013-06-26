@@ -15,6 +15,14 @@ class Evernet::Connection
     response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
   end
 
+  def retrieve_amenity_data(conditions = {}, filters = [])
+    response = client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(conditions) }
+    response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
+  end
+
+
+
+  private
 
   def build_query(conditions = {}, filters = [])
     xml = Builder::XmlMarkup.new
