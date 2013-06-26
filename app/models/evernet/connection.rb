@@ -10,6 +10,11 @@ class Evernet::Connection
     )
   end
 
+  def retrieve_listing_data(conditions = {}, filters = [])
+    client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+  end
+
+
   def build_query(conditions = {}, filters = [])
     xml = Builder::XmlMarkup.new
     xml.instruct!

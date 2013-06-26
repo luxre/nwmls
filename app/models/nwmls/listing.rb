@@ -169,7 +169,7 @@ class Nwmls::Listing
       conditions = { :listing_number => conditions.to_i }
     end
 
-    response = evernet_client.call :retrieve_listing_data, message: { v_strXmlQuery: evernet_connection.build_query(conditions, filters) }
+    response = evernet_connection.retrieve_listing_data(conditions, filters)
     xml_body = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
     collection = build_collection_from_xml(xml_body)
     if conditions[:listing_number]
@@ -218,10 +218,6 @@ class Nwmls::Listing
 
   def self.evernet_connection
     @@evernet_connection ||= Evernet::Connection.new
-  end
-
-  def self.evernet_client
-    self.evernet_connection.client
   end
 
   def self.translate_attribute(attribute)
