@@ -194,6 +194,12 @@ class Nwmls::Listing
     end
   end
 
+  def office
+    if listing_office_number
+      @office ||= Nwmls::Office.all.detect { |o| o.office_mlsid == listing_office_number }
+    end
+  end
+
 
   protected
 
