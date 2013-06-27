@@ -1981,6 +1981,8 @@ en:
     <<: *room_location 
   ENT:
     <<: *room_location 
+  EFR:
+    <<: *room_location 
   FAM:
     <<: *room_location 
   KES:
@@ -1993,3 +1995,6 @@ en:
     <<: *room_location 
   RRM:
     <<: *room_location 
+  UTR:
+    <<: *room_location 
+
