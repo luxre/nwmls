@@ -1964,5 +1964,32 @@ en:
   AllowAVM:
     Y: Yes
     N: No
-    
-
+  ADU: &room_location
+    A: Garage
+    B: Lower
+    C: Main
+    D: Split
+    E: Upper
+    L: Lower
+    M: Main
+    U: Upper
+  BRM:
+    <<: *room_location 
+  DNO:
+    <<: *room_location 
+  DRM:
+    <<: *room_location 
+  ENT:
+    <<: *room_location 
+  FAM:
+    <<: *room_location 
+  KES:
+    <<: *room_location 
+  KIT:
+    <<: *room_location 
+  LRM:
+    <<: *room_location 
+  MBD:
+    <<: *room_location 
+  RRM:
+    <<: *room_location 
