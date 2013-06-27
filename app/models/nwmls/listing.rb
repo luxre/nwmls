@@ -4,30 +4,25 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   CODED_ELEMENTS = %w(
-    ADU
     AFH
     AFR
     AGR
     AMP
     ANC
-    APH
     APP
     APR
     ARC
     ATF
     AllowAVM
     BDC
-    BDI
     BFE
     BON
     BREO
     BRM
-    BSM
     BTP
     BUS
     CFE
     CL
-    CMFE
     CMN
     COO
     CTD
@@ -40,15 +35,12 @@ class Nwmls::Listing
     DW4
     DW5
     DW6
-    ECRT
     EFR
     ELE
-    ENS
     ENT
     ENV
     EQP
     EXA
-    EXT
     F17
     FAC
     FAM
@@ -60,15 +52,12 @@ class Nwmls::Listing
     FG5
     FG6
     FMR
-    FND
     FRN
     FTP
     FTR
     FUR
     GAS
-    GR
     GZC
-    HOI
     KES
     KEY
     KIT
@@ -82,7 +71,6 @@ class Nwmls::Listing
     LOF
     LRM
     LTG
-    LTV
     MBD
     MFY
     MTB
@@ -90,11 +78,9 @@ class Nwmls::Listing
     NIA
     OTR
     PAD
-    PARQ
     PAS
     PKA
     POL
-    POS
     PTO
     PTYP
     ProhibitBLOG
@@ -126,10 +112,8 @@ class Nwmls::Listing
     TYP
     UBG
     UCS
-    UNF
     UTL
     UTR
-    WAS
     WD1
     WD2
     WD3
@@ -140,20 +124,34 @@ class Nwmls::Listing
   )
 
   MULTI_CODED_ELEMENTS = %w(
+    ADU
     AMN
+    APH
     APS
+    BDI
+    BSM
+    CMFE
+    ECRT
+    ENS
+    EXT
     FEA
     FLS
+    FND
+    GR
+    HOI
     HTC
     IMP
     IRS
     ITP
     LDE
     LTP
+    LTV
     MHF
     MIF
     OUT
+    PARQ
     PKG
+    POS
     RDI
     RF
     SIT
@@ -161,7 +159,9 @@ class Nwmls::Listing
     SWR
     TPO
     TRM
+    UNF
     VEW
+    WAS
     WFT
     WTR
   )
