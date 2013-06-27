@@ -140,14 +140,13 @@ class Nwmls::Listing
   )
 
   MULTI_CODED_ELEMENTS = %w(
+    AMN
+    APS
+    FEA
+    FLS
     HTC
     IMP
-    TPO
     IRS
-    FEA
-    APS
-    WTR
-    FLS
     ITP
     LDE
     LTP
@@ -160,10 +159,11 @@ class Nwmls::Listing
     SIT
     SRI
     SWR
-    AMN
+    TPO
     TRM
     VEW
     WFT
+    WTR
   )
 
   def self.find(conditions = {}, filters = [])
