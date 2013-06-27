@@ -13,7 +13,6 @@ class Nwmls::Listing
     APH
     APP
     APR
-    APS
     ARC
     ATF
     AllowAVM
@@ -53,7 +52,6 @@ class Nwmls::Listing
     F17
     FAC
     FAM
-    FEA
     FEN
     FG1
     FG2
@@ -125,7 +123,6 @@ class Nwmls::Listing
     STY
     TMC
     TOF
-    TPO
     TYP
     UBG
     UCS
@@ -139,14 +136,17 @@ class Nwmls::Listing
     WD4
     WD5
     WD6
-    WTR
     ZJD
   )
 
   MULTI_CODED_ELEMENTS = %w(
     HTC
     IMP
+    TPO
     IRS
+    FEA
+    APS
+    WTR
     FLS
     ITP
     LDE
