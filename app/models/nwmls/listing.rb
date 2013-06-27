@@ -180,6 +180,23 @@ class Nwmls::Listing
     end
   end
 
+  def self.listing_class(property_type)
+    case property_type
+    when "RESI" then Nwmls::ResidentialListing
+    when "COND" then Nwmls::CondominiumListing
+    when "BUSO" then Nwmls::BusinessOpportunityListing
+    when "COMI" then Nwmls::CommercialListing
+    when "FARM" then Nwmls::FarmListing
+    when "MANU" then Nwmls::ManufacturedHomeListing 
+    when "MULT" then Nwmls::MultiFamilyListing
+    when "RENT" then Nwmls::RentalListing
+    when "VACL" then Nwmls::VacantLandListing
+    end
+  end
+
+
+  protected
+
   def self.build_collection(xml)
     collection = []
     xml.root.children.each do |listing|
@@ -221,20 +238,6 @@ class Nwmls::Listing
       code.underscore.parameterize('_')
     elsif Rails.env.development?
       raise "code #{attribute} not found"
-    end
-  end
-
-  def self.listing_class(property_type)
-    case property_type
-    when "RESI" then Nwmls::ResidentialListing
-    when "COND" then Nwmls::CondominiumListing
-    when "BUSO" then Nwmls::BusinessOpportunityListing
-    when "COMI" then Nwmls::CommercialListing
-    when "FARM" then Nwmls::FarmListing
-    when "MANU" then Nwmls::ManufacturedHomeListing 
-    when "MULT" then Nwmls::MultiFamilyListing
-    when "RENT" then Nwmls::RentalListing
-    when "VACL" then Nwmls::VacantLandListing
     end
   end
 
