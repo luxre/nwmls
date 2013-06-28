@@ -225,10 +225,12 @@ class Nwmls::Listing
 
           #temporary code for development/debugging
           if ::Rails.env.development?
-            if attributes[key].to_s =~ /translation missing/
-              Rails.logger.info "MISSING #{key} #{attributes[key]}"
-            elsif %w(Y N).include? attributes[key] and %w(GRDX GRDY DRS DRP).exclude?(name)
-              Rails.logger.info "YN for #{name}"
+            Array(attributes[key]).each do |part|
+              if part.to_s =~ /translation missing/
+                Rails.logger.info "MISSING #{key} #{part}"
+              elsif %w(Y N).include? attributes[key] and %w(GRDX GRDY DRS DRP).exclude?(name)
+                Rails.logger.info "YN for #{name}"
+              end
             end
           end
         end
