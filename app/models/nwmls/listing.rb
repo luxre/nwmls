@@ -200,6 +200,10 @@ class Nwmls::Listing
     end
   end
 
+  def images
+    @images ||= Nwmls::Image.find(listing_number)
+  end
+
 
   protected
 
