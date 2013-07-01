@@ -27,6 +27,12 @@ class Evernet::Connection
     load_data_result_with_nokogiri(raw)
   end
 
+  def self.retrieve_image_data(conditions = {})
+    response = instance.client.call :retrieve_image_data, message: { v_strXmlQuery: build_query(conditions) }
+    raw = response.body[:retrieve_image_data_response][:retrieve_image_data_result]
+    load_data_result_with_nokogiri(raw)
+  end
+
   private
 
   def self.instance
