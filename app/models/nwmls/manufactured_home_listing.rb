@@ -84,6 +84,7 @@ class Nwmls::ManufacturedHomeListing < Nwmls::Listing
     PDR: 'Pending Date',
     POS: 'Possession',
     PTYP: 'Property Type',
+    TQBT: "Three Quarter Bathrooms",
     RF: 'Roof',
     SH: 'Senior High',
     SHOADR: 'Show Address to Public',
