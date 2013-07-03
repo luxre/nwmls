@@ -59,7 +59,6 @@ class Nwmls::Listing
     OTR
     PAD
     PAS
-    PKA
     POL
     PTO
     PTYP
@@ -144,6 +143,7 @@ class Nwmls::Listing
     MTB
     OUT
     PARQ
+    PKA
     PKG
     POS
     RDI
