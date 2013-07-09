@@ -200,6 +200,14 @@ class Nwmls::Listing
     end
   end
 
+  def school_district_description
+    if school_district
+      if found_school_district = Nwmls::SchoolDistrict.all.detect { |s| s.code == school_district }
+        found_school_district.description
+      end
+    end
+  end
+
   def images
     @images ||= Nwmls::Image.find(listing_number)
   end
