@@ -1,8 +1,16 @@
 class Nwmls::Member
   attr_accessor :member_mlsid, :first_name, :last_name, :office_mlsid, :office_name, :office_area_code, :office_phone, :office_phone_extension
 
-  def self.all
-    @all ||= build_collection(Evernet::Connection.retrieve_member_data)
+  def self.find(conditions = {})
+    unless conditions.is_a?(Hash)
+      conditions = { :agent_mls_id => conditions.to_i }
+    end
+    collection = build_collection(Evernet::Connection.retrieve_member_data(conditions))
+    if conditions[:agent_mls_id]
+      collection.first
+    else
+      collection
+    end
   end
 
   def office

@@ -39,8 +39,8 @@ class Evernet::Connection
     load_data_result_with_nokogiri(raw)
   end
 
-  def self.retrieve_member_data
-    response = instance.client.call :retrieve_member_data, message: { v_strXmlQuery: build_query }
+  def self.retrieve_member_data(conditions = {})
+    response = instance.client.call :retrieve_member_data, message: { v_strXmlQuery: build_query(conditions) }
     raw = response.body[:retrieve_member_data_response][:retrieve_member_data_result]
     load_data_result_with_nokogiri(raw)
   end
