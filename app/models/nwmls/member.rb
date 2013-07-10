@@ -5,6 +5,10 @@ class Nwmls::Member
     @all ||= build_collection(Evernet::Connection.retrieve_member_data)
   end
 
+  def office
+    @office ||= Nwmls::Office.find office_mlsid
+  end
+
   private
 
   def self.build_collection(xml)
