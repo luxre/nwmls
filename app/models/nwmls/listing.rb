@@ -194,6 +194,15 @@ class Nwmls::Listing
     end
   end
 
+  def community
+    if area
+      @area_community ||= Nwmls::AreaCommunity.all.detect { |ac| ac.area == area }
+      if @area_community
+        @area_community.community
+      end
+    end
+  end
+
   def office
     if listing_office_number
       @office ||= Nwmls::Office.all.detect { |o| o.office_mlsid == listing_office_number }
