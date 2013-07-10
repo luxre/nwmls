@@ -3,6 +3,18 @@ require 'nwmls/acts_as_nwmls_listing'
 class Nwmls::Listing < Nwmls::Base
   include Nwmls::ActsAsNwmlsListing
 
+  TYPE_TO_CLASS_MAP = {
+    "RESI" =>  'Nwmls::ResidentialListing',
+    "COND" => 'Nwmls::CondominiumListing',
+    "BUSO" => 'Nwmls::BusinessOpportunityListing',
+    "COMI" => 'Nwmls::CommercialListing',
+    "FARM" => 'Nwmls::FarmListing',
+    "MANU" => 'Nwmls::ManufacturedHomeListing', 
+    "MULT" => 'Nwmls::MultiFamilyListing',
+    "RENT" => 'Nwmls::RentalListing',
+    "VACL" => 'Nwmls::VacantLandListing',
+  }
+
   CODED_ELEMENTS = %w(
     AFH
     AGR
@@ -181,17 +193,7 @@ class Nwmls::Listing < Nwmls::Base
   end
 
   def self.listing_class(property_type)
-    case property_type
-    when "RESI" then Nwmls::ResidentialListing
-    when "COND" then Nwmls::CondominiumListing
-    when "BUSO" then Nwmls::BusinessOpportunityListing
-    when "COMI" then Nwmls::CommercialListing
-    when "FARM" then Nwmls::FarmListing
-    when "MANU" then Nwmls::ManufacturedHomeListing 
-    when "MULT" then Nwmls::MultiFamilyListing
-    when "RENT" then Nwmls::RentalListing
-    when "VACL" then Nwmls::VacantLandListing
-    end
+    TYPE_TO_CLASS_MAP(property_type).constantize
   end
 
   def community
@@ -227,6 +229,10 @@ class Nwmls::Listing < Nwmls::Base
 
 
   protected
+
+  def self.listing_class(property_type)
+    TYPE_TO_CLASS_MAP[property_type].constantize
+  end
 
   def self.build_collection(xml)
     collection = []
