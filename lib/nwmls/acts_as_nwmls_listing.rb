@@ -4,7 +4,6 @@ module Nwmls
 
     module ClassMethods
       def acts_as_nwmls_listing(options = {})
-        include ActiveModel::Model
 
         cattr_accessor :attribute_mappings
         self.attribute_mappings = options[:attribute_mappings]

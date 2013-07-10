@@ -1,6 +1,6 @@
 require 'nwmls/acts_as_nwmls_listing'
 
-class Nwmls::Listing
+class Nwmls::Listing < Nwmls::Base
   include Nwmls::ActsAsNwmlsListing
 
   CODED_ELEMENTS = %w(
