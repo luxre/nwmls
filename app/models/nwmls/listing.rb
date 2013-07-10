@@ -209,7 +209,7 @@ class Nwmls::Listing
 
   def office
     if listing_office_number
-      @office ||= Nwmls::Office.all.detect { |o| o.office_mlsid == listing_office_number }
+      @office ||= Nwmls::Office.find listing_office_number
     end
   end
 

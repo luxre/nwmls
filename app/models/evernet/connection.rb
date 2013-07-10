@@ -46,7 +46,7 @@ class Evernet::Connection
   end
 
   def self.retrieve_office_data(conditions = {})
-    response = instance.client.call :retrieve_office_data, message: { v_strXmlQuery: build_query }
+    response = instance.client.call :retrieve_office_data, message: { v_strXmlQuery: build_query(conditions) }
     raw = response.body[:retrieve_office_data_response][:retrieve_office_data_result]
     load_data_result_with_nokogiri(raw)
   end
