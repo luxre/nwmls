@@ -14,6 +14,10 @@ class Nwmls::Office
     end
   end
 
+  def members
+    @members ||= Nwmls::Member.find(:office_mls_id => office_mlsid)
+  end
+
   private
 
   def self.build_collection(xml)
