@@ -33,6 +33,12 @@ class Evernet::Connection
     load_data_result_with_nokogiri(raw)
   end
 
+  def self.retrieve_listing_history_data(conditions = {})
+    response = instance.client.call :retrieve_listing_history_data, message: { v_strXmlQuery: build_query(conditions) }
+    raw = response.body[:retrieve_listing_history_data_response][:retrieve_listing_history_data_result]
+    load_data_result_with_nokogiri(raw)
+  end
+
   def self.retrieve_office_data(conditions = {})
     response = instance.client.call :retrieve_office_data, message: { v_strXmlQuery: build_query }
     raw = response.body[:retrieve_office_data_response][:retrieve_office_data_result]

@@ -203,6 +203,10 @@ class Nwmls::Listing
     end
   end
 
+  def history
+    @history ||= Nwmls::ListingHistory.find listing_number
+  end
+
   def office
     if listing_office_number
       @office ||= Nwmls::Office.all.detect { |o| o.office_mlsid == listing_office_number }
