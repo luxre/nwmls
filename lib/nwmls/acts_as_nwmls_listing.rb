@@ -16,7 +16,7 @@ module Nwmls
 
         def self.find(conditions = {}, filters = [])
           if conditions.is_a?(Hash)
-            conditions.merge!(:property_type => options[:property_type])
+            conditions.merge!(:property_type => conditions[:property_type])
           end
           super(conditions, filters)
         end
