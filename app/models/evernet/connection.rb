@@ -9,15 +9,21 @@ class Evernet::Connection
 
   attr_accessor :client
 
-  def self.retrieve_listing_data(conditions = {}, filters = [])
-    response = instance.client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
-    raw = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
-    load_data_result_with_nokogiri(raw)
-  end
-
   def self.retrieve_amenity_data(property_type)
     response = instance.client.call :retrieve_amenity_data, message: { v_strXmlQuery: build_query(:property_type => property_type) }
     raw = response.body[:retrieve_amenity_data_response][:retrieve_amenity_data_result]
+    load_data_result_with_nokogiri(raw)
+  end
+
+  def self.retrieve_image_data(conditions = {})
+    response = instance.client.call :retrieve_image_data, message: { v_strXmlQuery: build_query(conditions) }
+    raw = response.body[:retrieve_image_data_response][:retrieve_image_data_result]
+    load_data_result_with_nokogiri(raw)
+  end
+
+  def self.retrieve_listing_data(conditions = {}, filters = [])
+    response = instance.client.call :retrieve_listing_data, message: { v_strXmlQuery: build_query(conditions, filters) }
+    raw = response.body[:retrieve_listing_data_response][:retrieve_listing_data_result]
     load_data_result_with_nokogiri(raw)
   end
 
@@ -30,12 +36,6 @@ class Evernet::Connection
   def self.retrieve_school_data
     response = instance.client.call :retrieve_school_data, message: { v_strXmlQuery: build_query }
     raw = response.body[:retrieve_school_data_response][:retrieve_school_data_result]
-    load_data_result_with_nokogiri(raw)
-  end
-
-  def self.retrieve_image_data(conditions = {})
-    response = instance.client.call :retrieve_image_data, message: { v_strXmlQuery: build_query(conditions) }
-    raw = response.body[:retrieve_image_data_response][:retrieve_image_data_result]
     load_data_result_with_nokogiri(raw)
   end
 
