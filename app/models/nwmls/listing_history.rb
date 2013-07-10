@@ -8,4 +8,8 @@ class Nwmls::ListingHistory < Nwmls::Base
     build_collection(Evernet::Connection.retrieve_listing_history_data(conditions))
   end
 
+  def listing
+    @listing ||= Nwmls::Listing.find ml_number
+  end
+
 end
