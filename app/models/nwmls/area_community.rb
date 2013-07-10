@@ -1,4 +1,8 @@
-class Nwmls::AreaCommunity < Nwmls::Base
+require 'nwmls/base'
+
+class Nwmls::AreaCommunity
+  include Nwmls::Base
+
   attr_accessor :area, :community
 
   def self.all

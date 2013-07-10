@@ -1,6 +1,8 @@
+require 'nwmls/base'
 require 'nwmls/acts_as_nwmls_listing'
 
-class Nwmls::Listing < Nwmls::Base
+class Nwmls::Listing
+  include Nwmls::Base
   include Nwmls::ActsAsNwmlsListing
 
   TYPE_TO_CLASS_MAP = {
