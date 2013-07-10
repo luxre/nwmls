@@ -1,4 +1,4 @@
-class Nwmls::Amenity
+class Nwmls::Amenity < Nwmls::Base
 
   attr_accessor :code, :description, :values
 
@@ -8,13 +8,7 @@ class Nwmls::Amenity
     build_collection(xml)
   end
 
-  private
-
-  def initialize(options = {})
-    self.code = options[:code]
-    self.description = options[:description]
-    self.values = options[:values]
-  end
+  protected
 
   def self.build_collection(xml)
     collection = []
