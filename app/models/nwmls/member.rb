@@ -13,6 +13,16 @@ class Nwmls::Member < Nwmls::Base
     end
   end
 
+  Nwmls::Listing::TYPE_TO_CLASS_MAP.each do |type, klass|
+    method_name = klass.demodulize.underscore.pluralize
+    define_method method_name do
+      unless instance_variable_get("@#{method_name}")
+        instance_variable_set("@#{method_name}", klass.constantize.find(:agent_mls_id => member_mlsid, :property_type => type))
+      end
+      instance_variable_get("@#{method_name}")
+    end
+  end
+
   def office
     @office ||= Nwmls::Office.find office_mlsid
   end
