@@ -1,4 +1,3 @@
-
 class Nwmls::ResidentialListing < Nwmls::Listing
 
   CODES = HashWithIndifferentAccess.new(

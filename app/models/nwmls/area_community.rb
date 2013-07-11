@@ -1,5 +1,3 @@
-require 'nwmls/base'
-
 class Nwmls::AreaCommunity
   include Nwmls::Base
 

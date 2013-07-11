@@ -1,4 +1,6 @@
-class Nwmls::Member < Nwmls::Base
+class Nwmls::Member
+  include Nwmls::Base
+
   attr_accessor :member_mlsid, :first_name, :last_name, :office_mlsid, :office_name, :office_area_code, :office_phone, :office_phone_extension
 
   def self.find(conditions = {})

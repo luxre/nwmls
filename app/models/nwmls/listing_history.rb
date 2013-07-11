@@ -1,4 +1,6 @@
-class Nwmls::ListingHistory < Nwmls::Base
+class Nwmls::ListingHistory
+  include Nwmls::Base
+
   attr_accessor :ml_number, :list_price, :change_date
 
   def self.find(conditions = {})

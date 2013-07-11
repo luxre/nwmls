@@ -1,4 +1,5 @@
-class Nwmls::SchoolDistrict < Nwmls::Base
+class Nwmls::SchoolDistrict
+  include Nwmls::Base
 
   attr_accessor :code, :description
 

@@ -1,4 +1,5 @@
-class Nwmls::Amenity < Nwmls::Base
+class Nwmls::Amenity
+  include Nwmls::Base
 
   attr_accessor :code, :description, :values
 

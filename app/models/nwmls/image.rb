@@ -1,4 +1,5 @@
-class Nwmls::Image < Nwmls::Base
+class Nwmls::Image
+  include Nwmls::Base
 
   attr_accessor :ml_number, :picture_file_name, :picture_height, :picture_width, :picture_description, :uploaded_date_time, :last_modified_date_time
 
