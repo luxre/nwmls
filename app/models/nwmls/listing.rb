@@ -205,6 +205,48 @@ class Nwmls::Listing < Nwmls::Base
     end
   end
 
+  def listing_agent
+    if listing_agent_number
+      @listing_agent ||= Nwmls::Member.find listing_agent_number
+    end
+  end
+
+  def co_listing_agent
+    if co_listing_agent_number
+      @co_listing_agent ||= Nwmls::Member.find co_listing_agent_number
+    end
+  end
+
+  def selling_agent
+    if selling_agent_number
+      @selling_agent ||= Nwmls::Member.find selling_agent_number
+    end
+  end
+
+  def selling_co_agent
+    if selling_co_agent_number
+      @selling_co_agent ||= Nwmls::Member.find selling_co_agent_number
+    end
+  end
+
+  def co_office
+    if co_office_number
+      @co_office ||= Nwmls::Office.find co_office_number
+    end
+  end
+
+  def selling_office
+    if selling_office_number
+      @selling_office ||= Nwmls::Office.find selling_office_number
+    end
+  end
+
+  def selling_co_office
+    if selling_co_office_number
+      @selling_co_office ||= Nwmls::Office.find selling_co_office_number
+    end
+  end
+
   def history
     @history ||= Nwmls::ListingHistory.find listing_number
   end
