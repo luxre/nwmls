@@ -1,5 +1,5 @@
 module Nwmls
-  module Base
+  module Model
 
     def self.included(base)
       base.extend(ClassMethods)
