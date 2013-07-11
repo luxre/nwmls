@@ -123,7 +123,7 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     SAP: "Septic Approved for Number of Bedrooms",
     SCA: "Selling Co Agent Number",
     SCO: "Selling Co Office Number",
-    SD: "School District",
+    SD: "School District Code",
     SDT: "Status Date",
     SFF: "Square Footage Finished",
     SFS: "Square Footage Source",

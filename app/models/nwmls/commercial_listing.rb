@@ -52,7 +52,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     SCA: 'Selling Co Agent Number',
     SCO: 'Selling Co Office Number',
     VIRT: 'Virtual Tour URL',
-    SD: 'School District',
+    SD: 'School District Code',
     SDT: 'Status Date',
     FIN: 'Financing',
     MAPBOOK: 'Map Book',

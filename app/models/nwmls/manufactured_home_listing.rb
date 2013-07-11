@@ -47,7 +47,7 @@ class Nwmls::ManufacturedHomeListing < Nwmls::Listing
     DOM: 'Days on Market',
     DRP: 'Directional Prefix',
     SCO: 'Selling Co Office Number',
-    SD: 'School District',
+    SD: 'School District Code',
     WAC: 'Water Company',
     SDT: 'Status Date',
     SFS: 'Square Footage Source',

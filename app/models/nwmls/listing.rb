@@ -256,10 +256,10 @@ class Nwmls::Listing
     end
   end
 
-  def school_district_description
-    if school_district
-      if found_school_district = Nwmls::SchoolDistrict.all.detect { |s| s.code == school_district }
-        found_school_district.description
+  def school_district
+    if school_district_code
+      if @school_district ||= Nwmls::SchoolDistrict.all.detect { |s| s.code == school_district_code }
+        @school_district.description
       end
     end
   end
