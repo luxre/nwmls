@@ -23,6 +23,10 @@ class Nwmls::Member < Nwmls::Base
     end
   end
 
+  def listings
+    @listings ||= Nwmls::Listing::TYPE_TO_CLASS_MAP.collect { |type, klass| public_send(klass.demodulize.underscore.pluralize) }.sum
+  end
+
   def office
     @office ||= Nwmls::Office.find office_mlsid
   end
