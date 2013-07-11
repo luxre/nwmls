@@ -24,7 +24,7 @@ class Nwmls::ManufacturedHomeListing < Nwmls::Listing
     ENS: 'Energy Source',
     LNI: 'Labor and Industries Inspected',
     LDR: 'List Date Received',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     ZIP: 'Zip Code',
     LP: 'Listing Price',
     LPH: 'Listing Price History',

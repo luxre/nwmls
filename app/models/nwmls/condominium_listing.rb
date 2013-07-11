@@ -61,7 +61,7 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     QBT: 'Quarter Bathrooms',
     SFS: 'Square Footage Source',
     LSZS: 'Lot Size Source',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     PIC: 'Picture Count',
     HSNA: 'Street Number Modifier',
     AFH: 'FHA/VA Approved',

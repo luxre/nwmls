@@ -58,7 +58,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     MAPBOOK: 'Map Book',
     DSR: 'Community Name',
     HSNA: 'Street Number Modifier',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     PIC: 'Picture Count',
     AMP: 'Power Service in AMPS',
     AVP: 'Number of Available Pads',

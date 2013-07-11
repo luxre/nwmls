@@ -62,7 +62,7 @@ class Nwmls::FarmListing < Nwmls::Listing
     SFS: 'Square Footage Source',
     LSZS: 'Lot Size Source',
     HSNA: 'Street Number Modifier',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     PIC: 'Picture Count',
     ACC: 'Acreage Comments',
     BCC: 'Barn/Outbuilding Comments',

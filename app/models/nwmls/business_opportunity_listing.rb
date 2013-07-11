@@ -56,7 +56,7 @@ class Nwmls::BusinessOpportunityListing < Nwmls::Listing
     MAPBOOK: 'Map Book',
     DSR: 'Community Name',
     HSNA: 'Street Number Modifier',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     PIC: 'Picture Count',
     BDC: 'Building Condition',
     BLK: 'Block',

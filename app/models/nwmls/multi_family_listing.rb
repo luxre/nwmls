@@ -65,7 +65,7 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     SFS: 'Square Footage Source',
     LSZS: 'Lot Size Source',
     HSNA: 'Street Number Modifier',
-    COLO: 'Co Office',
+    COLO: 'Co Office Number',
     PIC: 'Picture Count',
     BDC: 'Building Condition',
     BLK: 'Block',
