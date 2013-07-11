@@ -18,4 +18,18 @@ class Nwmls::Office < Nwmls::Base
     @members ||= Nwmls::Member.find(:office_mls_id => office_mlsid)
   end
 
+  Nwmls::Listing::TYPE_TO_CLASS_MAP.each do |type, klass|
+    method_name = klass.demodulize.underscore.pluralize
+    define_method method_name do
+      unless instance_variable_get("@#{method_name}")
+        instance_variable_set("@#{method_name}", klass.constantize.find(:office_mls_id => office_mlsid, :property_type => type))
+      end
+      instance_variable_get("@#{method_name}")
+    end
+  end
+
+  def listings
+    @listings ||= Nwmls::Listing::TYPE_TO_CLASS_MAP.collect { |type, klass| public_send(klass.demodulize.underscore.pluralize) }.sum
+  end
+
 end
