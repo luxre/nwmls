@@ -1,5 +1,5 @@
 class Nwmls::Listing
-  include Nwmls::Base
+  include Nwmls::Model
   include Nwmls::ActsAsNwmlsListing
 
   TYPE_TO_CLASS_MAP = {

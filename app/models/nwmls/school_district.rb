@@ -1,5 +1,5 @@
 class Nwmls::SchoolDistrict
-  include Nwmls::Base
+  include Nwmls::Model
 
   attr_accessor :code, :description
 

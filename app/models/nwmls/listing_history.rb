@@ -1,5 +1,5 @@
 class Nwmls::ListingHistory
-  include Nwmls::Base
+  include Nwmls::Model
 
   attr_accessor :ml_number, :list_price, :change_date
 

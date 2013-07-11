@@ -1,5 +1,5 @@
 class Nwmls::AreaCommunity
-  include Nwmls::Base
+  include Nwmls::Model
 
   attr_accessor :area, :community
 
