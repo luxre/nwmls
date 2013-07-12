@@ -1,0 +1,2000 @@
+en:
+### BEGIN === FROM AMENITIES WEB SERVICE === ###
+  ADU:
+    B: Lower
+    C: Main
+    E: Upper
+
+  APS:
+    A: Diskmaskin
+    B: Double Oven
+    C: Torktumlare
+    D: Garbage Disposal
+    E: Mikrovågsugn
+    F: Range/Oven
+    G: Kylskåp
+    H: See Remarks
+    I: Trash Compactor
+    J: Tvättmaskin
+
+  ARC:
+    A: A-Frame/Dome
+    B: Cabin
+    C: Cape Cod
+    D: Colonial
+    F: Contemporary
+    G: Craftsman
+    I: NW Contemporary
+    J: See Remarks
+    K: Spanish/SW
+    N: Traditionell
+    O: Tudor
+    P: Victorian
+    Q: Modern
+    H: Loft
+    L: Studio
+    M: Townhouse
+    E: Contemp/Custom
+
+  BDC:
+    A: Genomsnittlig
+    B: Fair
+    C: Renoveringsobjekt
+    D: Bra
+    E: Ombyggt
+    F: Restored
+    G: Under konstruktion
+    H: Mycket bra
+
+  BDI:
+    A: Additional Dwelling
+    B: Built On Lot
+    C: Manufactured Home
+    D: Modular
+    E: Planned Unit Dev
+    F: Zero Lot Line
+
+  BDL:
+    Y: Ja
+
+  BDM:
+    Y: Ja
+
+  BDU:
+    Y: Ja
+
+  BLD:
+    Y: Ja
+
+  BLK:
+    Y: Ja
+
+  BREO:
+    N: Nej
+    Y: Ja
+
+  BRM:
+    B: Lower
+    C: Main
+    E: Upper
+
+  BSM:
+    A: Daylight
+    B: Fully Finished
+    C: None
+    D: Partially Finished
+    E: Roughed In
+    F: Unfinished
+
+  BUS:
+    N: Nej
+    Y: Ja
+
+  BUSR:
+    D: Standard
+
+  CMFE:
+    A: Age Restriction
+    B: Airfield
+    C: Boat Launch
+    D: CCRs
+    E: Clubhouse
+    F: Golfbana
+    G: Privat sjöaccess
+
+  DNO:
+    B: Lower
+    C: Main
+    E: Upper
+
+  DRM:
+    B: Lower
+    C: Main
+    E: Upper
+
+  ECRT:
+    A: Built Green
+    B: ENERGY STAR
+    C: LEED
+    D: Other-See Remarks
+    E: Third Party Verif.
+
+  EFR:
+    A: Garage
+    B: Lower
+    C: Main
+    E: Upper
+
+  ENS:
+    A: El
+    B: Naturgas
+    C: Olja
+    D: Pellets
+    E: Propan
+    F: Se kommentarer
+    G: Solpanel
+    H: Trä
+
+  ENT:
+    B: Lower
+    C: Main
+    D: Split
+    E: Upper
+
+  EXT:
+    A: Brick
+    B: Cement Plank
+    C: Cement/Concrete
+    E: Log
+    G: Metal/Vinyl
+    I: See Remarks
+    J: Stone
+    K: Stucco
+    N: Wood
+    O: Wood Products
+    L: Tilt-Up
+    H: Other
+
+  F17:
+    A: Exempt
+    B: Not Provided
+    C: Provided
+
+  FAM:
+    B: Lower
+    C: Main
+    E: Upper
+
+  FBG:
+    Y: Ja
+
+  FBL:
+    Y: Ja
+
+  FBM:
+    Y: Ja
+
+  FBT:
+    Y: Ja
+
+  FBU:
+    Y: Ja
+
+  FEA:
+    A: 2nd Kitchen
+    A1: Wet Bar
+    B: 2nd Master BR
+    B1: Wine Cellar
+    C1: Wired for Generator
+    D: Bath Off Master
+    E: Built-In Vacuum
+    F: Ceiling Fan(s)
+    G: Dbl Pane/Storm Windw
+    H: Dining Room
+    I: Disabled Access
+    L: Frplc. in Mstr Bdrm
+    M: French Doors
+    N: High Tech Cabling
+    O: Hot Tub/Spa
+    Q: Jetted Tub
+    R: Loft
+    T: Sauna
+    U: Security System
+    V: Skylights
+    W: Solarium/Atrium
+    X: Vaulted Ceilings
+    Y: Walk In Pantry
+    Z: Walk-in Closet
+    C: 3rd Master BR
+    J: Extra Room
+    K: Family/Rec Room
+    P: Intermcom
+    S: Pantry
+
+  FLS:
+    A: Bamboo/Cork
+    B: Ceramic Tile
+    C: Concrete
+    D: Fir/Softwood
+    E: Hardwood
+    F: Laminate
+    I: Other Renewable
+    J: See Remarks
+    K: Slate
+    L: Vinyl
+    M: Wall to Wall Carpet
+    G: Laminate Hardwood
+    H: Laminate Tile
+
+  FND:
+    A: Concrete Block
+    C: Concrete Ribbon
+    E: Post  Block
+    F: Post  Pillar
+    G: Poured Concrete
+    H: See Remarks
+    I: Slab
+    J: Tie Down
+
+  FP:
+    Y: Yes
+
+  FPL:
+    Y: Yes
+
+  FPM:
+    Y: Yes
+
+  FPU:
+    Y: Yes
+
+  GAR:
+    Y: Yes
+
+  GR:
+    B: Carport-Attached
+    C: Carport-Detached
+    E: Garage-Attached
+    F: Garage-Detached
+    H: None
+    I: Off-Street Parking
+    D: Common Garage
+    J: Uncovered
+
+  HBG:
+    Y: Yes
+
+  HBL:
+    Y: Yes
+
+  HBM:
+    Y: Yes
+
+  HBT:
+    Y: Yes
+
+  HBU:
+    Y: Yes
+
+  HOD:
+    Y: Yes
+
+  HTC:
+    A: Baseboard
+    B: Central Air
+    C: Forced Air
+    D: Heat Pump
+    E: High Efficiency
+    F: Insert
+    G: None
+    H: Other-See Remarks
+    I: Radiant
+    J: Radiator
+    K: Stove/Free Stndg
+    L: Wall
+    M: Window Units
+
+  KES:
+    B: Lower
+    C: Main
+    E: Upper
+
+  KEY:
+    A: Appointment
+    B: Call Listing Office
+    C: Day Sleeper
+    D: Gate Code Needed
+    E: MLS Keybox
+    F: Other Keybox
+    G: Owner-Call First
+    H: Pet in House
+    I: Power Off
+    J: Renter-Call First
+    K: Security System
+    L: See Remarks
+    M: Vacant
+    N: View With Discretion
+
+  KIT:
+    B: Lower
+    C: Main
+    E: Upper
+
+  LDE:
+    A: Alley
+    C: Corner Lot
+    D: Cul-de-sac
+    E: Curbs
+    F: Dead End Street
+    G: Drought Res Landscpe
+    H: High Voltage Line
+    I: Open Space
+    J: Paved Street
+    K: Secluded
+    L: Sidewalk
+    M: Value In Land
+    B: Community Golf Cours
+
+  LOF:
+    A: Duplicate Areas
+    B: Duplicate Prop Type
+    C: Other
+    D: Restriction on Showg
+    E: SOC Restriction
+    F: Undiscl Owner Info
+
+  LRM:
+    B: Lower
+    C: Main
+    E: Upper
+
+  LSD:
+    Y: Yes
+
+  LSZ:
+    Y: Yes
+
+  LT:
+    Y: Yes
+
+  LTV:
+    A: Brush
+    C: Dune
+    D: Equestrian
+    F: Fruit Trees
+    G: Garden Space
+    I: Level
+    J: Partial Slope
+    K: Pasture
+    L: Rolling
+    N: Sloped
+    O: Steep Slope
+    Q: Terraces
+    R: Wooded
+
+  MBD:
+    B: Lower
+    C: Main
+    E: Upper
+
+  MHM:
+    Y: Yes
+
+  MHN:
+    Y: Yes
+
+  MHS:
+    Y: Yes
+
+  MOR:
+    Y: Yes
+
+  NC:
+    A: Completed
+    B: Presale
+    C: Under Construction
+
+  OAD:
+    Y: Yes
+
+  PARQ:
+    A: None
+    B: Other - See Remarks
+    C: Short Sale
+
+  POC:
+    Y: Yes
+
+  POL:
+    A: Above Ground
+    B: Community
+    C: Indoor
+    D: In-Ground
+
+  POS:
+    A: Closing
+    B: Negotiable
+    C: See Remarks
+    D: Subject to Tenants
+
+  PRC:
+    D: Default
+
+  PRJ:
+    Y: Yes
+
+  PTO:
+    N: No
+    Y: Yes
+
+  QBT:
+    Y: Yes
+
+  RF:
+    A: Built-Up
+    B: Cedar Shake
+    C: Composition
+    D: Flat
+    E: Metal
+    F: See Remarks
+    G: Tile
+    H: Torch Down
+
+  RRM:
+    B: Lower
+    C: Main
+    E: Upper
+
+  SAP:
+    Y: Yes
+
+  SFF:
+    Y: Yes
+
+  SFS:
+    Y: Yes
+
+  SFU:
+    Y: Yes
+
+  SIT:
+    A: Arena-Indoor
+    B: Arena-Outdoor
+    C: Athletic Court
+    D: Barn
+    E: Boat House
+    F: Cabana/Gazebo
+    G: Cable TV
+    H: Deck
+    I: Disabled Access
+    J: Dock
+    K: Dog Run
+    L: Fenced-Fully
+    M: Fenced-Partially
+    N: Gas Available
+    O: Gated Entry
+    P: Green House
+    Q: High Speed Internet
+    R: Hot Tub/Spa
+    S: Moorage
+    T: Outbuildings
+    U: Patio
+    V: Propane
+    W: RV Parking
+    X: Shop
+    Y: Sprinkler System
+    Z: Stable
+
+  SML:
+    N: No
+    Y: Yes
+
+  SNR:
+    N: No
+    Y: Yes
+
+  STY:
+    '10': 10-1 Story
+    '11': 11-1 1/2 Story
+    '12': 12-2 Story
+    '13': 13-Tri-Level
+    '14': 14-Split Entry
+    '15': 15-Multi Level
+    '16': 16-1 Story w/Bsmnt.
+    '17': 17- 1/2 Sty. w/Bsmnt
+    '18': 18-2 Stories w/Bsmnt
+    '20': 20-Manuf-Single Wide
+    '21': 21-Manuf-Double Wide
+    '22': 22-Manuf-Triple Wide
+    '24': 24-Floating Home
+    '32': 32-Townhouse
+    '30': 30-Condo (1 Level)
+    '31': 31-Condo (2 Levels)
+    '33': 33-Co-op
+    '34': 34-Condo (3 Levels)
+    '35': 35-Garage Storage
+    '45': 45-Moorage
+    '60': 60-Comm Bldg Und 10K
+    '61': 61-Comm Bldg Ovr 10K
+    '62': 62-Business Opp.
+    '63': 63-Farm  Ranch
+    '64': 64-Hotel/Motel
+    '70': 70-Industrial
+    '71': 71-Light Indrl.
+    '72': 72-Mobile Home Park
+    '73': 73-Office
+    '74': 74-Recreational
+    '75': 75-Retail
+    '76': 76-RV Park
+    '77': 77-Timber
+    '78': 78-Warehouse
+    '52': 52-Duplex
+    '53': 53-Tri-plex
+    '54': 54-4-Plex
+    '56': 56-10+ Units
+    '57': 57-10+ Units
+    '5-': 5-Plex
+    '55': 55-5-9 Units
+    '40': 40-Res-Less thn 1 Ac
+    '41': 41-Res - 1 Acre +
+    '42': 42-Multi-Family
+    '43': 43-Comm/Industrial
+    '44': 44-Recreational
+
+  SWC:
+    Y: Yes
+
+  SWR:
+    A: Available
+    C: None
+    F: Septic
+    G: Sewer Connected
+    B: In Street
+    D: Not Available
+    E: On Property
+
+  TBG:
+    Y: Yes
+
+  TBL:
+    Y: Yes
+
+  TBM:
+    Y: Yes
+
+  TBU:
+    Y: Yes
+
+  TRM:
+    A: Assumable
+    B: Cash Out
+    C: Conventional
+    D: Farm Home Loan
+    E: FHA
+    F: Lease/Purchase
+    G: Owner Financing
+    H: Rehab Loan
+    J: See Remarks
+    K: State Bond
+    L: USDA
+    M: VA
+    N: Variable Price Lstg
+    I: SBA
+
+  TUR:
+    Y: Default
+
+  TX:
+    Y: Yes
+
+  TXY:
+    Y: Yes
+
+  UTR:
+    A: Garage
+    B: Lower
+    C: Main
+    E: Upper
+
+  VEW:
+    A: Bay
+    B: Canal
+    C: City
+    D: Golf Course
+    E: Jetty
+    F: Lake
+    G: Mountain
+    H: Ocean
+    I: Partial
+    J: River
+    K: See Remarks
+    L: Sound
+    M: Strait
+    N: Territorial
+
+  WAC:
+    Y: Yes
+
+  WAS:
+    B: Community
+    F: Individual Well
+    I: Private
+    K: Public
+    L: See Remarks
+    N: Shared Well
+    O: Shares
+
+  WFG:
+    Y: Yes
+
+  WFT:
+    A: Bank-High
+    B: Bank-Low
+    C: Bank-Medium
+    D: Bay
+    F: Bulkhead
+    G: Canal
+    H: Creek
+    I: Jetty
+    J: Lake
+    K: No Bank
+    L: Ocean
+    M: River
+    N: Saltwater
+    O: Sound
+    P: Strait
+    Q: Tideland Rights
+    E: Beach Rights
+
+  WHT:
+    Y: Yes
+
+  ZJD:
+    A: City
+    B: County
+    C: See Remarks
+
+  ZNC:
+    D: Default
+
+  AFH:
+    N: No
+    Y: Yes
+
+  APH:
+    A: Cooking-Electric
+    B: Cooking-Gas
+    C: Dryer-Electric
+    D: Dryer-Gas
+    E: Ice Maker
+    F: Washer
+
+  ASC:
+    Y: Yes
+
+  CMN:
+    A: Age Restriction
+    B: Athletic Court
+    D: Boat House
+    E: Cable TV
+    F: Club House
+    G: Disabled Access
+    I: Elevator
+    J: Exercise Room
+    K: Fire Sprinklers
+    L: Game/Rec Rm
+    M: Golf Course
+    N: High Speed Int Avail
+    O: Hot Tub
+    P: Laundry Room
+    Q: Lobby Entrance
+    R: Moorage
+    S: Outside Entry
+    T: Pool-Indoor
+    U: Pool-Outdoor
+    V: RV Parking
+    W: Sauna
+    X: Security Gate
+    Y: See Remarks
+    Z: Trails
+
+  COO:
+    N: No
+    Y: Yes
+
+  CTD:
+    A: Cats Only
+    B: Dogs Only
+    C: No Dogs or Cats
+    D: No Restrictions
+    E: See Remarks
+    F: Subj to Restrictions
+
+  HOI:
+    A: Cable TV
+    B: Central Hot Water
+    C: Earthquake Ins.
+    D: Garbage
+    E: See Remarks
+    F: Water/Sewer
+
+  MGR:
+    Y: Yes
+
+  NAS:
+    Y: Yes
+
+  NOC:
+    Y: Yes
+
+  NOS:
+    Y: Yes
+
+  NOU:
+    Y: Yes
+
+  OOC:
+    Y: Yes
+
+  PKG:
+    A: Carport
+    D: Common Garage
+    G: Individual Garage
+    H: None
+    I: Off-Street Parking
+    J: Uncovered
+
+  PKS:
+    Y: Yes
+
+  REM:
+    N: No
+    Y: Yes
+
+  SAA:
+    Y: Yes
+
+  SPA:
+    N: No
+    Y: Yes
+
+  STG:
+    Y: Yes
+
+  STL:
+    Y: Yes
+
+  STRS:
+    D: Default
+
+  TOF:
+    A: Both
+    B: Gas
+    C: Wood
+
+  UFN:
+    Y: Yes
+
+  UNF:
+    A: Alarm System
+    B: Balcony/Deck/Patio
+    C: Central Vacuum
+    D: Disabled Access
+    E: End Unit
+    F: French Doors
+    G: Ground Floor
+    H: Insulated Windows
+    I: Jetted/Soaking Tub
+    K: Master Bath
+    L: Penthouse
+    M: Skylights
+    N: Top Floor
+    O: Vaulted Ceilings
+    P: Walk-in Closet
+    Q: Yard
+
+  WDW:
+    Y: Yes
+
+  AMP:
+    Y: Yes
+
+  AVP:
+    Y: Yes
+
+  BON:
+    N: No
+    Y: Yes
+
+  CAP:
+    Y: Yes
+
+  CFE:
+    A: Disabled Access
+    B: Elevator
+    C: Leased Fixtures
+    D: Satellite
+    E: Signage Included
+    F: Sprinklered
+    G: Storage
+    H: Tenant Association
+
+  CHT:
+    Y: Yes
+
+  CSP:
+    Y: Yes
+
+  DLT:
+    Y: Yes
+
+  ELEX:
+    Y: Yes
+
+  ENV:
+    N: No
+    Y: Yes
+
+  EXA:
+    N: No
+    Y: Yes
+
+  EXP:
+    Y: Yes
+
+  FAC:
+    N: No
+    Y: Yes
+
+  GAI:
+    Y: Yes
+
+  GRM:
+    Y: Yes
+
+  GSI:
+    Y: Yes
+
+  GZC:
+    A: Agricultural
+    B: Business
+    C: Commercial
+    D: Farm  Ranch
+    E: Forestry
+    F: Industrial
+    G: Industrial-Light
+    H: Multi-Family
+    I: Office
+    J: Residential
+    K: Retail
+    L: See Remarks
+
+  HET:
+    Y: Yes
+
+  INS:
+    Y: Yes
+
+  LDG:
+    A: 1-3 Bays
+    B: 4-6 Bays
+    C: 7+ Bays
+    D: 10&#39; Doors
+    E: 10&#39;-15&#39; Doors
+    F: 15&#39; Doors
+    G: Dock High
+    H: Grade
+    I: Ramp
+
+  LX1:
+    Y: Yes
+
+  LX2:
+    Y: Yes
+
+  LX3:
+    Y: Yes
+
+  LX4:
+    Y: Yes
+
+  LX5:
+    Y: Yes
+
+  LX6:
+    Y: Yes
+
+  NN1:
+    Y: Yes
+
+  NN2:
+    Y: Yes
+
+  NN3:
+    Y: Yes
+
+  NN4:
+    Y: Yes
+
+  NN5:
+    Y: Yes
+
+  NN6:
+    Y: Yes
+
+  NNN:
+    Y: Yes
+
+  NOI:
+    Y: Yes
+
+  OSF:
+    Y: Yes
+
+  OTX:
+    Y: Yes
+
+  PAD:
+    N: No
+    Y: Yes
+
+  PKC:
+    Y: Yes
+
+  PKU:
+    Y: Yes
+
+  RN1:
+    Y: Yes
+
+  RN2:
+    Y: Yes
+
+  RN3:
+    Y: Yes
+
+  RN4:
+    Y: Yes
+
+  RN5:
+    Y: Yes
+
+  RN6:
+    Y: Yes
+
+  SF1:
+    Y: Yes
+
+  SF2:
+    Y: Yes
+
+  SF3:
+    Y: Yes
+
+  SF4:
+    Y: Yes
+
+  SF5:
+    Y: Yes
+
+  SF6:
+    Y: Yes
+
+  SIZ:
+    Y: Yes
+
+  STF:
+    Y: Yes
+
+  TAV:
+    Y: Yes
+
+  TEX:
+    Y: Yes
+
+  TN1:
+    Y: Yes
+
+  TN2:
+    Y: Yes
+
+  TN3:
+    Y: Yes
+
+  TN4:
+    Y: Yes
+
+  TN5:
+    Y: Yes
+
+  TN6:
+    Y: Yes
+
+  TRI:
+    Y: Yes
+
+  TSF:
+    Y: Yes
+
+  US1:
+    Y: Yes
+
+  US2:
+    Y: Yes
+
+  US3:
+    Y: Yes
+
+  US4:
+    Y: Yes
+
+  US5:
+    Y: Yes
+
+  US6:
+    Y: Yes
+
+  VAC:
+    Y: Yes
+
+  VAI:
+    Y: Yes
+
+  VAL:
+    Y: Yes
+
+  WSF:
+    Y: Yes
+
+  WSG:
+    Y: Yes
+
+  YVA:
+    Y: Yes
+
+  ACC:
+    Y: Yes
+
+  BCC:
+    Y: Yes
+
+  BFE:
+    A: Box Stalls
+    B: Calving Area
+    C: Granary
+    D: Lay Stalls
+    E: Loft Area
+    F: Milking Parlor
+    G: Multiple Storage
+    H: Silo/Silage Bunker
+    I: Workshop
+    J: See Outbldg Comments
+    K: Office
+
+  BRI:
+    Y: Yes
+
+  BSZ:
+    Y: Yes
+
+  BTP:
+    A: Grain
+    B: Hay
+    C: Livestock
+    D: Pole
+    E: See Comments
+
+  CCC:
+    Y: Yes
+
+  CRI:
+    Y: Yes
+
+  ELEV:
+    D: Default
+
+  EQI:
+    Y: Yes
+
+  EQP:
+    A: Bailer
+    B: Combine
+    C: Dairy
+    D: Disc
+    E: Electric
+    F: Feeder
+    G: Hay Wagon
+    H: Irrigation
+    I: Leveler
+    J: Planter
+    K: Plow
+    L: Rake
+    M: See Comments
+
+  EQV:
+    Y: Yes
+
+  ESM:
+    Y: Yes
+
+  FEN:
+    A: Barbed Wire
+    B: Block
+    C: Brick
+    D: Chain Link
+    E: Combination
+    F: Cross Fenced
+    G: Electric
+    H: Partial
+    I: Partial Perimeter
+    J: Perimeter
+    K: Picket
+    L: Rail
+    M: Security
+    N: Wire
+    O: Wood
+    P: See Remarks
+
+  FTP:
+    A: Berry
+    B: Crop
+    C: Equestrian
+    D: Land Only
+    E: Livestock
+    F: Nursery
+    G: Orchard
+    H: Tree
+    I: Vineyard
+    J: See Remarks
+
+  IMP:
+    M: Gas Tanks
+    N: Equipment Included
+    O: Disabled Access
+    P: Green House
+    Q: Deck
+    R: Patio
+    S: Dog Run
+    T: Hot Tub Spa
+    U: In Ground Pool
+    V: Above Ground Pool
+    W: Sprinkler System
+    X: See Remarks
+    A: Barn
+    B: Boat House
+    C: Cabana/Gazebo
+    D: Cable TV Available
+    E: Dock
+    F: Dwelling
+    G: Fenced-Fully
+    H: Fenced-Partially
+    I: Garage
+    J: Outbuilding(s)
+    K: Shop
+    L: Stable
+
+  IRS:
+    A: Bureau
+    B: Community
+    C: Drainage
+    D: Pond
+    E: Well Drilled
+    F: Well Shared
+    G: Well Private
+    H: Additional Well(s)
+    I: Water Rights Cert.
+    J: Water Use Permit
+    K: See Irrigation Comm
+
+  ITP:
+    A: Circle
+    B: Drip Line
+    C: Dry Land
+    D: Hand Lines
+    E: Pivot
+    F: Pressure/Undergrnd
+    G: Wheel Lines
+    H: See Irrigation Comm
+    I: None
+
+  LCC:
+    Y: Yes
+
+  LEQ:
+    A: Bailer
+    B: Combine
+    C: Dairy
+    D: Electric
+    E: Feeder
+    F: Planter
+    G: Sprinkler
+    H: Tower
+    I: See Remarks
+    J: Option Available
+
+  LSI:
+    Y: Yes
+    N: No
+
+  LTG:
+    I: Annual
+    J: Month-to-Month
+    K: Quarterly
+    L: Semi-Annual
+    M: Year 1-3
+    N: Year 4+
+    O: See Remarks
+
+  LTP:
+    A: Cattle
+    B: Dairy
+    C: Hog
+    D: Horse
+    E: Poultry
+    F: Sheep
+    G: Included in Sale
+    H: See Lvestck Comments
+
+  OCC:
+    Y: Yes
+
+  OUT:
+    A: Arena-Indoors
+    B: Arena-Outdoors
+    C: 2nd Barn
+    D: Chicken
+    E: Corral
+    F: Stable
+    G: Storage
+    H: Windmill
+    I: Workshop
+    J: See Outbldg Comments
+
+  PSZ:
+    Y: Yes
+
+  QTR:
+    Y: Yes
+
+  SEC:
+    Y: Yes
+
+  SSZ:
+    Y: Yes
+
+  STP:
+    A: Clay
+    B: Clay Loam
+    C: Loam
+    D: Gravel
+    E: Rock
+    F: Sand
+    G: Sandy Loam
+    H: See Soil Comments
+
+  SUR:
+    Y: Yes
+
+  TAC:
+    Y: Yes
+
+  VCC:
+    Y: Yes
+
+  AGR:
+    N: No
+    Y: Yes
+
+  ANC:
+    B: Concrete Perimeter
+    C: Concrete Ribbons
+    D: Concrete Slab
+    F: Post  Pillar
+    H: See Remarks
+    J: Tie Downs
+
+  LNI:
+    N: No
+    Y: Yes
+
+  MFY:
+    N: No
+    Y: Yes
+
+  MHF:
+    A: Awnings
+    B: Bath Off Master
+    C: Ceiling Fan(s)
+    D: Disabled Access
+    E: Double Pane Windows
+    F: Drapes
+    G: Fireplace in Master
+    H: Hot Tub/Spa
+    I: Jetted/Soaking Tub
+    J: Landscaped
+    K: Patio/Porch/Deck
+    L: Sauna
+    M: Security System
+    N: Skylights
+    O: Vaulted Ceilings
+    P: Walk-In Closet
+    Q: Wet Bar
+
+  NOH:
+    Y: Yes
+
+  OTR:
+    D: Dining Room
+    E: Entry
+    F: Extra Finished Room
+    G: Family Room
+    H: Kitchen w/Eat Space
+    I: Kitchen
+    J: Living Room
+    N: Utility Room
+
+  PAS:
+    N: No
+    Y: Yes
+
+  PKA:
+    A: BBQs
+    B: Clubhouse
+    C: Common Area
+    D: Community Watefront
+    E: Exercise Room
+    F: Golf
+    G: Laundry
+    H: Playground
+    I: Pool
+    J: Recreational Area
+    K: RV Parking
+    L: Sauna
+    M: Security Gate
+    N: Sidewalks
+    O: Spa/Hot Tub
+    P: Tennis Courts
+    Q: Trails
+    R: High Speed Int Avail
+
+  PRK:
+    Y: Yes
+
+  SKR:
+    Y: Yes
+
+  SPR:
+    Y: Yes
+
+  SRI:
+    A: Water
+    B: Sewer
+    C: Garbage
+    D: Cable/TV
+    E: See Remarks
+
+  UCS:
+    N: No
+    Y: Yes
+
+  AIN:
+    Y: Yes
+
+  AMN:
+    A: Basement
+    B: Clubhouse
+    C: Coin Op Laundry
+    D: Elevator
+    E: Energy Package
+    F: Fire Sprinklers
+    G: Playground
+    H: Storage
+    I: Thermal Windows
+    J: See Remarks
+
+  BA1:
+    Y: Yes
+
+  BA2:
+    Y: Yes
+
+  BA3:
+    Y: Yes
+
+  BA4:
+    Y: Yes
+
+  BA5:
+    Y: Yes
+
+  BA6:
+    Y: Yes
+
+  BR1:
+    Y: Yes
+
+  BR2:
+    Y: Yes
+
+  BR3:
+    Y: Yes
+
+  BR4:
+    Y: Yes
+
+  BR5:
+    Y: Yes
+
+  BR6:
+    Y: Yes
+
+  DW1:
+    N: No
+    Y: Yes
+
+  DW2:
+    N: No
+    Y: Yes
+
+  DW3:
+    N: No
+    Y: Yes
+
+  DW4:
+    N: No
+    Y: Yes
+
+  DW5:
+    N: No
+    Y: Yes
+
+  DW6:
+    N: No
+    Y: Yes
+
+  FG1:
+    N: No
+    Y: Yes
+
+  FG2:
+    N: No
+    Y: Yes
+
+  FG3:
+    N: No
+    Y: Yes
+
+  FG4:
+    N: No
+    Y: Yes
+
+  FG5:
+    N: No
+    Y: Yes
+
+  FG6:
+    N: No
+    Y: Yes
+
+  FP1:
+    Y: Yes
+
+  FP2:
+    Y: Yes
+
+  FP3:
+    Y: Yes
+
+  FP4:
+    Y: Yes
+
+  FP5:
+    Y: Yes
+
+  FP6:
+    Y: Yes
+
+  GSP:
+    Y: Yes
+
+  LIT:
+    K: Furnace/Burner
+    L: Security System
+    M: Washer/Dryer
+    N: Water Tank
+    O: None
+
+  NCS:
+    Y: Yes
+
+  RO1:
+    N: No
+    Y: Yes
+
+  RO2:
+    N: No
+    Y: Yes
+
+  RO3:
+    N: No
+    Y: Yes
+
+  RO4:
+    N: No
+    Y: Yes
+
+  RO5:
+    N: No
+    Y: Yes
+
+  RO6:
+    N: No
+    Y: Yes
+
+  SIB:
+    Y: Yes
+
+  TIN:
+    Y: Yes
+
+  TRSF:
+    D: Default
+
+  TSP:
+    Y: Yes
+
+  UBG:
+    N: No
+    Y: Yes
+
+  UN1:
+    Y: Yes
+
+  UN2:
+    Y: Yes
+
+  UN3:
+    Y: Yes
+
+  UN4:
+    Y: Yes
+
+  UN5:
+    Y: Yes
+
+  UN6:
+    Y: Yes
+
+  USP:
+    Y: Yes
+
+  WD1:
+    N: No
+    Y: Yes
+
+  WD2:
+    N: No
+    Y: Yes
+
+  WD3:
+    N: No
+    Y: Yes
+
+  WD4:
+    N: No
+    Y: Yes
+
+  WD5:
+    N: No
+    Y: Yes
+
+  WD6:
+    N: No
+    Y: Yes
+
+  AFR:
+    B: Bonus Room
+    C: Den
+    D: Dining Room
+    G: Family Room
+    H: Kitchen Eating Space
+    L: Recreation Room
+
+  APP:
+    A: Dishwasher
+    B: Garbage Disposal
+    C: Microwave
+    D: Range/Oven
+    E: Refrigerator
+    F: Washer/Dryer
+    G: See Remarks
+
+  APR:
+    A: Association
+    B: Credit
+    C: See Remarks
+
+  AU:
+    Y: Yes
+
+  CL:
+    N: No
+    Y: Yes
+
+  DA:
+    Y: Yes
+
+  FMR:
+    A: Rntl Agree.-Ownr
+    B: Rntl Agree.-Prop Mgr
+    C: Rntl Agree.-Rntg Off
+    D: Rental Application
+    E: Screening Rpt-Owner
+    F: Screening Rpt-Prp Mg
+    G: Screening Rpt-Rnt Of
+    H: See Remarks
+
+  FUR:
+    N: No
+    Y: Yes
+
+  LNC:
+    Y: Yes
+
+  MIF:
+    A: First Month
+    B: Last Month
+    C: Cleaning Fee
+    D: Pet Deposit
+    E: Pet Fee
+    F: Security Deposit
+    G: See Remarks
+
+  MLT:
+    Y: Yes
+
+  STO:
+    N: No
+    Y: Yes
+
+  TMC:
+    A: Month to Month
+    B: Non-Smoking
+    C: No Pets
+    D: Purchase Option
+    E: Section 8
+
+  TYP:
+    A: App&#39;d Access. Dwl Un
+    C: Condo
+    D: Mobile Home
+    F: Multi-Family/Apt.
+    G: Room For Rent
+    H: See Remarks
+    I: Shared Housing
+    J: Single Family Home
+
+  UTL:
+    A: Cable
+    B: Garbage
+    C: Heat
+    D: Homeowner Dues
+    E: Hot Water
+    F: Lawn Service
+    G: Pool Service
+    H: Power
+    I: Security System
+    J: Sewer
+    K: Telephone
+    L: Water
+
+  ATF:
+    A: Electric
+    B: Gas
+    C: Parks
+    D: Road
+    E: School
+    F: Sewer
+    G: Water
+    H: See Remarks
+
+  DOC:
+    A: CCRs
+    B: Drainage
+    C: Geotech
+    D: Road Agreement
+    E: Septic &quot;As Built&quot;
+    F: Topographical
+    G: Well Agreement
+    H: Wetland Delineation
+    I: See Remarks
+
+  ELE:
+    A: On Property
+    B: In Street
+    C: Available
+    D: Not Available
+
+  FTR:
+    A: Brush
+    B: Comm. Grade Timber
+    C: Corners Flagged
+    D: Dune Grasses
+    E: Evergreens
+    F: Garden/Fruit Trees
+    G: Heavily Forested
+    H: Lightly Treed
+    I: ORV Trails
+    J: Partially Cleared
+    K: Pasture Land
+    L: Pond
+    M: Recreational
+    N: Riding Trails
+    O: Stream/Creek
+    P: Irrigation
+
+  GAS:
+    A: On Property
+    B: In Street
+    C: Available
+    D: Not Available
+
+  LVL:
+    Y: Yes
+
+  RD:
+    Y: Yes
+
+  RDI:
+    A: Access Easement
+    B: County Maintained
+    C: County Right of Way
+    D: Gravel
+    E: Paved
+    F: Privately Maintained
+    G: Recorded Maint. Agrm
+    H: Trail Permit
+    I: See Remarks
+
+  RS2:
+    A: CC
+    B: NO Manufacturd Homes
+    C: Manufacturd Homes OK
+    D: No Restrictions
+    E: Timber Clause
+    F: Unknown
+    G: See Remarks
+
+  SDA:
+    N: No
+    Y: Yes
+
+  SDD:
+    Y: Yes
+
+  SDX:
+    Y: Yes
+
+  SEP:
+    N: No
+    Y: Yes
+
+  SFA:
+    N: No
+    Y: Yes
+
+  SKS:
+    N: No
+    Y: Yes
+
+  SLP:
+    Y: Yes
+
+  SST:
+    Y: Yes
+
+  STD:
+    Y: Yes
+
+  TER:
+    Y: Yes
+
+  TPO:
+    B: Cliffs
+    E: Fill Needed
+    H: Gullies
+    I: Level
+    L: Rolling
+    M: See Remarks
+    N: Sloped
+    P: Swale
+
+  WRJ:
+    Y: Yes
+
+  WTR:
+    A: Available
+    C: Community Well
+    D: Drilled Well
+    E: In Street
+    G: Not Available
+    H: On Property
+    J: Private Well
+    L: See Remarks
+    M: Share Available
+    N: Shared Well
+    P: Unknown
+    Q: Water Rights
+    R: Well Site Approved
+
+  ZNR:
+    Y: Yes
+
+  EMP:
+    Y: Yes
+
+  EQU:
+    Y: Yes
+
+  FRN:
+    N: No
+    Y: Yes
+
+  GRS:
+    Y: Yes
+
+  GW:
+    Y: Yes
+
+  HRS:
+    Y: Yes
+
+  INV:
+    Y: Yes
+
+  LES:
+    A: None
+    B: Assignable
+    C: Less Than 1Yr
+    D: 1-2 Years
+    E: 2-3 Years
+    F: 3-5 Years
+    G: More Than 5 Yrs
+    H: May Escalate
+
+  LIC:
+    A: Alcohol
+    B: Gaming
+    C: Professional
+    D: See Remarks
+
+  LNM:
+    N: No
+    Y: Yes
+
+  LOC:
+    A: Business Park
+    B: Corner
+    C: Free Standing
+    D: Inside
+    E: Shopping Center
+    F: See Remarks
+
+  MTB:
+    A: Food  Beverage
+    B: Gas Station
+    C: Grocery
+    D: Hospitality
+    E: Manufacturing
+    F: Retail
+    G: Services
+    H: Wholesale
+    I: See Remarks
+
+  NA:
+    Y: Yes
+
+  NP:
+    Y: Yes
+
+  RES:
+    Y: Yes
+
+  RNT:
+    Y: Yes
+
+  RP:
+    A: Lease Only
+    B: Lease Option
+    C: Optional
+    D: Purchase
+    E: Rent Only
+    F: Separate Listing
+    G: See Remarks
+
+  SIN:
+    N: No
+    Y: Yes
+
+  TEXP:
+    Y: Yes
+
+  TOB:
+    Y: Yes
+
+  YRE:
+    Y: Yes
+
+  YRS:
+    Y: Yes
+
+### END === FROM AMENITIES WEB SERVICE === ###
+
+  PTYP:
+    RESI: Residential
+    COND: Condominium
+    COMI: Commercial/Industrial
+    FARM: Farm/Ranch
+    MANU: Manufactured Home
+    MULT: Multi-Family
+    RENT: Rental
+    BUSO: Business Opportunity
+    VACL: Vacant Land
+
+  ST:
+    A: Active
+    C: Contingent
+    D: Active - STI
+    E: Expired
+    P: Pending
+    R: Rented
+    S: Sold
+    T: Temp. Off Mrkt
+    U: Sale Fail Release
+    X: Cancelled
+  NIA:
+    Y: Yes
+    N: No
+  SHOADR:
+    Y: Yes
+    N: No
+  ProhibitBLOG:
+    Y: Yes
+    N: No
+  AllowAVM:
+    Y: Yes
+    N: No
+  ADU: &room_location
+    A: Garage
+    B: Lower
+    C: Main
+    D: Split
+    E: Upper
+    L: Lower
+    M: Main
+    U: Upper
+  BRM:
+    <<: *room_location 
+  DNO:
+    <<: *room_location 
+  DRM:
+    <<: *room_location 
+  ENT:
+    <<: *room_location 
+  EFR:
+    <<: *room_location 
+  FAM:
+    <<: *room_location 
+  KES:
+    <<: *room_location 
+  KIT:
+    <<: *room_location 
+  LRM:
+    <<: *room_location 
+  MBD:
+    <<: *room_location 
+  RRM:
+    <<: *room_location 
+  UTR:
+    <<: *room_location 
+
