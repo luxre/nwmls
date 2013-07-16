@@ -195,11 +195,11 @@ class Nwmls::Listing
     TYPE_TO_CLASS_MAP(property_type).constantize
   end
 
-  def community
+  def communities
     if area
-      @area_community ||= Nwmls::AreaCommunity.all.detect { |ac| ac.area == area }
-      if @area_community
-        @area_community.community
+      @area_communities ||= Nwmls::AreaCommunity.all.select { |ac| ac.area == area }
+      if @area_communities
+        @area_communities.collect(&:community)
       end
     end
   end
