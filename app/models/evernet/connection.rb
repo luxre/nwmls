@@ -72,6 +72,8 @@ class Evernet::Connection
 
 
   def self.build_query(conditions = {}, filters = [])
+    conditions = self.sanitize_conditions(conditions)
+
     xml = Builder::XmlMarkup.new
     xml.instruct!
     xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
@@ -115,5 +117,13 @@ class Evernet::Connection
     xml
   end
 
+  def self.sanitize_conditions(conditions)
+    conditions.each do |key,value|
+      if [:begin_date, :end_date].include?(key.to_sym) and value.is_a?(String)
+        conditions[key] = Time.parse(value)
+      end
+    end
+    conditions
+  end
 
 end
