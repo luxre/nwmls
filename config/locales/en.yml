@@ -1943,15 +1943,18 @@ en:
 
   ST:
     A: Active
-    C: Contingent
-    D: Active - STI
-    E: Expired
+    CT: Contingent
+    PB: Pending BU Requested
+    PF: Pending Feasibility
+    PI: Pending Inspection
+    PS: Pending Short Sale
     P: Pending
+    E: Expired
+    T: Temp. Off Mrkt.
+    SFR: Sale Fail Release
+    CA: Cancelled
     R: Rented
     S: Sold
-    T: Temp. Off Mrkt
-    U: Sale Fail Release
-    X: Cancelled
   NIA:
     Y: Yes
     N: No
