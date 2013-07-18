@@ -14,65 +14,40 @@ class Nwmls::Listing
     "VACL" => 'Nwmls::VacantLandListing',
   }
 
-  CODED_ELEMENTS = %w(
+  BOOLEAN_ELEMENTS = %w[
     AFH
     AGR
-    AMP
-    ANC
-    APR
-    ARC
     AllowAVM
-    BDC
     BON
     BREO
-    BRM
     BUS
     CL
     COO
-    DNO
-    DRM
     DW1
     DW2
     DW3
     DW4
     DW5
     DW6
-    EFR
-    ELE
-    ENT
     ENV
     EXA
-    F17
     FAC
-    FAM
     FG1
     FG2
     FG3
     FG4
     FG5
     FG6
-    FMR
     FRN
     FUR
-    GAS
-    KES
-    KEY
-    KIT
     LNI
     LNM
-    LOF
-    LRM
-    LTG
-    MBD
+    LSI
     MFY
-    NC
     NIA
-    OTR
     PAD
     PAS
-    POL
     PTO
-    PTYP
     ProhibitBLOG
     REM
     RO1
@@ -81,7 +56,6 @@ class Nwmls::Listing
     RO4
     RO5
     RO6
-    RRM
     SDA
     SEP
     SFA
@@ -91,23 +65,51 @@ class Nwmls::Listing
     SML
     SNR
     SPA
-    ST
     STO
-    STY
-    TOF
     UBG
     UCS
-    UTR
     WD1
     WD2
     WD3
     WD4
     WD5
     WD6
-    ZJD
-  )
+  ]
 
-  MULTI_CODED_ELEMENTS = %w(
+  CODED_ELEMENTS = %w[
+    ANC
+    APR
+    ARC
+    BDC
+    BRM
+    DNO
+    DRM
+    EFR
+    ELE
+    ENT
+    F17
+    FAM
+    FMR
+    GAS
+    KES
+    KEY
+    KIT
+    LRM
+    LTG
+    MBD
+    NC
+    OTR
+    POL
+    PTYP
+    RRM
+    ST
+    STY
+    TOF
+    UTR
+    ZJD
+  ]
+
+  MULTI_CODED_ELEMENTS = %w[
     ADU
     AFR
     AMN
@@ -144,6 +146,7 @@ class Nwmls::Listing
     LDE
     LDG
     LES
+    LEQ
     LIC
     LIT
     LOC
@@ -175,7 +178,7 @@ class Nwmls::Listing
     WAS
     WFT
     WTR
-  )
+  ]
 
   def self.find(conditions = {}, filters = [])
     unless conditions.is_a?(Hash)
@@ -291,6 +294,15 @@ class Nwmls::Listing
             unless value == '0'
               attributes[key] = I18n::t("#{name}.#{value}")
             end
+          elsif BOOLEAN_ELEMENTS.include?(name) and value
+            attributes[key] = if value == 'Y'
+                                true
+                              elsif value == 'N'
+                                false
+                              else
+                                Rails.logger.info "BOOLEAN ELEMENT #{name} with value #{value}"
+                                nil
+                              end
           else
             attributes[key] = value
           end
@@ -300,8 +312,6 @@ class Nwmls::Listing
             Array(attributes[key]).each do |part|
               if part.to_s =~ /translation missing/
                 Rails.logger.info "MISSING #{key} #{part}"
-              elsif %w(Y N).include? attributes[key] and %w(GRDX GRDY DRS DRP).exclude?(name)
-                Rails.logger.info "YN for #{name}"
               end
             end
           end
