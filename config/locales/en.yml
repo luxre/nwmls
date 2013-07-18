@@ -1205,15 +1205,3 @@ en:
     CA: Cancelled
     R: Rented
     S: Sold
-  NIA:
-    Y: Yes
-    N: No
-  SHOADR:
-    Y: Yes
-    N: No
-  ProhibitBLOG:
-    Y: Yes
-    N: No
-  AllowAVM:
-    Y: Yes
-    N: No
