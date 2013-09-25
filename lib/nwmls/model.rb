@@ -1,5 +1,6 @@
 module Nwmls
   module Model
+    mattr_accessor :attribute_mode
 
     def self.included(base)
       base.extend(ClassMethods)
@@ -16,6 +17,10 @@ module Nwmls
           collection << new(attributes)
         end
         collection
+      end
+
+      def expand_attributes?
+        Nwmls::Model.attribute_mode != :raw
       end
     end
 
