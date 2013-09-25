@@ -9,7 +9,11 @@ module Nwmls
         self.attribute_mappings = options[:attribute_mappings]
 
         def self.attributes
-          self.attribute_mappings.values.collect { |v| v.underscore.parameterize('_').to_sym }
+          if self.expand_attributes?
+            self.attribute_mappings.values.collect { |v| v.underscore.parameterize('_').to_sym }
+          else
+            self.attribute_mappings.keys
+          end
         end
 
         attr_accessor(*self.attributes)
