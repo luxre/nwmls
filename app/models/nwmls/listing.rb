@@ -287,24 +287,28 @@ class Nwmls::Listing
         value = element.text
         name = element.name
         if value.present?
-          key = klass.translate_attribute(element.name).to_sym
-          if MULTI_CODED_ELEMENTS.include?(name)
-            attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
-          elsif CODED_ELEMENTS.include?(name)
-            unless value == '0'
-              attributes[key] = I18n::t("#{name}.#{value}")
+          if self.expand_attributes?
+            key = klass.translate_attribute(element.name).to_sym
+            if MULTI_CODED_ELEMENTS.include?(name)
+              attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
+            elsif CODED_ELEMENTS.include?(name)
+              unless value == '0'
+                attributes[key] = I18n::t("#{name}.#{value}")
+              end
+            elsif BOOLEAN_ELEMENTS.include?(name) and value
+              attributes[key] = if value == 'Y'
+                                  true
+                                elsif value == 'N'
+                                  false
+                                else
+                                  Rails.logger.info "BOOLEAN ELEMENT #{name} with value #{value}"
+                                  nil
+                                end
+            else
+              attributes[key] = value
             end
-          elsif BOOLEAN_ELEMENTS.include?(name) and value
-            attributes[key] = if value == 'Y'
-                                true
-                              elsif value == 'N'
-                                false
-                              else
-                                Rails.logger.info "BOOLEAN ELEMENT #{name} with value #{value}"
-                                nil
-                              end
           else
-            attributes[key] = value
+            attributes[element.name] = value
           end
 
           #temporary code for development/debugging
