@@ -198,8 +198,20 @@ class Nwmls::Listing
     TYPE_TO_CLASS_MAP(property_type).constantize
   end
 
-  def area
-    self.class.expand_attributes? ? self.area : self.AR
+  ###
+  ### Relationships
+  ###
+
+  def co_listing_agent
+    if co_listing_agent_number
+      @co_listing_agent ||= Nwmls::Member.find co_listing_agent_number
+    end
+  end
+
+  def co_office
+    if co_office_number
+      @co_office ||= Nwmls::Office.find co_office_number
+    end
   end
 
   def communities
@@ -211,8 +223,12 @@ class Nwmls::Listing
     end
   end
 
-  def listing_agent_number
-    self.class.expand_attributes? ? self.listing_agent_number : self.LAG
+  def history
+    @history ||= Nwmls::ListingHistory.find listing_number
+  end
+
+  def images
+    @images ||= Nwmls::Image.find(listing_number)
   end
 
   def listing_agent
@@ -221,82 +237,10 @@ class Nwmls::Listing
     end
   end
 
-  def co_listing_agent_number
-    self.class.expand_attributes? ? col_listing_agent_number : self.CLA
-  end
-
-  def co_listing_agent
-    if co_listing_agent_number
-      @co_listing_agent ||= Nwmls::Member.find co_listing_agent_number
-    end
-  end
-
-  def selling_agnet_number
-    self.class.expand_attributes? ? selling_agent_number : self.SAG
-  end
-
-  def selling_agent
-    if selling_agent_number
-      @selling_agent ||= Nwmls::Member.find selling_agent_number
-    end
-  end
-
-  def selling_co_agent_number
-    self.class.expand_attributes? ? selling_co_agent_number : self.SCA
-  end
-
-  def selling_co_agent
-    if selling_co_agent_number
-      @selling_co_agent ||= Nwmls::Member.find selling_co_agent_number
-    end
-  end
-
-  def co_office_number
-    self.class.expand_attributes? ? self.co_office_number : self.COLO
-  end
-
-  def co_office
-    if co_office_number
-      @co_office ||= Nwmls::Office.find co_office_number
-    end
-  end
-
-  def selling_office_number
-    self.class.expand_attributes? ? self.selling_office_number : self.SO
-  end
-
-  def selling_office
-    if selling_office_number
-      @selling_office ||= Nwmls::Office.find selling_office_number
-    end
-  end
-
-  def selling_co_office_number
-    self.class.expand_attributes? ? self.selling_co_office_number : self.SCO
-  end
-
-  def selling_co_office
-    if selling_co_office_number
-      @selling_co_office ||= Nwmls::Office.find selling_co_office_number
-    end
-  end
-
-  def history
-    @history ||= Nwmls::ListingHistory.find listing_number
-  end
-
-  def listing_office_number
-    self.class.expand_attributes? ? self.listing_office_number : self.LO
-  end
-
   def office
     if listing_office_number
       @office ||= Nwmls::Office.find listing_office_number
     end
-  end
-
-  def school_district_code
-    self.class.expand_attributes? ? self.school_district_code : self.SD
   end
 
   def school_district
@@ -307,12 +251,75 @@ class Nwmls::Listing
     end
   end
 
-  def images
-    @images ||= Nwmls::Image.find(listing_number)
+  def selling_agent
+    if selling_agent_number
+      @selling_agent ||= Nwmls::Member.find selling_agent_number
+    end
+  end
+
+  def selling_co_agent
+    if selling_co_agent_number
+      @selling_co_agent ||= Nwmls::Member.find selling_co_agent_number
+    end
+  end
+
+  def selling_co_office
+    if selling_co_office_number
+      @selling_co_office ||= Nwmls::Office.find selling_co_office_number
+    end
+  end
+
+  def selling_office
+    if selling_office_number
+      @selling_office ||= Nwmls::Office.find selling_office_number
+    end
+  end
+
+  ###
+  ### Attribute Getters
+  ###
+
+  def area
+    self.class.expand_attributes? ? self.area : self.AR
+  end
+
+  def co_listing_agent_number
+    self.class.expand_attributes? ? col_listing_agent_number : self.CLA
+  end
+
+  def co_office_number
+    self.class.expand_attributes? ? self.co_office_number : self.COLO
+  end
+
+  def listing_agent_number
+    self.class.expand_attributes? ? self.listing_agent_number : self.LAG
   end
 
   def listing_number
     self.class.expand_attributes? ? self.listing_number : self.LN
+  end
+
+  def listing_office_number
+    self.class.expand_attributes? ? self.listing_office_number : self.LO
+  end
+
+  def selling_agent_number
+    self.class.expand_attributes? ? selling_agent_number : self.SAG
+  end
+
+  def selling_co_agent_number
+    self.class.expand_attributes? ? selling_co_agent_number : self.SCA
+  end
+
+  def selling_office_number
+    self.class.expand_attributes? ? self.selling_office_number : self.SO
+  end
+
+  def selling_co_office_number
+    self.class.expand_attributes? ? self.selling_co_office_number : self.SCO
+  end
+  def school_district_code
+    self.class.expand_attributes? ? self.school_district_code : self.SD
   end
 
   protected
