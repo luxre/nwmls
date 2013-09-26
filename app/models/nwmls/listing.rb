@@ -344,46 +344,46 @@ class Nwmls::Listing
 
   unless expand_attributes?
     def area
-      self.class.expand_attributes? ? self.area : self.AR
+      self.AR
     end
 
     def co_listing_agent_number
-      self.class.expand_attributes? ? col_listing_agent_number : self.CLA
+      self.CLA
     end
 
     def co_office_number
-      self.class.expand_attributes? ? self.co_office_number : self.COLO
+      self.COLO
     end
 
     def listing_agent_number
-      self.class.expand_attributes? ? self.listing_agent_number : self.LAG
+      self.LAG
     end
 
     def listing_number
-      self.class.expand_attributes? ? self.listing_number : self.LN
+      self.LN
     end
 
     def listing_office_number
-      self.class.expand_attributes? ? self.listing_office_number : self.LO
+      self.LO
     end
 
     def selling_agent_number
-      self.class.expand_attributes? ? selling_agent_number : self.SAG
+      self.SAG
     end
 
     def selling_co_agent_number
-      self.class.expand_attributes? ? selling_co_agent_number : self.SCA
+      self.SCA
     end
 
     def selling_office_number
-      self.class.expand_attributes? ? self.selling_office_number : self.SO
+      self.SO
     end
 
     def selling_co_office_number
-      self.class.expand_attributes? ? self.selling_co_office_number : self.SCO
+      self.SCO
     end
     def school_district_code
-      self.class.expand_attributes? ? self.school_district_code : self.SD
+      self.SD
     end
   end
 
