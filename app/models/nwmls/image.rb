@@ -1,7 +1,15 @@
 class Nwmls::Image
   include Nwmls::Model
 
-  attr_accessor :ml_number, :picture_file_name, :picture_height, :picture_width, :picture_description, :uploaded_date_time, :last_modified_date_time
+  def self.attribute_names
+    attrs = %w[MLNumber PictureFileName PictureHeight PictureWidth PictureDescription UploadedDateTime LastModifiedDateTime]
+    if expand_attributes?
+      attrs = attrs.collect { |attr| attr.underscore }
+    end
+    attrs.collect { |attr| attr.to_sym }
+  end
+
+  attr_accessor(*attribute_names)
 
   def self.find(conditions = {})
     unless conditions.is_a?(Hash)
