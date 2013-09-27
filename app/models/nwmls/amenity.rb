@@ -1,7 +1,12 @@
 class Nwmls::Amenity
   include Nwmls::Model
 
-  attr_accessor :code, :description, :values
+
+  if expand_attributes?
+    attr_accessor :code, :description, :values
+  else
+    attr_accessor :Code, :Description, :Values
+  end
 
 
   def self.find(property_type)
@@ -18,11 +23,14 @@ class Nwmls::Amenity
       if amenity.name == 'Amenity'
         code = amenity.at('Code').inner_text
         raw[code] ||= {}
-        raw[code][:code] = code
-        raw[code][:description] ||= amenity.at('Description').inner_text
-        raw[code][:values] ||= {}
-        raw[code][:values][amenity.at('Values Code').inner_text] = amenity.at('Values Description').inner_text
+        raw[code]['Code'] = code
+        raw[code]['Description'] ||= amenity.at('Description').inner_text
+        raw[code]['Values'] ||= {}
+        raw[code]['Values'][amenity.at('Values Code').inner_text] = amenity.at('Values Description').inner_text
       end
+    end
+    if self.expand_attributes?
+      raw = Hash[raw.collect { |k,v| [k.downcase, v] } ]
     end
     raw.each do |key,values|
       collection << self.new(values)
