@@ -9,10 +9,11 @@ module Nwmls
     module ClassMethods
       def build_collection(xml)
         collection = []
-        xml.root.children.each do |office|
+        xml.root.children.each do |element|
           attributes = {}
-          office.children.each do |child|
-            attributes[child.name.underscore] = child.text
+          element.children.each do |child|
+            key = expand_attributes? ? child.name.underscore : child.name
+            attributes[key] = child.text
           end
           collection << new(attributes)
         end
