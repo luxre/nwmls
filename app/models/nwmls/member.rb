@@ -1,7 +1,15 @@
 class Nwmls::Member
   include Nwmls::Model
 
-  attr_accessor :member_mlsid, :first_name, :last_name, :office_mlsid, :office_name, :office_area_code, :office_phone, :office_phone_extension
+  def self.attribute_names
+    attrs = %w[ MemberMLSID FirstName LastName OfficeMLSID OfficeName OfficeAreaCode OfficePhone OfficePhoneExtension]
+    if expand_attributes?
+      attrs = attrs.collect { |attr| attr.underscore }
+    end
+    attrs.collect { |attr| attr.to_sym }
+  end
+
+  attr_accessor(*attribute_names)
 
   def self.find(conditions = {})
     unless conditions.is_a?(Hash)
@@ -31,6 +39,14 @@ class Nwmls::Member
 
   def office
     @office ||= Nwmls::Office.find office_mlsid
+  end
+
+  private
+
+  unless expand_attributes?
+    def office_mlsid
+      self.OfficeMLSID
+    end
   end
 
 end
