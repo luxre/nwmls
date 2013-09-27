@@ -14,7 +14,7 @@ Put this line in your Gemfile:
 Then bundle:
   % bundle
 
-Create config/initializers/evernet.rb to set your Evernet credentials
+Create config/initializers/nwmls.rb to set your Evernet credentials
   Evernet::Connection.user = 'XXXXX'
   Evernet::Connection.pass = 'XXXXX'
 
@@ -71,3 +71,9 @@ if you give find the key :listing_number then a single result will be returned i
 conveniently you can also find a single listing with
   Nwmls::Listing.find(454186)
 
+=== Raw Attribute Mode
+if you add the following to your config/initializers/nwmls.rb initializer file
+  Nwmls::Model.attribute_mode = :raw
+
+The model will act in "raw" mode. This means that attributes names and values will be returned exactly as they are represented in the Evernet schema.
+For example, Nwmls::Listing objects will have attribute LN instead of listing_number. Values for boolean attributes are returned as strings "1" and "0". Attributes that return arrays will return | delimited strings.
