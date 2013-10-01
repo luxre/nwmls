@@ -237,9 +237,9 @@ class Nwmls::Listing
     end
   end
 
-  def office
+  def listing_office
     if listing_office_number
-      @office ||= Nwmls::Office.find listing_office_number
+      @listing_office ||= Nwmls::Office.find listing_office_number
     end
   end
 
