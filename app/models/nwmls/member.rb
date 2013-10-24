@@ -44,8 +44,8 @@ class Nwmls::Member
   private
 
   unless expand_attributes?
-    def office_mlsid
-      self.OfficeMLSID
+    def member_mlsid
+      self.MemberMLSID
     end
   end
 
