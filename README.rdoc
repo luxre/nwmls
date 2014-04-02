@@ -65,7 +65,7 @@ The find method also takes an optional second parameter. This is an array of fil
 would return all active residential listings but only the listing_number, property_type, and update_date attributes.
 This feature is useful when you are doing finds that return a large number of Listing objects
 
-=== Finding a single listing by it's listing number
+=== Finding a single listing by its listing number
 if you give find the key :listing_number then a single result will be returned instead of an array. Example:
   Nwmls::Listing.find(:listing_number => '454186')
 conveniently you can also find a single listing with
@@ -75,5 +75,5 @@ conveniently you can also find a single listing with
 if you add the following to your config/initializers/nwmls.rb initializer file
   Nwmls::Model.attribute_mode = :raw
 
-The model will act in "raw" mode. This means that attributes names and values will be returned exactly as they are represented in the Evernet schema.
+The model will act in "raw" mode. This means that attribute's names and values will be returned exactly as they are represented in the Evernet schema.
 For example, Nwmls::Listing objects will have attribute LN instead of listing_number. Values for boolean attributes are returned as strings "1" and "0". Attributes that return arrays will return | delimited strings.
