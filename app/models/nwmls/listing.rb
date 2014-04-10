@@ -382,10 +382,9 @@ class Nwmls::Listing
     def selling_co_office_number
       self.SCO
     end
+
     def school_district_code
       self.SD
     end
   end
-
-
 end
