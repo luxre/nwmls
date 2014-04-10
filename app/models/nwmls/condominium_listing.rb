@@ -1,4 +1,5 @@
 class Nwmls::CondominiumListing < Nwmls::Listing
+
   CODES = HashWithIndifferentAccess.new(
     LN: 'Listing Number',
     PTYP: 'Property Type',
@@ -154,5 +155,6 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     AllowAVM: 'Allow AVM',
     ProhibitBLOG: 'Allow Blog',
   )
+
   acts_as_nwmls_listing :property_type => 'COND', :attribute_mappings => CODES
 end

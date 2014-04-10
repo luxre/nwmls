@@ -1,4 +1,5 @@
 class Nwmls::ManufacturedHomeListing < Nwmls::Listing
+
   CODES = HashWithIndifferentAccess.new(
     LO: 'Listing Office Number',
     LD: 'List Date',

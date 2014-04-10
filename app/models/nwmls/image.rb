@@ -16,7 +16,6 @@ class Nwmls::Image
       conditions = { :listing_number => conditions.to_i }
     end
     build_collection(Evernet::Connection.retrieve_image_data(conditions))
-
   end
 
 end

@@ -1,4 +1,5 @@
 class Nwmls::FarmListing < Nwmls::Listing
+
   CODES = HashWithIndifferentAccess.new(
     LN: 'Listing Number',
     PTYP: 'Property Type',
