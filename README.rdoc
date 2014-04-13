@@ -19,13 +19,13 @@ Create config/initializers/nwmls.rb to set your Evernet credentials
   Evernet::Connection.pass = 'XXXXX'
 
 in this intializer you can also set the SchemaName for your query results using the Evernet::Connection.schema_name setting. Possible settings include NWMLSPremiumXML, NWMLSStandardXML, StandardXML, StandardXML1_0, PremiumXML1_0, StandardXML1_1, and PremiumXML1_1. If not set the default is StandardXML1_1
-  eg. Evernet::Connection.schema_name = 'StandardXML1_1'
+  e.g. Evernet::Connection.schema_name = 'StandardXML1_1'
 
 == Usage
 
 === Finding a batch of listings
 
-the Nwmls::Listing#find method will return an array of Nwmls::Listing objects if given a hash. The possible keys for that hash are
+The Nwmls::Listing#find method will return an array of Nwmls::Listing objects if given a hash. The possible keys for that hash are:
   :property_type
   :status
   :county
@@ -38,7 +38,7 @@ the Nwmls::Listing#find method will return an array of Nwmls::Listing objects if
   :bedrooms
   :bathrooms
 
-eg. Nwmls::Listing.find(:property_type => "RESI", :status => "A", :city => "Seattle")
+e.g. Nwmls::Listing.find(:property_type => "RESI", :status => "A", :city => "Seattle")
 
 The options for :property_type are "RESI", "COND", "BUSO", "COMI", "FARM", "MANU", "MULT", "RENT", "VACL". If the :property_type key is not supplied then "RESI" is the default
 
