@@ -38,7 +38,8 @@ The Nwmls::Listing.find method will return an array of Nwmls::Listing objects if
   :bedrooms
   :bathrooms
 
-e.g. Nwmls::Listing.find(:property_type => "RESI", :status => "A", :city => "Seattle")
+e.g.
+  Nwmls::Listing.find(:property_type => "RESI", :status => "A", :city => "Seattle")
 
 The options for :property_type are "RESI", "COND", "BUSO", "COMI", "FARM", "MANU", "MULT", "RENT", "VACL". If the :property_type key is not supplied then "RESI" is the default
 
