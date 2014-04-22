@@ -25,7 +25,7 @@ in this intializer you can also set the SchemaName for your query results using 
 
 === Finding a batch of listings
 
-The Nwmls::Listing#find method will return an array of Nwmls::Listing objects if given a hash. The possible keys for that hash are:
+The Nwmls::Listing.find method will return an array of Nwmls::Listing objects if given a hash. The possible keys for that hash are:
   :property_type
   :status
   :county
