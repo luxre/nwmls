@@ -17,6 +17,371 @@ en:
     I: Trash Compactor
     J: Washer
 
+  AR:
+    '1': 1 - Gig Harbor
+    '100': 100 - Jovita/West Hill
+    '1026': 1026 - East Orchard
+    '1031': 1031 - Camp Bonneville
+    '1033': 1033 - Camas-Washougal
+    '1042': 1042 - Evergreen Hwy
+    '1043': 1043 - City Centr-West
+    '1045': 1045 - Salmon Creek
+    '1046': 1046 - Minnehaha
+    '1047': 1047 - West Orchard
+    '1051': 1051 - Ridgefield
+    '1061': 1061 - Battle Ground
+    '1062': 1062 - Brush Pr/Hcknsn
+    '1064': 1064 - Vennersborg
+    '1070': 1070 - LaCenter
+    '1071': 1071 - North County
+    '109': 109 - Lake Tapps/Bonne
+    '110': 110 - Dash Point/Feder
+    '111': 111 - Buckley
+    '112': 112 - Wilkeson/Carbona
+    '113': 113 - Sumner
+    '114': 114 - Orting
+    '119': 119 - Roy/McKenna
+    '12': 12 - Anderson Island
+    '120': 120 - Des Moines/Redon
+    '121': 121 - Harts Lake
+    '122': 122 - Graham
+    '123': 123 - Tanwax Lake/Kapo
+    '124': 124 - Eatonville
+    '125': 125 - Eatonville
+    '126': 126 - Alder
+    '127': 127 - Elbe
+    '128': 128 - Ashford
+    '129': 129 - Clear Lake
+    '13': 13 - North Tacoma
+    '130': 130 - Burien/Normandy
+    '131': 131 - Columbia County
+    '134': 134 - East Pierce/Mt R
+    '135': 135 - Greenwater
+    '136': 136 - Garfield County
+    '14': 14 - North Tacoma
+    '140': 140 - West Seattle
+    '141': 141 - S. Kitsap W Of H
+    '142': 142 - S Kitsap E Of Hw
+    '143': 143 - Port Orchard
+    '144': 144 - Retsil/Mancheste
+    '145': 145 - Seabeck/Hlly
+    '146': 146 - Chico
+    '147': 147 - Silverdale
+    '148': 148 - West Bremerton
+    '149': 149 - East Bremerton
+    '15': 15 - North Tacoma
+    '150': 150 - E Central Kitsap
+    '16': 16 - North Tacoma
+    '161': 161 - Hansville
+    '162': 162 - Kingston
+    '163': 163 - Port Gamble
+    '164': 164 - Lofall
+    '165': 165 - Finn Hill
+    '166': 166 - Poulsbo
+    '167': 167 - Suquamish
+    '168': 168 - Indianola
+    '17': 17 - North Tacoma
+    '170': 170 - Bainbridge Islan
+    '171': 171 - Belfair/ Hood Ca
+    '172': 172 - Mason Lk Region
+    '173': 173 - South Shore Hood
+    '174': 174 - Harstine Island
+    '175': 175 - Shelton
+    '176': 176 - Agate
+    '177': 177 - Sw Mason County
+    '178': 178 - Nw Mason County
+    '179': 179 - Arcadia - Kamilc
+    '18': 18 - North Tacoma
+    '180': 180 - North Mason
+    '19': 19 - North Tacoma
+    '190': 190 - Taholah
+    '191': 191 - Pacific Beach
+    '192': 192 - Copalis Beach
+    '193': 193 - Copalis Crossing
+    '194': 194 - Ocean Shores
+    '195': 195 - Quinault
+    '196': 196 - Humptulips
+    '197': 197 - Hoquiam
+    '198': 198 - Aberdeen
+    '199': 199 - Satsop
+    '2': 2 - Purdy
+    '20': 20 - North Tacoma
+    '200': 200 - Elma
+    '201': 201 - McCleary
+    '202': 202 - Cosmopolis
+    '203': 203 - Montesano
+    '204': 204 - Oakville
+    '206': 206 - Westport
+    '207': 207 - Bay Center
+    '208': 208 - Grayland
+    '209': 209 - Tokeland
+    '21': 21 - North Tacoma
+    '210': 210 - Raymond
+    '211': 211 - South Bend
+    '212': 212 - Menlo
+    '213': 213 - Lebam
+    '214': 214 - Amanda Park
+    '215': 215 - Malone
+    '216': 216 - Neilton
+    '217': 217 - Aloha
+    '218': 218 - Moclips
+    '219': 219 - Central Park
+    '22': 22 - North Tacoma
+    '220': 220 - Ocosta
+    '23': 23 - North Tacoma
+    '24': 24 - North Tacoma
+    '244': 244 - Benton County
+    '245': 245 - Franklin County
+    '25': 25 - North Tacoma
+    '26': 26 - Central Tacoma
+    '27': 27 - Central Tacoma
+    '28': 28 - Central Tacoma
+    '286': 286 - NEDouglas County
+    '289': 289 - East Grant Count
+    '29': 29 - Central Tacoma
+    '290': 290 - North Grant Coun
+    '291': 291 - North Central Gr
+    '292': 292 - West Grant Count
+    '293': 293 - South Grant Coun
+    '294': 294 - Central Grant Co
+    '295': 295 - South Moses Lake
+    '296': 296 - Peninsula
+    '297': 297 - Central Moses La
+    '298': 298 - North Moses Lake
+    '299': 299 - West Moses Lake
+    '3': 3 - Rosedale
+    '30': 30 - Central Tacoma
+    '300': 300 - Enumclaw
+    '31': 31 - West Tacoma
+    '310': 310 - Auburn
+    '32': 32 - University Place
+    '320': 320 - Blk Dimnd/Mpl Vl
+    '33': 33 - University Place
+    '330': 330 - Kent
+    '34': 34 - University Place
+    '340': 340 - Renton/Benson Hi
+    '35': 35 - University Place
+    '350': 350 - Renton/Highlands
+    '36': 36 - Lakewood
+    '360': 360 - Skyway Area
+    '37': 37 - Lakewood
+    '38': 38 - Lakewood
+    '380': 380 - Southeast Seattle
+    '381': 381 - Adams County
+    '385': 385 - SODO/Beacon Hill
+    '386': 386 - Lincoln County
+    '39': 39 - Lakewood
+    '390': 390 - Central Seattle/
+    '4': 4 - Key Peninsula Sout
+    '40': 40 - Lakewood
+    '401': 401 - West Kelso And B
+    '402': 402 - Highlands
+    '403': 403 - St. Helens
+    '404': 404 - Westside
+    '405': 405 - Olympic
+    '406': 406 - Columbia Heights
+    '407': 407 - Hillside
+    '408': 408 - Northlake/Cvg
+    '409': 409 - Pacific Way
+    '41': 41 - Lakewood/Tillicum
+    '410': 410 - Beacon Hill
+    '411': 411 - Robert Gray/Mint
+    '412': 412 - West County
+    '413': 413 - Wahkiakum County
+    '414': 414 - North County
+    '415': 415 - Ostrander
+    '416': 416 - North Kelso
+    '417': 417 - Kelso Hill
+    '418': 418 - South Kelso
+    '419': 419 - East County
+    '42': 42 - Dupont
+    '420': 420 - South County/Woo
+    '426': 426 - Centralia
+    '428': 428 - Adna/Pe Ell
+    '43': 43 - Steilacoom
+    '430': 430 - Chehalis
+    '432': 432 - Napavine
+    '434': 434 - Onalaska
+    '436': 436 - Morton
+    '44': 44 - Ketron Island
+    '441': 441 - Thurston Nw
+    '442': 442 - Black Hills
+    '443': 443 - Tumwater
+    '444': 444 - Olympia Westside
+    '445': 445 - Boston Harbor
+    '446': 446 - Thurston Ne
+    '447': 447 - Olympia North
+    '448': 448 - Olympia South
+    '449': 449 - East Olympia
+    '45': 45 - South Tacoma
+    '450': 450 - Lacey
+    '451': 451 - Hawks Prairie
+    '452': 452 - Thurston Se
+    '453': 453 - Yelm/Rainier
+    '454': 454 - Thurston South
+    '455': 455 - Rochester
+    '46': 46 - South Tacoma
+    '465': 465 - Ferry County
+    '47': 47 - South Tacoma
+    '475': 475 - Yakima County
+    '48': 48 - South Tacoma
+    '480': 480 - Port Townsend
+    '481': 481 - Cape George
+    '482': 482 - South Port Townsend
+    '483': 483 - Marrowstone
+    '484': 484 - Kala Point
+    '485': 485 - Hadlock
+    '486': 486 - Gardiner
+    '487': 487 - Oak Bay
+    '488': 488 - Chimacum Valley
+    '489': 489 - Port Ludlow
+    '49': 49 - South Tacoma
+    '490': 490 - Shine
+    '491': 491 - Coyle
+    '492': 492 - Quilcene
+    '493': 493 - Brinnon
+    '494': 494 - West Jeff County
+    '495': 495 - Discovery Bay
+    '5': 5 - Fox Island
+    '50': 50 - South Tacoma
+    '500': 500 - East Side/South
+    '501': 501 - Klickitat County
+    '51': 51 - South Tacoma
+    '510': 510 - Mercer Island
+    '52': 52 - South Tacoma
+    '520': 520 - Bellevue/West Of
+    '53': 53 - South Tacoma
+    '530': 530 - Bellevue/East Of
+    '54': 54 - South Tacoma
+    '540': 540 - East Of Lake Sam
+    '55': 55 - Southeast Tacoma
+    '550': 550 - Redmond/Carnatio
+    '56': 56 - Southeast Tacoma
+    '560': 560 - Kirkland/Bridle
+    '561': 561 - Spokane County
+    '57': 57 - Southeast Tacoma
+    '58': 58 - Southeast Tacoma
+    '59': 59 - Southeast Tacoma
+    '6': 6 - Gig Harbor South
+    '60': 60 - Southeast Tacoma
+    '600': 600 - Juanita/Woodinvi
+    '61': 61 - Southeast Tacoma
+    '610': 610 - Southeast Snohom
+    '62': 62 - Southeast Tacoma
+    '620': 620 - Okanogan Valley
+    '63': 63 - Parkland
+    '64': 64 - Parkland
+    '65': 65 - Parkland
+    '66': 66 - Parkland
+    '67': 67 - Parkland
+    '68': 68 - Parkland
+    '69': 69 - Parkland
+    '7': 7 - Artondale
+    '70': 70 - Fife
+    '700': 700 - Queen Anne/Magno
+    '701': 701 - Belltown/Downtn
+    '705': 705 - Ballard/Greenlak
+    '71': 71 - Milton
+    '710': 710 - North Seattle
+    '715': 715 - Richmond Beach/S
+    '72': 72 - Edgewood
+    '720': 720 - Lake Forest Park
+    '73': 73 - Sumner
+    '730': 730 - Southwest Snohom
+    '74': 74 - Sumner
+    '740': 740 - Everett/Mukilteo
+    '750': 750 - East Snohomish C
+    '760': 760 - Northeast Snohom
+    '770': 770 - Northwest Snohom
+    '78': 78 - Port of Tacoma
+    '780': 780 - Camano Island
+    '79': 79 - Puyallup
+    '8': 8 - Gig Harbor North
+    '80': 80 - Puyallup
+    '800': 800 - Vashon Island
+    '81': 81 - Puyallup
+    '811': 811 - South Whidbey Is
+    '812': 812 - Central Whidbey
+    '813': 813 - North Whidbey Is
+    '815': 815 - Anacortes
+    '816': 816 - Guemes Island
+    '817': 817 - Other Skagit Cou
+    '82': 82 - Puyallup
+    '820': 820 - La Conner
+    '825': 825 - Burlington
+    '83': 83 - Puyallup
+    '830': 830 - Sedro Woolley
+    '835': 835 - Mount Vernon
+    '84': 84 - Puyallup
+    '840': 840 - Lyman/Hamilton
+    '845': 845 - Concrete  Up Ri
+    '85': 85 - Puyallup
+    '850': 850 - Sudden Valley
+    '86': 86 - Puyallup
+    '860': 860 - Bellingham
+    '865': 865 - Meridian
+    '87': 87 - Puyallup
+    '870': 870 - Ferndale/Custer
+    '88': 88 - Puyallup
+    '880': 880 - Blaine/Birch Bay
+    '881': 881 - Point Roberts
+    '885': 885 - Lynden
+    '89': 89 - Graham/Fredrickso
+    '890': 890 - Nooksack Valley
+    '895': 895 - Mount Baker/Demi
+    '899': 899 - Waldron
+    '9': 9 - Key Peninsula Nort
+    '900': 900 - San Juan Island
+    '901': 901 - Orc/Shw/Obsr/Crn
+    '902': 902 - Lopez/Frost
+    '903': 903 - Dec/Ctr/Blakely
+    '904': 904 - Stu/Hen/Pl/Johns
+    '905': 905 - Other San Juan I
+    '906': 906 - Clallam County
+    '907': 907 - Walla Walla Coun
+    '911': 911 - Miller Peninsula
+    '912': 912 - Southeast Clalla
+    '913': 913 - Northeast Sequim
+    '914': 914 - North Central Se
+    '915': 915 - Northwest Sequim
+    '916': 916 - Southeast Sequim
+    '917': 917 - Southwest Sequim
+    '918': 918 - East of Port Ang
+    '919': 919 - East of Port Ang
+    '920': 920 - Northeast Port A
+    '921': 921 - Central East Por
+    '922': 922 - Central West Por
+    '923': 923 - Northwest Port A
+    '924': 924 - Southeast Port A
+    '925': 925 - Southwest Port A
+    '926': 926 - West of Port Ang
+    '927': 927 - Northwest Clalla
+    '928': 928 - Southwest Clalla
+    '930': 930 - South Pacific Co
+    '94': 94 - Browns Point
+    '940': 940 - Stevens County
+    '948': 948 - Upper Kittitas C
+    '949': 949 - Lower Kittitas C
+    '95': 95 - Browns Point
+    '950': 950 - Skamania County
+    '959': 959 - Stevens Pass
+    '96': 96 - Asotin County
+    '961': 961 - Chelan
+    '962': 962 - Manson
+    '963': 963 - Chelan Falls
+    '964': 964 - Entiat
+    '965': 965 - Mansfield
+    '966': 966 - Methow Valley
+    '967': 967 - Brewster/Pateros
+    '968': 968 - Bridgeport
+    '969': 969 - Orondo
+    '970': 970 - E. Wenatchee
+    '971': 971 - Wenatchee
+    '972': 972 - Leavenworth
+    '980': 980 - Pend Oreille Cou
+    '99': 99 - Spanaway
+    '990': 990 - Whitman County
+
   ARC:
     A: A-Frame/Dome
     B: Cabin
@@ -67,6 +432,13 @@ en:
     E: Roughed In
     F: Unfinished
 
+  BuiltGreenRating:
+    '1': 1 star
+    '2': 2 stars
+    '3': 3 stars
+    '4': 4 stars
+    '5': 5 stars
+
   CMFE:
     A: Age Restriction
     B: Airfield
@@ -74,9 +446,20 @@ en:
     D: CCRs
     E: Clubhouse
     F: Golf Course
-    G: Private Beach Access
+    G: Community Waterfront/Pvt Beach
     H: Tennis Courts
     I: Gated Entry
+
+  ConstructionMethods:
+    AW: Advanced Wall
+    DW: Double Wall
+    ICF: Insulated Concrete Form (ICF)
+    PB: Post  Beam
+    SB: Strawbale
+    SC: Steel  Concrete
+    SF: Standard Frame
+    SIP: Structural Insulated Panel (SIPs
+    TU: Tilt-up
 
   DNO:
     L: Lower
@@ -278,6 +661,12 @@ en:
     L: Sidewalk
     M: Value In Land
 
+  LEEDRating:
+    CERT: Certified
+    GOLD: Gold
+    PLAT: Platinum
+    SILV: Silver
+
   LRM:
     L: Lower
     M: Main
@@ -312,6 +701,11 @@ en:
     A: Completed
     B: Presale
     C: Under Construction
+
+  NWESHRating:
+    NWC: NWESH Certified
+    NWP: NWESH Presale
+    NWUC: NWESH Under Construction
 
   PARQ:
     A: None
@@ -404,7 +798,7 @@ en:
     '53': 53 - Tri-plex
     '54': 54 - 4-Plex
     '55': 55 - 5-Plex
-    '56': 56 - 6-9 Units
+    '56': 56 - 10+ Units
     '57': 57 - 10+ Units
     '60': 60 - Comm Bldg Und 10K
     '61': 61 - Comm Bldg Ovr 10K
@@ -486,6 +880,8 @@ en:
     P: Unknown
     Q: Water Rights
     R: Well Site Approved
+    S: Well Needed
+    T: Lake
 
   WFT:
     A: Bank-High
@@ -1126,6 +1522,8 @@ en:
     P: Unknown
     Q: Water Rights
     R: Well Site Approved
+    S: Well Needed
+    T: Lake
 
   LES:
     A: None
