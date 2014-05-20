@@ -191,6 +191,14 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     AllowAVM: 'Allow AVM',
     ProhibitBLOG: 'Allow Blog',
     SWR: 'Sewer',#not in documentation or schema
+    BuiltGreenRating: "Built Green Certification Rating",
+    ConstructionMethods: "Construction Methods",
+    EPSEnergy: "EPS Energy",
+    HERSIndex: "HERS Index",
+    LEEDRating: "LEED Certification Rating",
+    NewConstruction: "New Construction",
+    NWESHRating: "NWESH Certification Rating",
+    ROFR: "Right of First Refusal",
   )
   acts_as_nwmls_listing :property_type => 'MULT', :attribute_mappings => CODES
 end

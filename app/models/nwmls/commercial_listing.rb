@@ -165,6 +165,12 @@ class Nwmls::CommercialListing < Nwmls::Listing
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
     ProhibitBLOG: 'Allow Blog',
+    ConstructionMethods: "Construction Methods",
+    EPSEnergy: "EPS Energy",
+    HERSIndex: "HERS Index",
+    LEEDRating: "LEED Certification Rating",
+    NWESHRating: "NWESH Certification Rating",
+    ROFR: "Right of First Refusal",
   )
 
   acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => CODES

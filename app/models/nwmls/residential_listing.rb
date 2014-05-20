@@ -163,7 +163,15 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     YBT: "Year Built",
     ZIP: "Zip Code",
     ZJD: "Zoning Jurisdiction",
-    ZNC: "Zoning Code"
+    ZNC: "Zoning Code",
+    BuiltGreenRating: "Built Green Certification Rating",
+    ConstructionMethods: "Construction Methods",
+    EPSEnergy: "EPS Energy",
+    HERSIndex: "HERS Index",
+    LEEDRating: "LEED Certification Rating",
+    NewConstruction: "New Construction",
+    NWESHRating: "NWESH Certification Rating",
+    ROFR: "Right of First Refusal",
   )
 
   acts_as_nwmls_listing :property_type => 'RESI', :attribute_mappings => CODES

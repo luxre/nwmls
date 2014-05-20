@@ -44,6 +44,7 @@ class Nwmls::Listing
     LNM
     LSI
     MFY
+    NewConstruction
     NIA
     PAD
     PAS
@@ -66,6 +67,7 @@ class Nwmls::Listing
     SNR
     SPA
     STO
+    ROFR
     UBG
     UCS
     WD1
@@ -111,6 +113,7 @@ class Nwmls::Listing
 
   MULTI_CODED_ELEMENTS = %w[
     ADU
+    Affiliations
     AFR
     AMN
     APH
@@ -124,6 +127,7 @@ class Nwmls::Listing
     CFE
     CMFE
     CMN
+    ConstructionMethods
     CTD
     DOC
     ECRT
@@ -176,6 +180,7 @@ class Nwmls::Listing
     UTL
     VEW
     WAS
+    WeekAssignment
     WFT
     WTR
   ]

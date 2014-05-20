@@ -116,6 +116,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     BREO: 'Bank Owned',
     AllowAVM: 'Allow AVM',
     ProhibitBLOG: 'Allow Blog',
+    ROFR: "Right of First Refusal",
   )
   acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => CODES
 end
