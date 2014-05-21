@@ -1576,6 +1576,52 @@ en:
     F: Separate Listing
     G: See Remarks
 
+  Affiliations:
+    INTR: Interval Intern'tl
+    RCIR: RCI Resort
+    RMRK: See Remarks
+    RSTW: Resorts West
+    WRLD: WorldMark
+
+  Ownership:
+    DEED: Deeded Shares
+    EXCH: Exchange Points
+    LEAS: Leasehold
+    PERC: Percentage
+    RMRK: See Remarks
+
+  TurnOver:
+    FRID: Friday
+    OTHR: Other
+    SATU: Saturday
+    SUND: Sunday
+    THUR: Thursday
+
+  WeekAssignment:
+    '1STW': 1st Week
+    '1WEK': 1 Week
+    '2NDW': 2nd Week
+    '2WEK': 2 Weeks
+    '3RDW': 3rd Week
+    '3WEK': 3 Weeks
+    '4THW': 4th Week
+    '4WEK': 4 Weeks
+    '5WEK': 5 Weeks
+    '6WEK': 6 Weeks
+    APRL: April
+    AUGU: August
+    DATE: Date Specific
+    DECE: December
+    FEBR: February
+    JANU: January
+    JULY: July
+    JUNE: June
+    MARC: March
+    MAY: May
+    NOVE: November
+    OCTO: October
+    OTHR: Other
+    SEPT: September
 ### END === FROM AMENITIES WEB SERVICE === ###
 
   PTYP:
@@ -1588,6 +1634,7 @@ en:
     RENT: Rental
     BUSO: Business Opportunity
     VACL: Vacant Land
+    TSHR: Time Share
 
   ST:
     A: Active

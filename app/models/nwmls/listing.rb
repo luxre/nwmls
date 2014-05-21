@@ -12,6 +12,7 @@ class Nwmls::Listing
     "MULT" => 'Nwmls::MultiFamilyListing',
     "RENT" => 'Nwmls::RentalListing',
     "VACL" => 'Nwmls::VacantLandListing',
+    "TSHR" => 'Nwmls::TimeShareListing',
   }
 
   BOOLEAN_ELEMENTS = %w[
