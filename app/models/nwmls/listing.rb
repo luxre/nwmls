@@ -336,7 +336,7 @@ class Nwmls::Listing
   end
 
   def self.translate_attribute(attribute)
-    if code = self.attribute_mappings[attribute]
+    if code = Nwmls::ActsAsNwmlsListing::ClassMethods::ALL_CODES[attribute]
       code.underscore.parameterize('_')
     elsif Rails.env.development?
       raise "code #{attribute} not found"

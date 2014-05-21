@@ -1,102 +1,102 @@
 class Nwmls::BusinessOpportunityListing < Nwmls::Listing
 
-  CODES = HashWithIndifferentAccess.new(
-    LN: 'Listing Number',
-    PTYP: 'Property Type',
-    LAG: 'Listing Agent Number',
-    ST: 'Status',
-    LP: 'Listing Price',
-    LPH: 'Listing Price History',
-    SP: 'Selling Price',
-    OLP: 'Original Price',
-    HSN: 'House Number',
-    DRP: 'Directional Prefix',
-    STR: 'Street',
-    SSUF: 'Street Suffix',
-    DRS: 'Directional Suffix',
-    UNT: 'Unit',
-    CIT: 'City',
-    STA: 'State',
-    ZIP: 'Zip Code',
-    PL4: 'Zip Plus 4',
-    LSF: 'Lot Square Footage',
-    UD: 'Update Date',
-    AR: 'Area',
-    DSRNUM: 'Community Number',
-    LDR: 'List Date Received',
-    LD: 'List Date',
-    CLO: 'Selling Date',
-    YBT: 'Year Built',
-    LO: 'Listing Office Number',
-    TAX: 'Parcel Number',
-    MAP: 'Map Page',
-    GRDX: 'X Coordinate',
-    GRDY: 'Y Coordinate',
-    SAG: 'Selling Agent Number',
-    SO: 'Selling Office Number',
-    NIA: 'Publish To Internet',
-    MR: 'Marketing Remarks',
-    LONG: 'Longitude',
-    LAT: 'Latitude',
-    PDR: 'Pending Date',
-    CLA: 'Co-Listing Agent Number',
-    SHOADR: 'Show Address to Public',
-    DD: 'Directions',
-    AVDT: 'Available Date',
-    INDT: 'Inactive Date',
-    COU: 'County',
-    CDOM: 'Cumulative Days on Market',
-    DOM: 'Days on Market',
-    CTDT: 'Contingent Date',
-    SCA: 'Selling Co Agent Number',
-    SCO: 'Selling Co Office Number',
-    VIRT: 'Virtual Tour URL',
-    SDT: 'Status Date',
-    FIN: 'Financing',
-    MAPBOOK: 'Map Book',
-    DSR: 'Community Name',
-    HSNA: 'Street Number Modifier',
-    COLO: 'Co Office Number',
-    PIC: 'Picture Count',
-    BDC: 'Building Condition',
-    BLK: 'Block',
-    EMP: 'Number of Employees',
-    EQU: 'Equipment',
-    EQV: 'Equipment Value',
-    F17: 'Form 17',
-    FRN: 'Franchise',
-    GRS: 'Annual Gross Sales',
-    GW: 'Goodwill Value',
-    HOD: 'Annual Association Dues',
-    HRS: 'Hours of Operation',
-    INV: 'Inventory Value',
-    LNM: 'Liens/Mortgages',
-    LSI: 'Lease Income',
-    LT: 'Lot Number',
-    NA: 'Business Name',
-    NP: 'Net Proceeds',
-    PKC: 'Total Covered Parking',
-    PKU: 'Total Uncovered Parking',
-    PTO: 'Preliminary Title Ordered',
-    RES: 'Real Estate Value',
-    RNT: 'Annual Rent',
-    SIN: 'Signage',
-    SML: 'Show Map Link to Public',
-    TEXP: 'Annual Expenses',
-    TOB: 'Type of Business',
-    YRE: 'Year Established',
-    YRS: 'Years Current Owner In Business',
-    LES: 'Lease Terms',
-    LIC: 'Licenses',
-    LOC: 'Location',
-    MTB: 'Major Type of Business',
-    POS: 'Possession',
-    RP: 'Real Property',
-    TRM: 'Potential Terms',
-    PARQ: 'Third Party Approval Required',
-    BREO: 'Bank Owned',
-    AllowAVM: 'Allow AVM',
-    ProhibitBLOG: 'Allow Blog',
+  CODES = %w(
+    LN
+    PTYP
+    LAG
+    ST
+    LP
+    LPH
+    SP
+    OLP
+    HSN
+    DRP
+    STR
+    SSUF
+    DRS
+    UNT
+    CIT
+    STA
+    ZIP
+    PL4
+    LSF
+    UD
+    AR
+    DSRNUM
+    LDR
+    LD
+    CLO
+    YBT
+    LO
+    TAX
+    MAP
+    GRDX
+    GRDY
+    SAG
+    SO
+    NIA
+    MR
+    LONG
+    LAT
+    PDR
+    CLA
+    SHOADR
+    DD
+    AVDT
+    INDT
+    COU
+    CDOM
+    DOM
+    CTDT
+    SCA
+    SCO
+    VIRT
+    SDT
+    FIN
+    MAPBOOK
+    DSR
+    HSNA
+    COLO
+    PIC
+    BDC
+    BLK
+    EMP
+    EQU
+    EQV
+    F17
+    FRN
+    GRS
+    GW
+    HOD
+    HRS
+    INV
+    LNM
+    LSI
+    LT
+    NA
+    NP
+    PKC
+    PKU
+    PTO
+    RES
+    RNT
+    SIN
+    SML
+    TEXP
+    TOB
+    YRE
+    YRS
+    LES
+    LIC
+    LOC
+    MTB
+    POS
+    RP
+    TRM
+    PARQ
+    BREO
+    AllowAVM
+    ProhibitBLOG
   )
 
   acts_as_nwmls_listing :property_type => 'BUSO', :attribute_mappings => CODES
