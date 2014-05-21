@@ -4,8 +4,7 @@ An object mapper for the Evernet NWMLS Soap Web Service
 
 == Supported versions
 
-* Rails 4.0.0
-
+* Rails  >= 4.0.0 < 4.2.0
 == Install
 
 Put this line in your Gemfile:
