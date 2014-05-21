@@ -111,7 +111,7 @@ class Evernet::Connection
 
   def self.load_data_result_with_nokogiri(raw)
     xml = Nokogiri::XML(raw)
-    if error_element = xml.at('Error')
+    if error_element = xml.at("ResponseMessages")
       raise error_element.text
     end
     xml
