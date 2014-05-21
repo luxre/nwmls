@@ -1,7 +1,7 @@
 require 'savon'
 class Evernet::Connection
 
-  DEFAULT_SCHEMA_NAME = 'StandardXML1_1'
+  DEFAULT_SCHEMA_NAME = 'StandardXML1_2'
   MLS = 'NWMLS'
   DEFAULT_PTYP = 'RESI'
 
