@@ -3,12 +3,12 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   TYPE_TO_CLASS_MAP = {
-    "RESI" =>  'Nwmls::ResidentialListing',
+    "RESI" => 'Nwmls::ResidentialListing',
     "COND" => 'Nwmls::CondominiumListing',
     "BUSO" => 'Nwmls::BusinessOpportunityListing',
     "COMI" => 'Nwmls::CommercialListing',
     "FARM" => 'Nwmls::FarmListing',
-    "MANU" => 'Nwmls::ManufacturedHomeListing', 
+    "MANU" => 'Nwmls::ManufacturedHomeListing',
     "MULT" => 'Nwmls::MultiFamilyListing',
     "RENT" => 'Nwmls::RentalListing',
     "VACL" => 'Nwmls::VacantLandListing',
