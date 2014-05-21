@@ -1,6 +1,6 @@
 class Nwmls::CommercialListing < Nwmls::Listing
 
-  CODES = %w(
+  RAW_ATTRIBUTE_NAMES = %w(
     LN
     PTYP
     LAG
@@ -173,6 +173,6 @@ class Nwmls::CommercialListing < Nwmls::Listing
     ROFR
   )
 
-  acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => CODES
+  acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 
 end
