@@ -1,6 +1,6 @@
 class Nwmls::RentalListing < Nwmls::Listing
 
-  CODES = %w(
+  RAW_ATTRIBUTE_NAMES = %w(
     LN
     PTYP
     LAG
@@ -204,5 +204,5 @@ class Nwmls::RentalListing < Nwmls::Listing
     UTL
     BSM
   )
-  acts_as_nwmls_listing :property_type => 'RENT', :attribute_mappings => CODES
+  acts_as_nwmls_listing :property_type => 'RENT', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 end
