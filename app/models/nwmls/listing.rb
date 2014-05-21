@@ -296,7 +296,7 @@ class Nwmls::Listing
         name = element.name
         if value.present?
           if self.expand_attributes?
-            key = klass.translate_attribute(element.name).to_sym
+            key = klass.expand_attribute(element.name).to_sym
             if MULTI_CODED_ELEMENTS.include?(name)
               attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
             elsif CODED_ELEMENTS.include?(name)
