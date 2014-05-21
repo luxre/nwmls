@@ -1,11 +1,10 @@
-class Nwmls::CondominiumListing < Nwmls::Listing
+class Nwmls::TimeShareListing < Nwmls::Listing
   CODES = %w(
     LN
     PTYP
     LAG
     ST
     LP
-    LPH
     SP
     OLP
     HSN
@@ -49,35 +48,27 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     COU
     CDOM
     CTDT
-    DOM
     SCA
     SCO
     VIRT
-    SD
     SDT
-    FIN
     MAPBOOK
     DSR
-    QBT
-    SFS
-    LSZS
+    HSNA
     COLO
     PIC
-    HSNA
-    AFH
-    ASC
+    ADU
     BDL
     BDM
     BDU
     BRM
-    BUS
-    COO
     DNO
     DRM
-    EL
+    EFR
     ENT
     F17
     FAM
+    FBG
     FBL
     FBM
     FBT
@@ -86,81 +77,69 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     FPL
     FPM
     FPU
+    HBG
     HBL
     HBM
     HBT
     HBU
     HOD
-    JH
     KES
     KIT
     LRM
-    LSD
+    LSZ
     MBD
-    MGR
     MOR
-    NAS
     NC
-    NOC
-    NOS
-    NOU
-    OOC
-    PKS
     PRJ
-    PTO
     TQBT
-    REM
-    SAA
-    SH
+    RRM
     SML
-    SNR
-    SPA
-    STG
-    STL
     STY
+    TBG
     TBL
     TBM
     TBU
-    TOF
-    TX
-    TXY
-    UFN
     UTR
-    WDW
-    WHT
-    APH
     APS
-    CMN
-    CTD
     ENS
     EXT
     FLS
-    HOI
     HTC
-    LDE
-    PKG
-    POS
     RF
-    TRM
-    UNF
     VEW
     WFT
-    ARC
-    BUSR
-    ECRT
-    STRS
-    PARQ
-    BREO
-    AllowAVM
     ProhibitBLOG
-    BuiltGreenRating
-    ConstructionMethods
-    EPSEnergy
-    HERSIndex
-    LEEDRating
-    NewConstruction
-    NWESHRating
+    AllowAVM
     ROFR
+    NewConstruction
+    Ownership
+    TurnOver
+    Affiliations
+    WeekAssignment
+    APH
+    ASC
+    CMN
+    CTD
+    FUR
+    HOI
+    MGR
+    NAS
+    NOC
+    NOS
+    NOU
+    PKG
+    PKS
+    REM
+    SAA
+    SPA
+    STG
+    STL
+    TOF
+    TYP
+    UFN
+    UNF
+    WDW
   )
-  acts_as_nwmls_listing :property_type => 'COND', :attribute_mappings => CODES
+
+  acts_as_nwmls_listing :property_type => 'TSHR', :attribute_mappings => CODES
 end

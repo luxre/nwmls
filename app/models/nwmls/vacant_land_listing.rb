@@ -1,121 +1,122 @@
 class Nwmls::VacantLandListing < Nwmls::Listing
-  CODES = HashWithIndifferentAccess.new(
-    LN: 'Listing Number',
-    PTYP: 'Property Type',
-    LAG: 'Listing Agent Number',
-    ST: 'Status',
-    LP: 'Listing Price',
-    LPH: 'Listing Price History',
-    SP: 'Selling Price',
-    OLP: 'Original Price',
-    HSN: 'House Number',
-    DRP: 'Directional Prefix',
-    STR: 'Street',
-    SSUF: 'Street Suffix',
-    DRS: 'Directional Suffix',
-    UNT: 'Unit',
-    CIT: 'City',
-    STA: 'State',
-    ZIP: 'Zip Code',
-    PL4: 'Zip Plus 4',
-    LSF: 'Lot Square Footage',
-    UD: 'Update Date',
-    AR: 'Area',
-    DSRNUM: 'Community Number',
-    LDR: 'List Date Received',
-    LD: 'List Date',
-    CLO: 'Selling Date',
-    LO: 'Listing Office Number',
-    TAX: 'Parcel Number',
-    MAP: 'Map Page',
-    GRDX: 'X Coordinate',
-    GRDY: 'Y Coordinate',
-    SAG: 'Selling Agent Number',
-    SO: 'Selling Office Number',
-    NIA: 'Publish To Internet',
-    MR: 'Marketing Remarks',
-    LONG: 'Longitude',
-    LAT: 'Latitude',
-    PDR: 'Pending Date',
-    CLA: 'Co-Listing Agent Number',
-    SHOADR: 'Show Address to Public',
-    DD: 'Directions',
-    AVDT: 'Available Date',
-    INDT: 'Inactive Date',
-    COU: 'County',
-    CDOM: 'Cumulative Days on Market',
-    CTDT: 'Contingent Date',
-    DOM: 'Days on Market',
-    SCA: 'Selling Co Agent Number',
-    SCO: 'Selling Co Office Number',
-    VIRT: 'Virtual Tour URL',
-    SD: 'School District Code',
-    SDT: 'Status Date',
-    FIN: 'Financing',
-    MAPBOOK: 'Map Book',
-    DSR: 'Community Name',
-    FBT: 'Full Bathrooms',
-    TQBT: 'Three Quarter Bathrooms',
-    HBT: 'Half Bathrooms',
-    QBT: 'Quarter Bathrooms',
-    SFS: 'Square Footage Source',
-    LSZS: 'Lot Size Source',
-    HSNA: 'Street Number Modifier',
-    COLO: 'Co Office Number',
-    PIC: 'Picture Count',
-    BLK: 'Block',
-    EL: 'Elementary School',
-    ELE: 'Electricity',
-    ESM: 'Easements',
-    F17: 'Form 17',
-    GAS: 'Gas',
-    JH: 'Junior High',
-    LSZ: 'Lot Dimensions',
-    LT: 'Lot Number',
-    LVL: 'Level',
-    PRJ: 'Project',
-    PTO: 'Preliminary Title Ordered',
-    QTR: 'Three Quarter Baths Total',
-    RD: 'Road On Which Side of Property',
-    SAP: 'Septic Approved for Number of Bedrooms',
-    SDA: 'Septic Designed and Applied for',
-    SEC: 'Section/Township/Range',
-    SEP: 'Septic System Installed',
-    SFA: 'Soils Feasibility Available',
-    SH: 'Senior High',
-    SLP: 'Slope of Property',
-    SML: 'Show Map Link to Public',
-    SNR: 'Senior Exemption',
-    SST: 'Septic System Type',
-    STY: 'Style',
-    SUR: 'Survey Information',
-    SWR: 'Sewer',
-    TER: 'Terms Remarks',
-    TX: 'Tax Amount',
-    TXY: 'Tax Year',
-    WFG: 'Waterfront Footage',
-    WRJ: 'Water Jurisdiction',
-    ZJD: 'Zoning Jurisdiction',
-    ZNR: 'Zoning Remarks',
-    ATF: 'Assessment Fees',
-    DOC: 'Documents Provided',
-    FTR: 'Property Features',
-    GZC: 'General Zoning Classification',
-    IMP: 'Improvements',
-    LDE: 'Lot Details',
-    POS: 'Possession',
-    RDI: 'Road Information',
-    RS2: 'Restrictions',
-    TPO: 'Topography',
-    TRM: 'Potential Terms',
-    VEW: 'View',
-    WFT: 'Waterfront',
-    WTR: 'Water',
-    CMFE: 'Community Features',
-    PARQ: 'Third Party Approval Required',
-    BREO: 'Bank Owned',
-    AllowAVM: 'Allow AVM',
-    ProhibitBLOG: 'Allow Blog',
+  CODES = %w(
+    LN
+    PTYP
+    LAG
+    ST
+    LP
+    LPH
+    SP
+    OLP
+    HSN
+    DRP
+    STR
+    SSUF
+    DRS
+    UNT
+    CIT
+    STA
+    ZIP
+    PL4
+    LSF
+    UD
+    AR
+    DSRNUM
+    LDR
+    LD
+    CLO
+    LO
+    TAX
+    MAP
+    GRDX
+    GRDY
+    SAG
+    SO
+    NIA
+    MR
+    LONG
+    LAT
+    PDR
+    CLA
+    SHOADR
+    DD
+    AVDT
+    INDT
+    COU
+    CDOM
+    CTDT
+    DOM
+    SCA
+    SCO
+    VIRT
+    SD
+    SDT
+    FIN
+    MAPBOOK
+    DSR
+    FBT
+    TQBT
+    HBT
+    QBT
+    SFS
+    LSZS
+    HSNA
+    COLO
+    PIC
+    BLK
+    EL
+    ELE
+    ESM
+    F17
+    GAS
+    JH
+    LSZ
+    LT
+    LVL
+    PRJ
+    PTO
+    QTR
+    RD
+    SAP
+    SDA
+    SEC
+    SEP
+    SFA
+    SH
+    SLP
+    SML
+    SNR
+    SST
+    STY
+    SUR
+    SWR
+    TER
+    TX
+    TXY
+    WFG
+    WRJ
+    ZJD
+    ZNR
+    ATF
+    DOC
+    FTR
+    GZC
+    IMP
+    LDE
+    POS
+    RDI
+    RS2
+    TPO
+    TRM
+    VEW
+    WFT
+    WTR
+    CMFE
+    PARQ
+    BREO
+    AllowAVM
+    ProhibitBLOG
+    ROFR
   )
   acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => CODES
 end

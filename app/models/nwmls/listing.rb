@@ -3,15 +3,16 @@ class Nwmls::Listing
   include Nwmls::ActsAsNwmlsListing
 
   TYPE_TO_CLASS_MAP = {
-    "RESI" =>  'Nwmls::ResidentialListing',
+    "RESI" => 'Nwmls::ResidentialListing',
     "COND" => 'Nwmls::CondominiumListing',
     "BUSO" => 'Nwmls::BusinessOpportunityListing',
     "COMI" => 'Nwmls::CommercialListing',
     "FARM" => 'Nwmls::FarmListing',
-    "MANU" => 'Nwmls::ManufacturedHomeListing', 
+    "MANU" => 'Nwmls::ManufacturedHomeListing',
     "MULT" => 'Nwmls::MultiFamilyListing',
     "RENT" => 'Nwmls::RentalListing',
     "VACL" => 'Nwmls::VacantLandListing',
+    "TSHR" => 'Nwmls::TimeShareListing',
   }
 
   BOOLEAN_ELEMENTS = %w[
@@ -44,6 +45,7 @@ class Nwmls::Listing
     LNM
     LSI
     MFY
+    NewConstruction
     NIA
     PAD
     PAS
@@ -66,6 +68,7 @@ class Nwmls::Listing
     SNR
     SPA
     STO
+    ROFR
     UBG
     UCS
     WD1
@@ -111,6 +114,7 @@ class Nwmls::Listing
 
   MULTI_CODED_ELEMENTS = %w[
     ADU
+    Affiliations
     AFR
     AMN
     APH
@@ -124,6 +128,7 @@ class Nwmls::Listing
     CFE
     CMFE
     CMN
+    ConstructionMethods
     CTD
     DOC
     ECRT
@@ -176,6 +181,7 @@ class Nwmls::Listing
     UTL
     VEW
     WAS
+    WeekAssignment
     WFT
     WTR
   ]
@@ -291,7 +297,7 @@ class Nwmls::Listing
         name = element.name
         if value.present?
           if self.expand_attributes?
-            key = klass.translate_attribute(element.name).to_sym
+            key = klass.expand_attribute(element.name).to_sym
             if MULTI_CODED_ELEMENTS.include?(name)
               attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
             elsif CODED_ELEMENTS.include?(name)
@@ -328,14 +334,6 @@ class Nwmls::Listing
       collection << instance
     end
     collection
-  end
-
-  def self.translate_attribute(attribute)
-    if code = self.attribute_mappings[attribute]
-      code.underscore.parameterize('_')
-    elsif Rails.env.development?
-      raise "code #{attribute} not found"
-    end
   end
 
   ###

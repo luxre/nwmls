@@ -1,170 +1,176 @@
 class Nwmls::CommercialListing < Nwmls::Listing
 
-  CODES = HashWithIndifferentAccess.new(
-    LN: 'Listing Number',
-    PTYP: 'Property Type',
-    LAG: 'Listing Agent Number',
-    ST: 'Status',
-    LP: 'Listing Price',
-    LPH: 'Listing Price History',
-    SP: 'Selling Price',
-    OLP: 'Original Price',
-    HSN: 'House Number',
-    DRP: 'Directional Prefix',
-    STR: 'Street',
-    SSUF: 'Street Suffix',
-    DRS: 'Directional Suffix',
-    UNT: 'Unit',
-    CIT: 'City',
-    STA: 'State',
-    ZIP: 'Zip Code',
-    PL4: 'Zip Plus 4',
-    ASF: 'Approximate Square Footage',
-    LSF: 'Lot Square Footage',
-    UD: 'Update Date',
-    AR: 'Area',
-    DSRNUM: 'Community Number',
-    LDR: 'List Date Received',
-    LD: 'List Date',
-    CLO: 'Selling Date',
-    YBT: 'Year Built',
-    LO: 'Listing Office Number',
-    TAX: 'Parcel Number',
-    MAP: 'Map Page',
-    GRDX: 'X Coordinate',
-    GRDY: 'Y Coordinate',
-    SAG: 'Selling Agent Number',
-    SO: 'Selling Office Number',
-    NIA: 'Publish To Internet',
-    MR: 'Marketing Remarks',
-    LONG: 'Longitude',
-    LAT: 'Latitude',
-    PDR: 'Pending Date',
-    CLA: 'Co-Listing Agent Number',
-    SHOADR: 'Show Address to Public',
-    DD: 'Directions',
-    AVDT: 'Available Date',
-    INDT: 'Inactive Date',
-    COU: 'County',
-    CDOM: 'Cumulative Days on Market',
-    CTDT: 'Contingent Date',
-    DOM: 'Days on Market',
-    SCA: 'Selling Co Agent Number',
-    SCO: 'Selling Co Office Number',
-    VIRT: 'Virtual Tour URL',
-    SD: 'School District Code',
-    SDT: 'Status Date',
-    FIN: 'Financing',
-    MAPBOOK: 'Map Book',
-    DSR: 'Community Name',
-    HSNA: 'Street Number Modifier',
-    COLO: 'Co Office Number',
-    PIC: 'Picture Count',
-    AMP: 'Power Service in AMPS',
-    AVP: 'Number of Available Pads',
-    BDC: 'Building Condition',
-    BLK: 'Block',
-    BON: 'Boundary Survey',
-    CAP: 'Cap Rate',# -NOI div LP',
-    CHT: 'Ceiling Height',
-    CSP: 'Column Spacing',
-    DLT: 'Depth of Lot',
-    ELEX: 'Electrical Expenses',
-    ENV: 'Environmental Survey',
-    EXA: 'Expansion Area',
-    EXP: 'Expenses',
-    F17: 'Form 17',
-    FAC: 'Free and Clear',
-    GAI: 'Gross Adjusted Income',
-    GRM: 'Gross Rent Multiplier',
-    GSI: 'Gross Scheduled Income',
-    HET: 'Heating Expenses',
-    HOD: 'Annual Association Dues',
-    INS: 'Insurance Expenses',
-    LSZ: 'Lot Dimensions',
-    LT: 'Lot Number',
-    NNN: 'Total Monthly NNN',
-    NOI: 'Net Operating Income',
-    OSF: 'Approximate Office Square Feet',
-    OTX: 'Other Expenses',
-    PAD: 'Pad Ready',
-    PKC: 'Total Covered Parking',
-    PKU: 'Total Uncovered Parking',
-    POC: 'Power Company',
-    PTO: 'Preliminary Title Ordered',
-    SIZ: 'Approximate Building Square Feet',
-    SML: 'Show Map Link to Public',
-    STF: 'Site Frontage',
-    STY: 'Style',
-    SWC: 'Sewer Company',
-    TAV: 'Total Assessed Value',
-    TEX: 'Total Expenses',
-    TRI: 'Total Monthly Rent',
-    TSF: 'Total Square Feet Rented',
-    TX: 'Tax Amount',
-    TXY: 'Tax Year',
-    VAC: 'Vacancy Rate',
-    VAI: 'Improved Assessed Value',
-    VAL: 'Land Assessed Value',
-    WAC: 'Water Company',
-    WSF: 'Approximate Whse/Mfg Square Feet',
-    WSG: 'Water/Sewer/Garbage',
-    YVA: 'Year Value Assessed',
-    ZJD: 'Zoning Jurisdiction',
-    CFE: 'Features',
-    ENS: 'Energy Source',
-    EXT: 'Exterior',
-    FLS: 'Floor Covering',
-    FND: 'Foundation',
-    GZC: 'General Zoning Classification',
-    HTC: 'Heating and Cooling',
-    LDG: 'Loading',
-    LTV: 'Lot Topography/Vegetation',
-    POS: 'Possession',
-    RF: 'Roof',
-    SWR: 'Sewer',
-    TRM: 'Potential Terms',
-    WAS: 'Water Source',
-    TN1: 'Description Unit 1',
-    SF1: 'Square Feet Unit 1',
-    RN1: 'Rent Unit 1',
-    LX1: 'Lease Expiration Unit 1',
-    NN1: 'Monthly NN Unit 1',
-    US1: 'Type of Use Unit 1',
-    TN2: 'Description Unit 2',
-    SF2: 'Square Feet Unit 2',
-    RN2: 'Rent Unit 2',
-    LX2: 'Lease Expiration Unit 2',
-    NN2: 'Monthly NN Unit 2',
-    US2: 'Type of Use Unit 2',
-    TN3: 'Description Unit 3',
-    SF3: 'Square Feet Unit 3',
-    RN3: 'Rent Unit 3',
-    LX3: 'Lease Expiration Unit 3',
-    NN3: 'Monthly NN Unit 3',
-    US3: 'Type of Use Unit 3',
-    TN4: 'Description Unit 4',
-    SF4: 'Square Feet Unit 4',
-    RN4: 'Rent Unit 4',
-    LX4: 'Lease Expiration Unit 4',
-    NN4: 'Monthly NN Unit 4',
-    US4: 'Type of Use Unit 4',
-    TN5: 'Description Unit 5',
-    SF5: 'Square Feet Unit 5',
-    RN5: 'Rent Unit 5',
-    LX5: 'Lease Expiration Unit 5',
-    NN5: 'Monthly NN Unit 5',
-    US5: 'Type of Use Unit 5',
-    TN6: 'Description Unit 6',
-    SF6: 'Square Feet Unit 6',
-    RN6: 'Rent Unit 6',
-    LX6: 'Lease Expiration Unit 6',
-    NN6: 'Monthly NN Unit 6',
-    US6: 'Type of Use Unit 6',
-    PARQ: 'Third Party Approval Required',
-    BREO: 'Bank Owned',
-    AllowAVM: 'Allow AVM',
-    ProhibitBLOG: 'Allow Blog',
+  CODES = %w(
+    LN
+    PTYP
+    LAG
+    ST
+    LP
+    LPH
+    SP
+    OLP
+    HSN
+    DRP
+    STR
+    SSUF
+    DRS
+    UNT
+    CIT
+    STA
+    ZIP
+    PL4
+    ASF
+    LSF
+    UD
+    AR
+    DSRNUM
+    LDR
+    LD
+    CLO
+    YBT
+    LO
+    TAX
+    MAP
+    GRDX
+    GRDY
+    SAG
+    SO
+    NIA
+    MR
+    LONG
+    LAT
+    PDR
+    CLA
+    SHOADR
+    DD
+    AVDT
+    INDT
+    COU
+    CDOM
+    CTDT
+    DOM
+    SCA
+    SCO
+    VIRT
+    SD
+    SDT
+    FIN
+    MAPBOOK
+    DSR
+    HSNA
+    COLO
+    PIC
+    AMP
+    AVP
+    BDC
+    BLK
+    BON
+    CAP
+    CHT
+    CSP
+    DLT
+    ELEX
+    ENV
+    EXA
+    EXP
+    F17
+    FAC
+    GAI
+    GRM
+    GSI
+    HET
+    HOD
+    INS
+    LSZ
+    LT
+    NNN
+    NOI
+    OSF
+    OTX
+    PAD
+    PKC
+    PKU
+    POC
+    PTO
+    SIZ
+    SML
+    STF
+    STY
+    SWC
+    TAV
+    TEX
+    TRI
+    TSF
+    TX
+    TXY
+    VAC
+    VAI
+    VAL
+    WAC
+    WSF
+    WSG
+    YVA
+    ZJD
+    CFE
+    ENS
+    EXT
+    FLS
+    FND
+    GZC
+    HTC
+    LDG
+    LTV
+    POS
+    RF
+    SWR
+    TRM
+    WAS
+    TN1
+    SF1
+    RN1
+    LX1
+    NN1
+    US1
+    TN2
+    SF2
+    RN2
+    LX2
+    NN2
+    US2
+    TN3
+    SF3
+    RN3
+    LX3
+    NN3
+    US3
+    TN4
+    SF4
+    RN4
+    LX4
+    NN4
+    US4
+    TN5
+    SF5
+    RN5
+    LX5
+    NN5
+    US5
+    TN6
+    SF6
+    RN6
+    LX6
+    NN6
+    US6
+    PARQ
+    BREO
+    AllowAVM
+    ProhibitBLOG
+    ConstructionMethods
+    EPSEnergy
+    HERSIndex
+    LEEDRating
+    NWESHRating
+    ROFR
   )
 
   acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => CODES
