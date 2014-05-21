@@ -437,9 +437,17 @@ module Nwmls
         cattr_accessor :attribute_mappings
         self.attribute_mappings = options[:attribute_mappings]
 
+        def self.translate_attribute(attr)
+          begin
+            ALL_CODES[attr].underscore.parameterize('_')
+          rescue NoMethodError
+            raise "unexpected attribute #{attr}"
+          end
+        end
+
         def self.attributes
           if self.expand_attributes?
-            self.attribute_mappings.collect { |k| ALL_CODES[k].underscore.parameterize('_').to_sym }
+            self.attribute_mappings.collect { |k| self.translate_attribute(k).to_sym }
           else
             self.attribute_mappings
           end
