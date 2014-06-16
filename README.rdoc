@@ -66,7 +66,7 @@ would return all active residential listings but only the listing_number, proper
 This feature is useful when you are doing finds that return a large number of Listing objects
 
 === Finding a single listing by its listing number
-if you give find the key :listing_number then a single result will be returned instead of an array. Example:
+If you give find the key :listing_number then a single result will be returned instead of an array. Example:
   Nwmls::Listing.find(:listing_number => '454186')
 conveniently you can also find a single listing with
   Nwmls::Listing.find(454186)
