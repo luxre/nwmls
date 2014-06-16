@@ -68,11 +68,11 @@ This feature is useful when you are doing finds that return a large number of Li
 === Finding a single listing by its listing number
 If you give find the key :listing_number then a single result will be returned instead of an array. Example:
   Nwmls::Listing.find(:listing_number => '454186')
-conveniently you can also find a single listing with
+Conveniently, you can also find a single listing with:
   Nwmls::Listing.find(454186)
 
 === Raw Attribute Mode
-if you add the following to your config/initializers/nwmls.rb initializer file
+If you add the following to your config/initializers/nwmls.rb initializer file:
   Nwmls::Model.attribute_mode = :raw
 
 The model will act in "raw" mode. This means that attribute's names and values will be returned exactly as they are represented in the Evernet schema.
