@@ -18,11 +18,6 @@ Create config/initializers/nwmls.rb to set your Evernet credentials:
   Evernet::Connection.pass = 'XXXXX'
 
 In this intializer you can also set the SchemaName for your query results using the Evernet::Connection.schema_name setting. Possible settings include:
-- NWMLSPremiumXML
-- NWMLSStandardXML
-- StandardXML
-- StandardXML1_0
-- PremiumXML1_0
 - StandardXML1_1
 - StandardXML1_2
 - PremiumXML1_1
