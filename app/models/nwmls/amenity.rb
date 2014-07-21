@@ -31,7 +31,7 @@ class Nwmls::Amenity
         raw[code][keys.third][amenity.at('Values Code').inner_text] = amenity.at('Values Description').inner_text
       end
     end
-    raw.each do |key,values|
+    raw.each do |key, values|
       collection << self.new(values)
     end
     collection
