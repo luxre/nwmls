@@ -1,13 +1,11 @@
 class Nwmls::Amenity
   include Nwmls::Model
 
-
   if expand_attributes?
     attr_accessor :code, :description, :values
   else
     attr_accessor :Code, :Description, :Values
   end
-
 
   def self.find(property_type)
     xml = Evernet::Connection.retrieve_amenity_data(property_type)
@@ -36,5 +34,4 @@ class Nwmls::Amenity
     end
     collection
   end
-
 end
