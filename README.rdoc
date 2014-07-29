@@ -13,16 +13,19 @@ Put this line in your Gemfile:
 Then bundle:
   % bundle
 
-Create config/initializers/nwmls.rb to set your Evernet credentials:
+Create the initializer:
+  % ./bin/rails generate nwmls USER_ID PASSWORD SCHEMA_NAME
+
+You can omit the arguments for the generator and set the values in the initializer later
+
+Edit config/initializers/nwmls.rb to set your Evernet credentials:
   Evernet::Connection.user = 'XXXXX'
   Evernet::Connection.pass = 'XXXXX'
 
-In this intializer you can also set the SchemaName for your query results using the Evernet::Connection.schema_name setting. Possible settings include:
+In this intializer you can also set the SchemaName for your query results using the Evernet::Connection.schema_name setting. The default is StandardXML1_2. Supported schemas include:
 - StandardXML1_1
 - StandardXML1_2
 - PremiumXML1_1
-If not set the default is StandardXML1_2
-  e.g. Evernet::Connection.schema_name = 'StandardXML1_1'
 
 == Usage
 
