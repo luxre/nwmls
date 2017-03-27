@@ -434,7 +434,7 @@ module Nwmls
         "ZJD"                 => "Zoning Jurisdiction",
         "ZNC"                 => "Zoning Code",
         "ZNR"                 => "Zoning Remarks",
-        "AUCTION"             => "Auction",
+        "Auction"             => "Auction",
         "LotSizeSource"       => "Lot Size Source",
         "EffectiveYearBuilt"  => "Effective Year Built",
         "EffectiveYearBuiltSource" => "Effective Year Built Source",
