@@ -441,6 +441,7 @@ module Nwmls
         "OFF"                 => "Off",
         "OFFRD"               => "Offrd",
         "SaleType"            => "Sale Type",
+        "AUCTION"             => "AUCTION"
       )
 
       def acts_as_nwmls_listing(options = {})
