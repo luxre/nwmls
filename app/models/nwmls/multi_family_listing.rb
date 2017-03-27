@@ -199,6 +199,7 @@ class Nwmls::MultiFamilyListing < Nwmls::Listing
     NewConstruction
     NWESHRating
     ROFR
+    Auction
   )
   acts_as_nwmls_listing :property_type => 'MULT', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 end

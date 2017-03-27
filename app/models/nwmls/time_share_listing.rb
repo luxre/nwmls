@@ -139,6 +139,7 @@ class Nwmls::TimeShareListing < Nwmls::Listing
     UFN
     UNF
     WDW
+    Auction
   )
 
   acts_as_nwmls_listing :property_type => 'TSHR', :attribute_mappings => RAW_ATTRIBUTE_NAMES

@@ -171,6 +171,7 @@ class Nwmls::CommercialListing < Nwmls::Listing
     LEEDRating
     NWESHRating
     ROFR
+    Auction
   )
 
   acts_as_nwmls_listing :property_type => 'COMI', :attribute_mappings => RAW_ATTRIBUTE_NAMES
