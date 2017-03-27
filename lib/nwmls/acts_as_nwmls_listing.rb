@@ -434,10 +434,13 @@ module Nwmls
         "ZJD"                 => "Zoning Jurisdiction",
         "ZNC"                 => "Zoning Code",
         "ZNR"                 => "Zoning Remarks",
-        "Auction"             => "Auction",
+        "AUCTION"             => "Auction",
         "LotSizeSource"       => "Lot Size Source",
         "EffectiveYearBuilt"  => "Effective Year Built",
-        "EffectiveYearBuiltSource" => "Effective Year Built Source"
+        "EffectiveYearBuiltSource" => "Effective Year Built Source",
+        "OFF"                 => "Off",
+        "OFFRD"               => "Offrd",
+        "SaleType"            => "Sale Type",
       )
 
       def acts_as_nwmls_listing(options = {})
