@@ -15,7 +15,7 @@ class Nwmls::Image
     unless conditions.is_a?(Hash)
       conditions = { :listing_number => conditions.to_i }
     end
-    build_collection(Evernet::Connection.retrieve_image_data(conditions))
+    build_collection(Evernet::Query.retrieve_image_data(conditions))
 
   end
 

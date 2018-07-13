@@ -15,7 +15,7 @@ class Nwmls::ListingHistory
     unless conditions.is_a?(Hash)
       conditions = { :listing_number => conditions.to_i }
     end
-    build_collection(Evernet::Connection.retrieve_listing_history_data(conditions))
+    build_collection(Evernet::Query.retrieve_listing_history_data(conditions))
   end
 
   def listing

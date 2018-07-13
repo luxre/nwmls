@@ -191,7 +191,7 @@ class Nwmls::Listing
       conditions = { :listing_number => conditions.to_i }
     end
 
-    xml = Evernet::Connection.retrieve_listing_data(conditions, filters)
+    xml = Evernet::Query.retrieve_listing_data(conditions, filters)
     collection = build_collection(xml)
     if conditions[:listing_number]
       collection.first
