@@ -1,4 +1,4 @@
-class Nwmls::Image
+class Nwmls::ImageData
   include Nwmls::Model
 
   def self.attribute_names

@@ -234,7 +234,7 @@ class Nwmls::Listing
   end
 
   def images
-    @images ||= Nwmls::Image.find(listing_number)
+    @images ||= Nwmls::ImageData.find(listing_number)
   end
 
   def listing_agent
