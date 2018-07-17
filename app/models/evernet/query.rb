@@ -15,9 +15,9 @@ class Evernet::Query < Evernet::Connection
     xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
       xml.Message do
         xml.Head do
-          xml.UserId Evernet::Connection.user
-          xml.Password Evernet::Connection.pass
-          xml.SchemaName (Evernet::Connection.schema_name || DEFAULT_SCHEMA_NAME )
+          xml.UserId Nwmls.configuration.user
+          xml.Password Nwmls.configuration.pass
+          xml.SchemaName (Nwmls.configuration.schema_name || DEFAULT_SCHEMA_NAME )
         end
         xml.Body do
           xml.Query do

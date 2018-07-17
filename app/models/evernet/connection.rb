@@ -2,7 +2,6 @@ require 'savon'
 class Evernet::Connection
 
   DEFAULT_SCHEMA_NAME = 'StandardXML1_2'
-  cattr_accessor :user, :pass, :schema_name
 
   attr_accessor :client
 

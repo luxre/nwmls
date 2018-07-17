@@ -17,9 +17,8 @@ class Evernet::ImageService < Evernet::Connection
     xml.instruct!
     xml.ImageQuery(:xmlns => "NWMLS: EverNet: ImageQuery: 1.0") do
       xml.Auth do
-        xml.UserId Evernet::Connection.user
-        xml.Password Evernet::Connection.pass
-        xml.SchemaName (Evernet::Connection.schema_name || DEFAULT_SCHEMA_NAME )
+        xml.UserId Nwmls.configuration.user
+        xml.Password Nwmls.configuration.pass
       end
       xml.Query do
         if conditions[:listing_number]
