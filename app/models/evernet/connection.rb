@@ -23,14 +23,6 @@ class Evernet::Connection
     )
   end
 
-  def self.load_data_result_with_nokogiri(raw)
-    xml = Nokogiri::XML(raw)
-    if error_element = xml.at("ResponseMessages")
-      raise error_element.text
-    end
-    xml
-  end
-
   def self.sanitize_conditions(conditions)
     conditions.each do |key,value|
       if [:begin_date, :end_date].include?(key.to_sym) and value.is_a?(String)
@@ -40,4 +32,7 @@ class Evernet::Connection
     conditions
   end
 
+end
+
+class Nwmls::ConnectionError < StandardError
 end

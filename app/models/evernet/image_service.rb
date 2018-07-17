@@ -7,8 +7,7 @@ class Evernet::ImageService < Evernet::Connection
   def self.retrieve_image(conditions = {})
     response = instance.client.call :retrieve_images, message: { query: build_query(conditions) }
     raw = response.body[:retrieve_images_response][:retrieve_images_result]
-    xml = load_data_result_with_nokogiri(raw)
-    xml.root.child
+    load_data_result_with_nokogiri(raw)
   end
 
   def self.build_query(conditions = {}, filters = [])
@@ -18,9 +17,9 @@ class Evernet::ImageService < Evernet::Connection
     xml.instruct!
     xml.ImageQuery(:xmlns => "NWMLS: EverNet: ImageQuery: 1.0") do
       xml.Auth do
-        xml.UserId user
-        xml.Password pass
-        xml.SchemaName (schema_name || DEFAULT_SCHEMA_NAME )
+        xml.UserId Evernet::Connection.user
+        xml.Password Evernet::Connection.pass
+        xml.SchemaName (Evernet::Connection.schema_name || DEFAULT_SCHEMA_NAME )
       end
       xml.Query do
         if conditions[:listing_number]
@@ -40,6 +39,11 @@ class Evernet::ImageService < Evernet::Connection
         xml.Schema "NWMLS:EverNet:ImageData:1.0"
       end
     end
+  end
+
+  def self.load_data_result_with_nokogiri(raw)
+    xml = Nokogiri::XML(raw)
+    xml.root.child
   end
 
 end

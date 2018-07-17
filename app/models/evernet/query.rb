@@ -15,9 +15,9 @@ class Evernet::Query < Evernet::Connection
     xml.EverNetQuerySpecification(:xmlns => "urn:www.nwmls.com/Schemas/General/EverNetQueryXML.xsd") do
       xml.Message do
         xml.Head do
-          xml.UserId user
-          xml.Password pass
-          xml.SchemaName (schema_name || DEFAULT_SCHEMA_NAME )
+          xml.UserId Evernet::Connection.user
+          xml.Password Evernet::Connection.pass
+          xml.SchemaName (Evernet::Connection.schema_name || DEFAULT_SCHEMA_NAME )
         end
         xml.Body do
           xml.Query do
@@ -93,5 +93,12 @@ class Evernet::Query < Evernet::Connection
     load_data_result_with_nokogiri(raw)
   end
 
+  def self.load_data_result_with_nokogiri(raw)
+    xml = Nokogiri::XML(raw)
+    if error_element = xml.at("ResponseMessages")
+      raise Nwmls::ConnectionError, error_element.text
+    end
+    xml
+  end
 
 end

@@ -29,6 +29,9 @@ class Nwmls::Image
       attributes = {}
       element.children.each do |child|
         key = expand_attributes? ? child.name.underscore : child.name
+        if key.downcase == 'message'
+          raise Nwmls::ConnectionError, child.text
+        end
         attributes[key] = child.text
       end
       collection << new(attributes)
