@@ -91,3 +91,40 @@ If you add the following to your config/initializers/nwmls.rb initializer file:
 
 The model will act in "raw" mode. This means that attribute's names and values will be returned exactly as they are represented in the Evernet schema.
 For example, Nwmls::Listing objects will have attribute LN instead of listing_number. Values for boolean attributes are returned as strings "1" and "0". Attributes that return arrays will return | delimited strings.
+
+== Images
+=== Image Data
+You can get image data for a listing with 
+  Nwmls::ImageData.find(:listing_number => listing_number)
+This will return a collection of Nwmls::ImageData objects with methods: ml_number, picture_file_name, picture_height, picture_width, picture_description, uploaded_date_time, and last_modified_date_time.
+You can use this data to fetch an image file the NWMLS ftp server or use it with Nwmls::Image
+
+=== Images
+Nwmls::Image wraps the Nwmls Image Service. You can use it to get information, including the binary data, for images.
+To get all the images for a listing
+  Nwmls::Image.find(:listing_number => listing_number)
+An image by sequence (1 to 15)
+  Nwmls::Image.find(:listing_number => listing_number, :sequence => n)
+An image by name (use picture_file_name from Nwmls::ImageData results)
+  Nwmls::Image.find(:name => picture_file_name)
+You can write the above without the name option
+  Nwmls::Image.find(picture_file_name)
+When the sequence or name options are given a single object is returned. When only the listing_number is provided an array of objects in returned.
+
+An Nwmls::Image instance has the methods: image_id, image_order, upload_dt, and blob
+
+=== Rendering with Rails
+The blob method on an Nwmls::Image object is the raw data for the image file base 64 encoded. An example action that would render the image inline might look like this
+
+   def show                                                                                                                                                                                                                         |
+     @image = Nwmls::Image.find("#{params[:id]}.jpg")                                                                                                                                                                               |
+     respond_to do |format|                                                                                                                                                                                                         |
+       format.jpg {·                                                                                                                                                                                                                |
+         if @image.nil?                                                                                                                                                                                                             |
+           head :not_found                                                                                                                                                                                                          |
+         else                                                                                                                                                                                                                       |
+           send_data(Base64.decode64(@image.blob),  :type => "image/jpeg", :disposition => "inline", buffer_size: '4096')                                                                                                           |
+         end
+        }
+     end
+   end
