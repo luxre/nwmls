@@ -18,7 +18,7 @@ class Nwmls::Office
     unless conditions.is_a?(Hash)
       conditions = { :office_mls_id => conditions.to_i }
     end
-    collection = build_collection(Evernet::Connection.retrieve_office_data(conditions))
+    collection = build_collection(Evernet::Query.retrieve_office_data(conditions))
     if conditions[:office_mls_id]
       collection.first
     else

@@ -15,7 +15,7 @@ class Nwmls::Member
     unless conditions.is_a?(Hash)
       conditions = { :agent_mls_id => conditions.to_i }
     end
-    collection = build_collection(Evernet::Connection.retrieve_member_data(conditions))
+    collection = build_collection(Evernet::Query.retrieve_member_data(conditions))
     if conditions[:agent_mls_id]
       collection.first
     else

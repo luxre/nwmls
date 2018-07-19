@@ -191,7 +191,7 @@ class Nwmls::Listing
       conditions = { :listing_number => conditions.to_i }
     end
 
-    xml = Evernet::Connection.retrieve_listing_data(conditions, filters)
+    xml = Evernet::Query.retrieve_listing_data(conditions, filters)
     collection = build_collection(xml)
     if conditions[:listing_number]
       collection.first
@@ -234,7 +234,7 @@ class Nwmls::Listing
   end
 
   def images
-    @images ||= Nwmls::Image.find(listing_number)
+    @images ||= Nwmls::ImageData.find(listing_number)
   end
 
   def listing_agent

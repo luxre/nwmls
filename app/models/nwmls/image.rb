@@ -2,7 +2,7 @@ class Nwmls::Image
   include Nwmls::Model
 
   def self.attribute_names
-    attrs = %w[MLNumber PictureFileName PictureHeight PictureWidth PictureDescription UploadedDateTime LastModifiedDateTime]
+    attrs = %w[ImageId ImageOrder UploadDt BLOB]
     if expand_attributes?
       attrs = attrs.collect { |attr| attr.underscore }
     end
@@ -13,10 +13,31 @@ class Nwmls::Image
 
   def self.find(conditions = {})
     unless conditions.is_a?(Hash)
-      conditions = { :listing_number => conditions.to_i }
+     conditions = { :name => conditions }
     end
-    build_collection(Evernet::Connection.retrieve_image_data(conditions))
-
+    collection = build_collection(Evernet::ImageService.retrieve_image(conditions))
+    if conditions[:sequence].present? or conditions[:name].present?
+      collection.first
+    else
+      collection
+    end
   end
+
+  def self.build_collection(root)
+    collection = []
+    root.children.each do |element|
+      attributes = {}
+      element.children.each do |child|
+        key = expand_attributes? ? child.name.underscore : child.name
+        if key.downcase == 'message'
+          raise Nwmls::ConnectionError, child.text
+        end
+        attributes[key] = child.text
+      end
+      collection << new(attributes)
+    end
+    collection
+  end
+
 
 end
