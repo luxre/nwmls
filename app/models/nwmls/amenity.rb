@@ -8,7 +8,7 @@ class Nwmls::Amenity
   end
 
   def self.find(property_type)
-    xml = Evernet::Connection.retrieve_amenity_data(property_type)
+    xml = Evernet::Query.retrieve_amenity_data(property_type)
     build_collection(xml)
   end
 

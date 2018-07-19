@@ -12,7 +12,7 @@ class Nwmls::SchoolDistrict
   attr_accessor(*attribute_names)
 
   def self.all
-    @@all ||= build_collection(Evernet::Connection.retrieve_school_data)
+    @@all ||= build_collection(Evernet::Query.retrieve_school_data)
   end
 
   private

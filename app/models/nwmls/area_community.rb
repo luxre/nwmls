@@ -8,6 +8,6 @@ class Nwmls::AreaCommunity
   end
 
   def self.all
-    @@all ||= build_collection(Evernet::Connection.retrieve_area_community_data)
+    @@all ||= build_collection(Evernet::Query.retrieve_area_community_data)
   end
 end
