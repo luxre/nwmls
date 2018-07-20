@@ -117,6 +117,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     AllowAVM
     ProhibitBLOG
     ROFR
+    Auction
   )
   acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 end

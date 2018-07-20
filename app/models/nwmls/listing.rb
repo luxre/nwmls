@@ -184,6 +184,13 @@ class Nwmls::Listing
     WeekAssignment
     WFT
     WTR
+    Auction
+    LotSizeSource
+    EffectiveYearBuilt
+    EffectiveYearBuiltSource
+    OFF
+    OFFRD
+    SaleType
   ]
 
   def self.find(conditions = {}, filters = [])

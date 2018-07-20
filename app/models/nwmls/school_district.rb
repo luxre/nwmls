@@ -29,11 +29,10 @@ class Nwmls::SchoolDistrict
         end
       end
       if self.expand_attributes?
-        attributes = Hash[attributes.collect { |k,v| [k.downcase, v] } ]
+        attributes = Hash[attributes.collect { |k, v| [k.downcase, v] }]
       end
       collection << new(attributes)
     end
     collection
   end
-
 end
