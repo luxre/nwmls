@@ -128,3 +128,11 @@ The blob method on an Nwmls::Image object is the raw data for the image file bas
         }
      end
    end
+
+== Open Houses
+To get all open houses use
+  Nwmls::OpenHouse.find
+
+The method accepts parameters but they are ignored. All open houses in the system are returned even if you give :listing_number, :start_date, and :end_date parameters.
+An Nwmls::OpenHouse object has the methods id, modified_dt, :listing_number, :start_dt, :end_dt, and description
+
