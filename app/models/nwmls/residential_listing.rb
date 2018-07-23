@@ -172,7 +172,7 @@ class Nwmls::ResidentialListing < Nwmls::Listing
     NewConstruction
     NWESHRating
     ROFR
-    Auction
+    AUCTION
     LotSizeSource
     EffectiveYearBuilt
     EffectiveYearBuiltSource
