@@ -72,7 +72,7 @@ The supported subclasses are
 
 * Filters
 The find method also takes an optional second parameter. This is an array of filters. The filters work similarly to a select clause in a SQL statement. It limits which attributes are returned in the results. For example
-  Nwmls::Listing.find(:status => "A", ['LN','PTYP',UD])
+  Nwmls::Listing.find(:status => "A", ['LN','PTYP','UD'])
 would return all active residential listings but only the listing_number, property_type, and update_date attributes.
 This feature is useful when you are doing finds that return a large number of Listing objects
 
