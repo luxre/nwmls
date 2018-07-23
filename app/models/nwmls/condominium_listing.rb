@@ -161,6 +161,13 @@ class Nwmls::CondominiumListing < Nwmls::Listing
     NewConstruction
     NWESHRating
     ROFR
+    AUCTION
+    LotSizeSource
+    EffectiveYearBuilt
+    EffectiveYearBuiltSource
+    OFF
+    OFFRD
+    SaleType
   )
   acts_as_nwmls_listing :property_type => 'COND', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 end

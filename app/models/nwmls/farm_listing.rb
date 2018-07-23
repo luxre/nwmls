@@ -167,6 +167,11 @@ class Nwmls::FarmListing < Nwmls::Listing
     NewConstruction
     NWESHRating
     ROFR
+    AUCTION
+    EffectiveYearBuilt
+    EffectiveYearBuiltSource
+    OFF
+    SaleType
   )
 
   acts_as_nwmls_listing :property_type => 'FARM', :attribute_mappings => RAW_ATTRIBUTE_NAMES

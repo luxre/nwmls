@@ -77,6 +77,7 @@ class Nwmls::Listing
     WD4
     WD5
     WD6
+    AUCTION
   ]
 
   CODED_ELEMENTS = %w[
@@ -110,6 +111,9 @@ class Nwmls::Listing
     TOF
     UTR
     ZJD
+    EffectiveYearBuiltSource
+    OFF
+    SaleType
   ]
 
   MULTI_CODED_ELEMENTS = %w[
@@ -299,10 +303,13 @@ class Nwmls::Listing
           if self.expand_attributes?
             key = klass.expand_attribute(element.name).to_sym
             if MULTI_CODED_ELEMENTS.include?(name)
-              attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}")}
+              attributes[key] = value.split('|').collect { |val| I18n::t("#{name}.#{val}") }
             elsif CODED_ELEMENTS.include?(name)
               unless value == '0'
                 attributes[key] = I18n::t("#{name}.#{value}")
+                if value.include?('|')
+                  Rails.logger.info "#{name} should be a multiple coded element"
+                end
               end
             elsif BOOLEAN_ELEMENTS.include?(name) and value
               attributes[key] = if value == 'Y'

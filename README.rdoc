@@ -4,7 +4,7 @@ An object mapper for the Evernet NWMLS Soap Web Service
 
 == Supported versions
 
-* Rails  >= 4.0.0 < 4.2.0
+* Rails  >= 4.0.0 < 4.2.7
 == Install
 
 Put this line in your Gemfile:
@@ -24,15 +24,12 @@ The default initializer will be generated at config/initializers/nwmls.rb with t
 Nwmls.configure do |config|
   config.user = <%= ENV['NWMLS_USER'] %>
   config.pass = <%= ENV['NWMLS_PASSWORD'] %>
-  config.schema_name = 'StandardXML1_2'
+  config.schema_name = 'StandardXML1_5'
 end
 
 Remember to add the initialize to you .gitignore if you're storing your password directly in the file.
 
-In this intializer you can also set the SchemaName for your query results using the schema_name setting. The default is StandardXML1_2. Supported schemas include:
-- StandardXML1_1
-- StandardXML1_2
-- PremiumXML1_1
+In this intializer you can also set the SchemaName for your query results using the schema_name setting. The default is StandardXML1_5.
 
 == Usage
 
@@ -75,7 +72,7 @@ The supported subclasses are
 
 * Filters
 The find method also takes an optional second parameter. This is an array of filters. The filters work similarly to a select clause in a SQL statement. It limits which attributes are returned in the results. For example
-  Nwmls::Listing.find(:status => "A", ['LN','PTYP',UD]) 
+  Nwmls::Listing.find(:status => "A", ['LN','PTYP','UD'])
 would return all active residential listings but only the listing_number, property_type, and update_date attributes.
 This feature is useful when you are doing finds that return a large number of Listing objects
 

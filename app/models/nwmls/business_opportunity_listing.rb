@@ -97,6 +97,9 @@ class Nwmls::BusinessOpportunityListing < Nwmls::Listing
     BREO
     AllowAVM
     ProhibitBLOG
+    AUCTION
+    OFF
+    SaleType
   )
 
   acts_as_nwmls_listing :property_type => 'BUSO', :attribute_mappings => RAW_ATTRIBUTE_NAMES
