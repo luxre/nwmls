@@ -10,5 +10,4 @@ class Nwmls::AreaCommunity
   def self.all
     @@all ||= build_collection(Evernet::Query.retrieve_area_community_data)
   end
-
 end

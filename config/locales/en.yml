@@ -1,5 +1,10 @@
 en:
 ### BEGIN === FROM AMENITIES WEB SERVICE === ###
+  SaleType:
+    FSBO: FSBO
+    MLS: MLS
+    SRA: SRA
+
   ADU:
     L: Lower
     M: Main
@@ -36,7 +41,7 @@ en:
     '1071': 1071 - North County
     '109': 109 - Lake Tapps/Bonne
     '110': 110 - Dash Point/Feder
-    '111': 111 - Buckley
+    '111': 111 - Buckley/South Prairie
     '112': 112 - Wilkeson/Carbona
     '113': 113 - Sumner
     '114': 114 - Orting
@@ -171,10 +176,10 @@ en:
     '385': 385 - SODO/Beacon Hill
     '386': 386 - Lincoln County
     '39': 39 - Lakewood
-    '390': 390 - Central Seattle/
+    '390': 390 - Central Seattle
     '4': 4 - Key Peninsula Sout
     '40': 40 - Lakewood
-    '401': 401 - West Kelso And B
+    '401': 401 - West Kelso
     '402': 402 - Highlands
     '403': 403 - St. Helens
     '404': 404 - Westside
@@ -270,7 +275,7 @@ en:
     '62': 62 - Southeast Tacoma
     '620': 620 - Okanogan Valley
     '63': 63 - Parkland
-    '64': 64 - Parkland
+    '64': 64 - Parkland/Midland
     '65': 65 - Parkland
     '66': 66 - Parkland
     '67': 67 - Parkland
@@ -314,31 +319,34 @@ en:
     '835': 835 - Mount Vernon
     '84': 84 - Puyallup
     '840': 840 - Lyman/Hamilton
-    '845': 845 - Concrete  Up Ri
+    '845': 845 - Concrete & Up Ri
     '85': 85 - Puyallup
     '850': 850 - Sudden Valley
+    '855': 855 - South Bay/Glenhaven
     '86': 86 - Puyallup
     '860': 860 - Bellingham
     '865': 865 - Meridian
     '87': 87 - Puyallup
     '870': 870 - Ferndale/Custer
+    '871': 871 - Lummi Island & Eliza Islan
     '88': 88 - Puyallup
     '880': 880 - Blaine/Birch Bay
     '881': 881 - Point Roberts
     '885': 885 - Lynden
-    '89': 89 - Graham/Fredrickso
+    '89': 89 - Graham/Frederickson
     '890': 890 - Nooksack Valley
     '895': 895 - Mount Baker/Demi
     '899': 899 - Waldron
     '9': 9 - Key Peninsula Nort
     '900': 900 - San Juan Island
-    '901': 901 - Orc/Shw/Obsr/Crn
+    '901': 901 - Orcas, Obstruction & Crane
     '902': 902 - Lopez/Frost
     '903': 903 - Dec/Ctr/Blakely
     '904': 904 - Stu/Hen/Pl/Johns
     '905': 905 - Other San Juan I
     '906': 906 - Clallam County
     '907': 907 - Walla Walla Coun
+    '908': 908 - Shaw Island
     '911': 911 - Miller Peninsula
     '912': 912 - Southeast Clalla
     '913': 913 - Northeast Sequim
@@ -346,8 +354,8 @@ en:
     '915': 915 - Northwest Sequim
     '916': 916 - Southeast Sequim
     '917': 917 - Southwest Sequim
-    '918': 918 - East of Port Ang
-    '919': 919 - East of Port Ang
+    '918': 918 - E of Port Angeles N
+    '919': 919 - E of Port Angeles S
     '920': 920 - Northeast Port A
     '921': 921 - Central East Por
     '922': 922 - Central West Por
@@ -366,7 +374,7 @@ en:
     '950': 950 - Skamania County
     '959': 959 - Stevens Pass
     '96': 96 - Asotin County
-    '961': 961 - Chelan
+    '961': 961 - Lake Chelan
     '962': 962 - Manson
     '963': 963 - Chelan Falls
     '964': 964 - Entiat
@@ -454,9 +462,9 @@ en:
     AW: Advanced Wall
     DW: Double Wall
     ICF: Insulated Concrete Form (ICF)
-    PB: Post  Beam
+    PB: Post & Beam
     SB: Strawbale
-    SC: Steel  Concrete
+    SC: Steel & Concrete
     SF: Standard Frame
     SIP: Structural Insulated Panel (SIPs
     TU: Tilt-up
@@ -477,6 +485,10 @@ en:
     C: LEED™
     D: Other-See Remarks
     E: Third Party Verif.
+
+  EffectiveYearBuiltSource:
+    PR: Public Records
+    SR: See Remarks
 
   EFR:
     L: Lower
@@ -580,8 +592,8 @@ en:
     B: Concrete Perimeter
     C: Concrete Ribbon
     D: Concrete Slab
-    E: Post  Block
-    F: Post  Pillar
+    E: Post & Block
+    F: Post & Pillar
     G: Poured Concrete
     H: See Remarks
     I: Slab
@@ -707,6 +719,10 @@ en:
     NWP: NWESH Presale
     NWUC: NWESH Under Construction
 
+  "OFF":
+    BEFORE: Reviewed on OFFRD
+    RECEIPT: Reviewed on receipt
+
   PARQ:
     A: None
     B: Other - See Remarks
@@ -781,7 +797,7 @@ en:
     '20': 20 - Manuf-Single Wide
     '21': 21 - Manuf-Double Wide
     '22': 22 - Manuf-Triple Wide
-    '24': 24 - Floating Home
+    '24': 24 - Floating Home/On-Water Res
     '30': 30 - Condo (1 Level)
     '31': 31 - Condo (2 Levels)
     '32': 32 - Townhouse
@@ -797,13 +813,13 @@ en:
     '52': 52 - Duplex
     '53': 53 - Tri-plex
     '54': 54 - 4-Plex
-    '55': 55 - 5-Plex
+    '55': 55 - 5-9 Units
     '56': 56 - 10+ Units
     '57': 57 - 10+ Units
     '60': 60 - Comm Bldg Und 10K
     '61': 61 - Comm Bldg Ovr 10K
     '62': 62 - Business Opp.
-    '63': 63 - Farm  Ranch
+    '63': 63 - Farm & Ranch
     '64': 64 - Hotel/Motel
     '70': 70 - Industrial
     '71': 71 - Light Indrl.
@@ -1016,7 +1032,7 @@ en:
     A: Agricultural
     B: Business
     C: Commercial
-    D: Farm  Ranch
+    D: Farm & Ranch
     E: Forestry
     F: Industrial
     G: Industrial-Light
@@ -1058,7 +1074,7 @@ en:
     E: See Comments
 
   EQP:
-    A: Bailer
+    A: Baler
     B: Combine
     C: Dairy
     D: Disc
@@ -1223,8 +1239,8 @@ en:
     B: Concrete Perimeter
     C: Concrete Ribbon
     D: Concrete Slab
-    E: Post  Block
-    F: Post  Pillar
+    E: Post & Block
+    F: Post & Pillar
     G: Poured Concrete
     H: See Remarks
     I: Slab
@@ -1475,9 +1491,9 @@ en:
     I: See Remarks
 
   RS2:
-    A: CC
-    B: NO Manufacturd Homes
-    C: Manufacturd Homes OK
+    A: CC&R
+    B: NO Manufactured Homes
+    C: Manufactured Homes OK
     D: No Restrictions
     E: Timber Clause
     F: Unknown
@@ -1557,7 +1573,7 @@ en:
     F: See Remarks
 
   MTB:
-    A: Food  Beverage
+    A: Food & Beverage
     B: Gas Station
     C: Grocery
     D: Hospitality
