@@ -120,6 +120,7 @@ class Nwmls::VacantLandListing < Nwmls::Listing
     SaleType
     AUCTION
     OFF
+    OFFRD
   )
   acts_as_nwmls_listing :property_type => 'VACL', :attribute_mappings => RAW_ATTRIBUTE_NAMES
 end
